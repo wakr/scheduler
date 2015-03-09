@@ -32,3 +32,8 @@ build/
 
 # unless supporting rvm < 1.11.0 or doing something fancy, ignore this:
 .rvmrc
+
+#Ignore JetBrains IDEA files. https://intellij-support.jetbrains.com/entries/23393067
+/.idea/workspace.xml
+/.idea/tasks.xml
+*.iml
