@@ -9,6 +9,12 @@
 /test/version_tmp/
 /tmp/
 
+## log
+/log/
+
+## workspace
+/.idea/
+
 ## Specific to RubyMotion:
 .dat*
 .repl_history
