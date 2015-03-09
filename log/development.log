@@ -7618,3 +7618,165 @@ Processing by AssignmentsController#index as JSON
   [1m[36mAssignment Load (0.2ms)[0m  [1mSELECT "assignments".* FROM "assignments"[0m
   Rendered assignments/index.json.jbuilder (2.2ms)
 Completed 200 OK in 5ms (Views: 3.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assignments" for 127.0.0.1 at 2015-03-10 00:47:09 +0200
+Processing by AssignmentsController#index as HTML
+  [1m[35mAssignment Load (0.3ms)[0m  SELECT "assignments".* FROM "assignments"
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered assignments/index.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 75ms (Views: 73.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/assignments-493aa7ac94efd2ec57d53829ec113d89.css?body=1" for 127.0.0.1 at 2015-03-10 00:47:09 +0200
+
+
+Started GET "/assets/scaffolds-0e40a977ad51d19682cf4d5224cb1520.css?body=1" for 127.0.0.1 at 2015-03-10 00:47:09 +0200
+
+
+Started GET "/assets/tasks-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-10 00:47:09 +0200
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-10 00:47:09 +0200
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-03-10 00:47:09 +0200
+
+
+Started GET "/assets/fullcalendar-6bee23c458d42683dba9159c94f7547f.css?body=1" for 127.0.0.1 at 2015-03-10 00:47:09 +0200
+
+
+Started GET "/assets/application-01daa2da0e3ee6ef2b9fc8af2d4b8424.css?body=1" for 127.0.0.1 at 2015-03-10 00:47:09 +0200
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-03-10 00:47:09 +0200
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2015-03-10 00:47:09 +0200
+
+
+Started GET "/assets/assignments-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-10 00:47:09 +0200
+
+
+Started GET "/assets/tasks-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-10 00:47:09 +0200
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-10 00:47:09 +0200
+
+
+Started GET "/assets/moment-66988874bf5714cb1e4a6f53d733b6e1.js?body=1" for 127.0.0.1 at 2015-03-10 00:47:09 +0200
+
+
+Started GET "/assets/fullcalendar-f09a2cee6bd3f7655c47cf7eab2b52b9.js?body=1" for 127.0.0.1 at 2015-03-10 00:47:09 +0200
+
+
+Started GET "/assets/application-7d5a8d9995b47ad878f233da1a0a4655.js?body=1" for 127.0.0.1 at 2015-03-10 00:47:09 +0200
+
+
+Started GET "/assignments.json?start=2015-02-23&end=2015-04-06&_=1425941229491" for 127.0.0.1 at 2015-03-10 00:47:09 +0200
+Processing by AssignmentsController#index as JSON
+  Parameters: {"start"=>"2015-02-23", "end"=>"2015-04-06", "_"=>"1425941229491"}
+  [1m[36mAssignment Load (0.2ms)[0m  [1mSELECT "assignments".* FROM "assignments"[0m
+  Rendered assignments/index.json.jbuilder (1.6ms)
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2015-03-10 00:47:13 +0200
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users"
+  Rendered users/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 80ms (Views: 78.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assignments" for 127.0.0.1 at 2015-03-10 00:47:14 +0200
+Processing by AssignmentsController#index as HTML
+  [1m[36mAssignment Load (0.3ms)[0m  [1mSELECT "assignments".* FROM "assignments"[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered assignments/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 70ms (Views: 68.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assignments.json?start=2015-02-23&end=2015-04-06&_=1425941229492" for 127.0.0.1 at 2015-03-10 00:47:14 +0200
+Processing by AssignmentsController#index as JSON
+  Parameters: {"start"=>"2015-02-23", "end"=>"2015-04-06", "_"=>"1425941229492"}
+  [1m[35mAssignment Load (0.2ms)[0m  SELECT "assignments".* FROM "assignments"
+  Rendered assignments/index.json.jbuilder (1.2ms)
+Completed 200 OK in 5ms (Views: 3.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/tasks" for 127.0.0.1 at 2015-03-10 00:47:15 +0200
+Processing by TasksController#index as HTML
+  [1m[36mTask Load (0.1ms)[0m  [1mSELECT "tasks".* FROM "tasks"[0m
+  Rendered tasks/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 74ms (Views: 69.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assignments" for 127.0.0.1 at 2015-03-10 00:47:16 +0200
+Processing by AssignmentsController#index as HTML
+  [1m[35mAssignment Load (0.3ms)[0m  SELECT "assignments".* FROM "assignments"
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered assignments/index.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 86ms (Views: 85.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assignments.json?start=2015-02-23&end=2015-04-06&_=1425941229493" for 127.0.0.1 at 2015-03-10 00:47:16 +0200
+Processing by AssignmentsController#index as JSON
+  Parameters: {"start"=>"2015-02-23", "end"=>"2015-04-06", "_"=>"1425941229493"}
+  [1m[36mAssignment Load (0.2ms)[0m  [1mSELECT "assignments".* FROM "assignments"[0m
+  Rendered assignments/index.json.jbuilder (1.5ms)
+Completed 200 OK in 3ms (Views: 2.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-10 00:57:17 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users"
+  Rendered users/index.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 140ms (Views: 128.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/assignments-493aa7ac94efd2ec57d53829ec113d89.css?body=1" for 127.0.0.1 at 2015-03-10 00:57:18 +0200
+
+
+Started GET "/assets/application-01daa2da0e3ee6ef2b9fc8af2d4b8424.css?body=1" for 127.0.0.1 at 2015-03-10 00:57:18 +0200
+
+
+Started GET "/assets/fullcalendar-6bee23c458d42683dba9159c94f7547f.css?body=1" for 127.0.0.1 at 2015-03-10 00:57:18 +0200
+
+
+Started GET "/assets/moment-66988874bf5714cb1e4a6f53d733b6e1.js?body=1" for 127.0.0.1 at 2015-03-10 00:57:18 +0200
+
+
+Started GET "/assets/fullcalendar-f09a2cee6bd3f7655c47cf7eab2b52b9.js?body=1" for 127.0.0.1 at 2015-03-10 00:57:18 +0200
+
+
+Started GET "/assets/application-7d5a8d9995b47ad878f233da1a0a4655.js?body=1" for 127.0.0.1 at 2015-03-10 00:57:18 +0200
+
+
+Started GET "/assignments" for 127.0.0.1 at 2015-03-10 00:57:20 +0200
+Processing by AssignmentsController#index as HTML
+  [1m[36mAssignment Load (0.1ms)[0m  [1mSELECT "assignments".* FROM "assignments"[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered assignments/index.html.erb within layouts/application (16.4ms)
+Completed 200 OK in 95ms (Views: 84.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assignments.json?start=2015-02-23&end=2015-04-06&_=1425941839002" for 127.0.0.1 at 2015-03-10 00:57:20 +0200
+Processing by AssignmentsController#index as JSON
+  Parameters: {"start"=>"2015-02-23", "end"=>"2015-04-06", "_"=>"1425941839002"}
+  [1m[35mAssignment Load (0.2ms)[0m  SELECT "assignments".* FROM "assignments"
+  Rendered assignments/index.json.jbuilder (3.0ms)
+Completed 200 OK in 5ms (Views: 4.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assignments/3" for 127.0.0.1 at 2015-03-10 00:57:23 +0200
+Processing by AssignmentsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mAssignment Load (0.3ms)[0m  [1mSELECT  "assignments".* FROM "assignments" WHERE "assignments"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered assignments/show.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 103ms (Views: 94.5ms | ActiveRecord: 0.5ms)
