@@ -4,4 +4,4 @@ http://ror-scheduler.herokuapp.com/
 
 [![Code Climate](https://codeclimate.com/github/wakr/scheduler/badges/gpa.svg)](https://codeclimate.com/github/wakr/scheduler)
 
-[![Code Climate](https://codeclimate.com/github/wakr/scheduler/badges/gpa.svg)](https://codeclimate.com/github/wakr/scheduler)
+[![Test Coverage](https://codeclimate.com/github/wakr/scheduler/badges/coverage.svg)](https://codeclimate.com/github/wakr/scheduler)
