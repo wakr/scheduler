@@ -332,3 +332,61 @@ Processing by TasksController#index as HTML
   [1m[35mTask Load (0.2ms)[0m  SELECT "tasks".* FROM "tasks"
   Rendered tasks/index.html.erb within layouts/application (2.6ms)
 Completed 200 OK in 83ms (Views: 78.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-09 18:26:28 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users"
+  Rendered users/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 425ms (Views: 412.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assignments" for 127.0.0.1 at 2015-03-09 18:26:31 +0200
+Processing by AssignmentsController#index as HTML
+  [1m[36mAssignment Load (0.2ms)[0m  [1mSELECT "assignments".* FROM "assignments"[0m
+  Rendered assignments/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 74ms (Views: 49.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assignments" for 127.0.0.1 at 2015-03-09 18:26:53 +0200
+Processing by AssignmentsController#index as HTML
+  [1m[35mAssignment Load (0.3ms)[0m  SELECT "assignments".* FROM "assignments"
+  Rendered assignments/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 60ms (Views: 58.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/assignments-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-09 18:26:53 +0200
+
+
+Started GET "/assets/scaffolds-0e40a977ad51d19682cf4d5224cb1520.css?body=1" for 127.0.0.1 at 2015-03-09 18:26:53 +0200
+
+
+Started GET "/assets/tasks-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-09 18:26:53 +0200
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-09 18:26:53 +0200
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-03-09 18:26:53 +0200
+
+
+Started GET "/assets/application-31ac73507e42169c63318675597a6ea4.css?body=1" for 127.0.0.1 at 2015-03-09 18:26:53 +0200
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2015-03-09 18:26:53 +0200
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-03-09 18:26:53 +0200
+
+
+Started GET "/assets/assignments-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-09 18:26:53 +0200
+
+
+Started GET "/assets/tasks-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-09 18:26:53 +0200
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-09 18:26:53 +0200
+
+
+Started GET "/assets/application-8ce5067598cd03bc722b97db5dd776ec.js?body=1" for 127.0.0.1 at 2015-03-09 18:26:53 +0200
