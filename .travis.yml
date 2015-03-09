@@ -6,6 +6,9 @@ script:
 - RAILS_ENV=test bundle exec rake db:migrate --trace
 - bundle exec rake db:test:prepare
 - bundle exec rspec -fd spec/
+addons:
+  code_climate:
+    repo_token: fcb12968ec0b28f892d130a83ae38c82a9ac3988019281697c7def4e0cfbee19
 deploy:
   provider: heroku
   api_key:
@@ -13,6 +16,4 @@ deploy:
   app: ror-scheduler
   on:
     repo: wakr/scheduler
-  addons:
-    code_climate:
-      repo_token: fcb12968ec0b28f892d130a83ae38c82a9ac3988019281697c7def4e0cfbee19
+
