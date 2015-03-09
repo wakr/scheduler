@@ -1,0 +1,7 @@
+deploy:
+  provider: heroku
+  api_key:
+    secure: XxHHu5oJfhzHwrc8448+VbVPHw81RTckrMlU/DA/MuMBjpuNHKBYOtYjtImmFgbr+NDi2+m2DP2bM3CZNYsqrtIrIxqK76mMK5AK+VIQ71u/Z/Uk/bCDPyKeVyNom6JcbhzovGI58TRKjLOL8tjcSdoReoDsQo8zxD28P9AduE4=
+  app: ror-scheduler
+  on:
+    repo: wakr/scheduler
