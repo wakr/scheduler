@@ -13,7 +13,7 @@ describe User do
   end
 
   it "when removed, can't be found anymore" do
-    
+
   end
 
 end
