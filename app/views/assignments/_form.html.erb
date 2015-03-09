@@ -15,10 +15,11 @@
     <%= f.label :name %><br>
     <%= f.text_field :name %>
   </div>
+
   <div class="field">
-    <%= f.label :user_id %><br>
-    <%= f.number_field :user_id %>
+  <%= f.select :user_id, options_from_collection_for_select(@users, :id, :name) %>
   </div>
+
   <div class="field">
     <%= f.label :deadline %><br>
     <%= f.datetime_select :deadline, :start_year => Time.now.year, :end_year => Time.now.year %>

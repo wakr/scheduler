@@ -9,6 +9,7 @@ gem 'rb-readline'
 group :development, :test do
   gem 'sqlite3'
   gem 'rspec-rails', '~> 3.0'
+  gem 'better_errors'
 end
 
 group :production do
@@ -16,11 +17,18 @@ group :production do
   gem 'rails_12factor'
 end
 
-gem "codeclimate-test-reporter", group: :test, require: nil
+
 
 group :test do
   gem 'factory_girl_rails'
+  gem "codeclimate-test-reporter", require: nil
+  gem 'rspec-its'
 end
+
+
+gem 'fullcalendar-rails'
+gem 'momentjs-rails'
+
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'

@@ -20,6 +20,7 @@ class AssignmentsController < ApplicationController
 
   # GET /assignments/1/edit
   def edit
+    @user = User.all
   end
 
   # POST /assignments

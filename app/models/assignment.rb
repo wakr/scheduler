@@ -5,10 +5,6 @@ class Assignment < ActiveRecord::Base
   #is_done depends if subtasks are all done
 
 
-  def is_done
-
-  end
-
   def to_s
     self.name
   end

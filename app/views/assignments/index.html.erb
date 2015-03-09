@@ -1,5 +1,25 @@
 <p id="notice"><%= notice %></p>
 
+<script>
+    $(document).ready(function() {
+
+    // page is now ready, initialize the calendar...
+
+    $('#calendar').fullCalendar({
+        // put your options and callbacks here
+        events: '/assignments.json',
+        firstDay: 1,
+        eventBackgroundColor: "black",
+        eventTextColor: "white"
+        // Need more adjusting
+
+    });
+
+
+});
+
+</script>
+
 <h1>Listing Assignments</h1>
 
 <table>
@@ -15,12 +35,12 @@
   <tbody>
     <% @assignments.each do |assignment| %>
       <tr>
-        <td><%= assignment.name %></td>
-        <td><%= assignment.user_id %></td>
+        <td><%= link_to assignment.name, assignment %></td>
+        <td><%= link_to assignment.user, assignment.user %></td>
         <td><%= assignment.deadline %></td>
-        <td><%= link_to 'Show', assignment %></td>
         <td><%= link_to 'Edit', edit_assignment_path(assignment) %></td>
         <td><%= link_to 'Destroy', assignment, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Add task', ""%></td>
       </tr>
     <% end %>
   </tbody>
@@ -29,3 +49,5 @@
 <br>
 
 <%= link_to 'New Assignment', new_assignment_path %>
+
+<div id="calendar"></div>
