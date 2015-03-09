@@ -15,6 +15,9 @@
 ## workspace
 /.idea/
 
+## gemfile for travis 
+.Gemfile.lock
+
 ## Specific to RubyMotion:
 .dat*
 .repl_history
