@@ -13,7 +13,7 @@ describe User do
   end
 
   it "when removed, can't be found anymore" do
-    user = User.create name:"Samu", birthdate: Date.new(1992,8,27)
+    user = FactoryGirl.create(:user)
     user.destroy
     expect(User.all.count).to eq(0)
   end
