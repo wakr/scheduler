@@ -7780,3 +7780,6 @@ Processing by AssignmentsController#show as HTML
   [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
   Rendered assignments/show.html.erb within layouts/application (3.2ms)
 Completed 200 OK in 103ms (Views: 94.5ms | ActiveRecord: 0.5ms)
+  [1m[36mAssignment Load (2.9ms)[0m  [1mSELECT "assignments".* FROM "assignments"[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users"  ORDER BY "users"."id" ASC LIMIT 1[0m

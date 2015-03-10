@@ -6,6 +6,10 @@ describe User do
     expect(User.all.count).to eq(0)
   end
 
+  it "does not allow to create user without name" do
+    expect(User.create(birthdate: Date.new(1999,9,2))).not_to be_valid
+  end
+
   describe "created and" do
     before :each do
       @user = FactoryGirl.create(:user)
@@ -18,6 +22,11 @@ describe User do
 
     it "when saved, count increases" do
       expect(User.all.count).to eq(1)
+    end
+
+    it "does not allow duplicate names" do
+      user2 = User.create name: "Samu"
+      expect(user2).not_to be_valid
     end
 
     it "when removed, can't be found anymore" do
