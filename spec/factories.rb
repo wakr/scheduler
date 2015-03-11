@@ -10,4 +10,10 @@ FactoryGirl.define do
     is_done false
     deadline Date.new(2015, 4, 30)
   end
+
+  factory :task do
+    name "Väsää angularilla single-page-app"
+    location "Kumpula"
+    assignment
+  end
 end
