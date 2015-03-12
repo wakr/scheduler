@@ -6,11 +6,7 @@ describe Assignment do
   end
 
   it "assignment without name is invalid" do
-    expect(Assignment.create user_id:1).not_to be_valid
-  end
-
-  it "assignment without user is invalid" do
-    expect(Assignment.create name:"Kristian").not_to be_valid
+    expect(Assignment.create is_done:true).not_to be_valid
   end
 
   describe " is created and " do
@@ -21,7 +17,6 @@ describe Assignment do
 
     it "has the name and user set correctly" do
       expect(Assignment.first.name).to eq(@assignment.name)
-      expect(Assignment.first.user.name).to eq(@assignment.user.name)
     end
 
     it "when saved, count increases" do

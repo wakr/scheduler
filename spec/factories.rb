@@ -6,7 +6,6 @@ FactoryGirl.define do
 
   factory :assignment do
     name "Tee rori-labra"
-    user
     is_done false
     deadline Date.new(2015, 4, 30)
   end
