@@ -1,6 +1,6 @@
 class Assignment < ActiveRecord::Base
-  belongs_to :user
-  has_many :membership
+  has_many :memberships
+  has_many :users, :through => :memberships
   has_many :tasks, dependent: :destroy
 
   validates :name, presence: true
