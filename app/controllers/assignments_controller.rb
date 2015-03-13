@@ -16,6 +16,7 @@ class AssignmentsController < ApplicationController
   def new
     @assignment = Assignment.new
     @users = User.all
+    @memberships = Membership.all
   end
 
   # GET /assignments/1/edit

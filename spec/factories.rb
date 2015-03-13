@@ -15,4 +15,20 @@ FactoryGirl.define do
     location "Kumpula"
     assignment
   end
+
+  factory :group do
+    name "Test group"
+    description "the most tested group in the world"
+  end
+
+  factory :membership do
+    user
+    group
+  end
+
+  factory :user_assignment do
+    user
+    assignment
+  end
+
 end

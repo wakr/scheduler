@@ -1,7 +1,11 @@
 class User < ActiveRecord::Base
-  has_many :tasks, :through => :assignments
+  #group
   has_many :memberships
-  has_many :assignments, :through => :memberships
+  has_many :groups, :through => :memberships
+  #assignments
+  has_many :user_assignments
+  has_many :assignments, :through => :user_assignments
+  has_many :tasks, :through => :assignments
 
   validates :name, uniqueness: true
   validates :name, length: {minimum: 3,

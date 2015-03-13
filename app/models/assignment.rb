@@ -1,6 +1,6 @@
 class Assignment < ActiveRecord::Base
-  has_many :memberships
-  has_many :users, :through => :memberships
+  has_many :user_assignments #fix name
+  has_many :doers, :through => :user_assignments, source: :user
   has_many :tasks, dependent: :destroy
 
   validates :name, presence: true
