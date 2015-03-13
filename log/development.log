@@ -9968,3 +9968,4 @@ Migrating to CreateUserAssignments (20150313122823)
   [1m[36m (96.9ms)[0m  [1mcommit transaction[0m
   [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
   [1m[36mUserAssignment Load (0.2ms)[0m  [1mSELECT "user_assignments".* FROM "user_assignments"[0m
+  [1m[36mAssignment Load (2.0ms)[0m  [1mSELECT "assignments".* FROM "assignments"[0m
