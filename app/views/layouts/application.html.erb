@@ -14,7 +14,9 @@
 <%=link_to 'groups', groups_path%> <b>|</b>
 <%= link_to 'sign up', signup_path%> |
 <%= link_to 'sign in', signin_path%> |
-<%= link_to 'sign out', signout_path%>
+<%= link_to 'sign out', signout_path, method: :delete%>
+
+[<%= current_user.name if current_user %>]
 
 <%= yield %>
 
