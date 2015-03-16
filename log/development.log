@@ -11671,6 +11671,7 @@ Started GET "/assets/moment-66988874bf5714cb1e4a6f53d733b6e1.js?body=1" for ::1 
 
 
 Started GET "/assets/application-7b561b070596c4845d460cc597932a7b.js?body=1" for ::1 at 2015-03-16 18:12:23 +0200
+<<<<<<< HEAD
   [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
   [1m[35mSQL (0.4ms)[0m  INSERT INTO "groups" ("name", "created_at", "updated_at") VALUES (?, ?, ?)  [["name", "Hippijengi"], ["created_at", "2015-03-16 16:21:17.626567"], ["updated_at", "2015-03-16 16:21:17.626567"]]
   [1m[36m (15.2ms)[0m  [1mcommit transaction[0m
@@ -11686,3 +11687,1698 @@ Started GET "/assets/application-7b561b070596c4845d460cc597932a7b.js?body=1" for
   [1m[36m (20.9ms)[0m  [1mcommit transaction[0m
   [1m[35m (0.1ms)[0m  begin transaction
   [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+=======
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-16 18:15:00 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users"
+  Rendered users/index.html.erb within layouts/application (15.6ms)
+Completed 200 OK in 470ms (Views: 409.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/groups-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-16 18:15:01 +0200
+
+
+Started GET "/assets/assignments-46528123b54ad94d8656cc32083f9984.css?body=1" for 127.0.0.1 at 2015-03-16 18:15:01 +0200
+
+
+Started GET "/assets/scaffolds-9fe0527a18558a65ba847be2e2f9571e.css?body=1" for 127.0.0.1 at 2015-03-16 18:15:01 +0200
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-16 18:15:01 +0200
+
+
+Started GET "/assets/fullcalendar-6bee23c458d42683dba9159c94f7547f.css?body=1" for 127.0.0.1 at 2015-03-16 18:15:01 +0200
+
+
+Started GET "/assets/application-2576406cb7d0583070526ea145936ce8.css?body=1" for 127.0.0.1 at 2015-03-16 18:15:01 +0200
+
+
+Started GET "/assets/tasks-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-16 18:15:01 +0200
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-03-16 18:15:01 +0200
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2015-03-16 18:15:01 +0200
+
+
+Started GET "/assets/assignments-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-16 18:15:01 +0200
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-03-16 18:15:01 +0200
+
+
+Started GET "/assets/tasks-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-16 18:15:01 +0200
+
+
+Started GET "/assets/groups-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-16 18:15:01 +0200
+
+
+Started GET "/assets/moment-66988874bf5714cb1e4a6f53d733b6e1.js?body=1" for 127.0.0.1 at 2015-03-16 18:15:01 +0200
+
+
+Started GET "/assets/fullcalendar-f09a2cee6bd3f7655c47cf7eab2b52b9.js?body=1" for 127.0.0.1 at 2015-03-16 18:15:01 +0200
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-16 18:15:01 +0200
+
+
+Started GET "/assets/application-7b561b070596c4845d460cc597932a7b.js?body=1" for 127.0.0.1 at 2015-03-16 18:15:01 +0200
+
+
+Started GET "/assignments" for 127.0.0.1 at 2015-03-16 18:15:46 +0200
+Processing by AssignmentsController#index as HTML
+  [1m[36mAssignment Load (0.2ms)[0m  [1mSELECT "assignments".* FROM "assignments"[0m
+  Rendered assignments/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 148ms (Views: 139.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assignments.json?start=2015-02-23&end=2015-04-06&_=1426522502049" for 127.0.0.1 at 2015-03-16 18:15:46 +0200
+Processing by AssignmentsController#index as JSON
+  Parameters: {"start"=>"2015-02-23", "end"=>"2015-04-06", "_"=>"1426522502049"}
+  [1m[35mAssignment Load (0.2ms)[0m  SELECT "assignments".* FROM "assignments"
+  Rendered assignments/index.json.jbuilder (9.2ms)
+Completed 200 OK in 14ms (Views: 12.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assignments.json" for 127.0.0.1 at 2015-03-16 18:16:01 +0200
+Processing by AssignmentsController#index as JSON
+  [1m[36mAssignment Load (0.3ms)[0m  [1mSELECT "assignments".* FROM "assignments"[0m
+  Rendered assignments/index.json.jbuilder (1.4ms)
+Completed 200 OK in 9ms (Views: 6.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assignments/new" for 127.0.0.1 at 2015-03-16 18:16:05 +0200
+Processing by AssignmentsController#new as HTML
+  Rendered assignments/_form.html.erb (33.8ms)
+  Rendered assignments/new.html.erb within layouts/application (41.0ms)
+Completed 200 OK in 214ms (Views: 198.3ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/assignments" for 127.0.0.1 at 2015-03-16 18:16:10 +0200
+Processing by AssignmentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"JGSUDVZStqfAriK4B6e8578oFZQHU2UEUoZKdeC1OpVuv8XzZ0S0uECcBV3M703uXsm/3RV700GZqtc+PDZV5A==", "assignment"=>{"name"=>"Test", "deadline(1i)"=>"2015", "deadline(2i)"=>"3", "deadline(3i)"=>"16", "deadline(4i)"=>"16", "deadline(5i)"=>"16"}, "commit"=>"Create Assignment"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "assignments" ("name", "deadline", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Test"], ["deadline", "2015-03-16 16:16:00.000000"], ["created_at", "2015-03-16 16:16:10.616726"], ["updated_at", "2015-03-16 16:16:10.616726"]]
+  [1m[35m (26.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "assignments" SET "is_done" = ?, "updated_at" = ? WHERE "assignments"."id" = ?  [["is_done", "f"], ["updated_at", "2015-03-16 16:16:10.649928"], ["id", 6]]
+  [1m[36m (126.6ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/assignments
+Completed 302 Found in 172ms (ActiveRecord: 153.7ms)
+
+
+Started GET "/assignments" for 127.0.0.1 at 2015-03-16 18:16:10 +0200
+Processing by AssignmentsController#index as HTML
+  [1m[35mAssignment Load (0.4ms)[0m  SELECT "assignments".* FROM "assignments"
+  Rendered assignments/index.html.erb within layouts/application (13.4ms)
+Completed 500 Internal Server Error in 21ms
+
+NoMethodError - undefined method `user' for #<Assignment:0x007fa8a5463a20>:
+  activemodel (4.2.0) lib/active_model/attribute_methods.rb:433:in `method_missing'
+  app/views/assignments/index.html.erb:39:in `block in _app_views_assignments_index_html_erb___1828888362426288867_70181151419980'
+  activerecord (4.2.0) lib/active_record/relation/delegation.rb:46:in `each'
+  app/views/assignments/index.html.erb:36:in `_app_views_assignments_index_html_erb___1828888362426288867_70181151419980'
+  actionview (4.2.0) lib/action_view/template.rb:145:in `block in render'
+  activesupport (4.2.0) lib/active_support/notifications.rb:166:in `instrument'
+  actionview (4.2.0) lib/action_view/template.rb:333:in `instrument'
+  actionview (4.2.0) lib/action_view/template.rb:143:in `render'
+  actionview (4.2.0) lib/action_view/renderer/template_renderer.rb:54:in `block (2 levels) in render_template'
+  actionview (4.2.0) lib/action_view/renderer/abstract_renderer.rb:39:in `block in instrument'
+  activesupport (4.2.0) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.0) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.0) lib/active_support/notifications.rb:164:in `instrument'
+  actionview (4.2.0) lib/action_view/renderer/abstract_renderer.rb:39:in `instrument'
+  actionview (4.2.0) lib/action_view/renderer/template_renderer.rb:53:in `block in render_template'
+  actionview (4.2.0) lib/action_view/renderer/template_renderer.rb:61:in `render_with_layout'
+  actionview (4.2.0) lib/action_view/renderer/template_renderer.rb:52:in `render_template'
+  actionview (4.2.0) lib/action_view/renderer/template_renderer.rb:14:in `render'
+  actionview (4.2.0) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionview (4.2.0) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionview (4.2.0) lib/action_view/rendering.rb:100:in `_render_template'
+  actionpack (4.2.0) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.2.0) lib/action_view/rendering.rb:83:in `render_to_body'
+  actionpack (4.2.0) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.2.0) lib/action_controller/metal/renderers.rb:37:in `render_to_body'
+  actionpack (4.2.0) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.2.0) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.2.0) lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+  activesupport (4.2.0) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /home/kristianw/.rbenv/versions/2.2.0/lib/ruby/2.2.0/benchmark.rb:303:in `realtime'
+  activesupport (4.2.0) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.2.0) lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+  actionpack (4.2.0) lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+  activerecord (4.2.0) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.2.0) lib/action_controller/metal/instrumentation.rb:40:in `render'
+  actionpack (4.2.0) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.2.0) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.2.0) lib/abstract_controller/base.rb:198:in `process_action'
+  actionpack (4.2.0) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.2.0) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:151:in `block in halting_and_conditional'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:234:in `block in halting'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:234:in `block in halting'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:169:in `block in halting'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:169:in `block in halting'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:169:in `block in halting'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:92:in `_run_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:734:in `_run_process_action_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.0) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.0) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.0) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.2.0) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.0) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.0) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.0) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.0) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.0) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.0) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.0) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.0) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.2.0) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.0) lib/action_controller/metal.rb:236:in `block in action'
+  actionpack (4.2.0) lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+  actionpack (4.2.0) lib/action_dispatch/routing/route_set.rb:42:in `serve'
+  actionpack (4.2.0) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.0) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.0) lib/action_dispatch/routing/route_set.rb:802:in `call'
+  rack (1.6.0) lib/rack/etag.rb:24:in `call'
+  rack (1.6.0) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.0) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.0) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.0) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.0) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:647:in `call'
+  activerecord (4.2.0) lib/active_record/migration.rb:378:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:88:in `_run_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:734:in `_run_call_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.0) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.1.2) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /home/kristianw/.rbenv/versions/2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/kristianw/.rbenv/versions/2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/kristianw/.rbenv/versions/2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+
+Started POST "/__better_errors/7e6945d970d81132/variables" for 127.0.0.1 at 2015-03-16 18:16:11 +0200
+
+
+Started GET "/tasks" for 127.0.0.1 at 2015-03-16 18:16:25 +0200
+Processing by TasksController#index as HTML
+  [1m[36mTask Load (0.3ms)[0m  [1mSELECT "tasks".* FROM "tasks"[0m
+  Rendered tasks/index.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 157ms (Views: 151.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/assignments-46528123b54ad94d8656cc32083f9984.css?body=1" for 127.0.0.1 at 2015-03-16 18:16:25 +0200
+
+
+Started GET "/assets/groups-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-16 18:16:25 +0200
+
+
+Started GET "/assets/scaffolds-9fe0527a18558a65ba847be2e2f9571e.css?body=1" for 127.0.0.1 at 2015-03-16 18:16:25 +0200
+
+
+Started GET "/assets/tasks-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-16 18:16:25 +0200
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-16 18:16:25 +0200
+
+
+Started GET "/assets/fullcalendar-6bee23c458d42683dba9159c94f7547f.css?body=1" for 127.0.0.1 at 2015-03-16 18:16:25 +0200
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-03-16 18:16:25 +0200
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2015-03-16 18:16:25 +0200
+
+
+Started GET "/assets/application-2576406cb7d0583070526ea145936ce8.css?body=1" for 127.0.0.1 at 2015-03-16 18:16:25 +0200
+
+
+Started GET "/assets/assignments-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-16 18:16:25 +0200
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-16 18:16:25 +0200
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-03-16 18:16:25 +0200
+
+
+Started GET "/assets/tasks-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-16 18:16:25 +0200
+
+
+Started GET "/assets/groups-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-16 18:16:25 +0200
+
+
+Started GET "/assets/fullcalendar-f09a2cee6bd3f7655c47cf7eab2b52b9.js?body=1" for 127.0.0.1 at 2015-03-16 18:16:25 +0200
+
+
+Started GET "/assets/moment-66988874bf5714cb1e4a6f53d733b6e1.js?body=1" for 127.0.0.1 at 2015-03-16 18:16:25 +0200
+
+
+Started GET "/assets/application-7b561b070596c4845d460cc597932a7b.js?body=1" for 127.0.0.1 at 2015-03-16 18:16:25 +0200
+
+
+Started GET "/groups" for 127.0.0.1 at 2015-03-16 18:16:30 +0200
+Processing by GroupsController#index as HTML
+  [1m[35mGroup Load (0.2ms)[0m  SELECT "groups".* FROM "groups"
+  Rendered groups/index.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 154ms (Views: 145.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/groups/1" for 127.0.0.1 at 2015-03-16 18:16:45 +0200
+Processing by GroupsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mGroup Load (0.2ms)[0m  [1mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered groups/show.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 157ms (Views: 141.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2015-03-16 18:16:48 +0200
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users"
+  Rendered users/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 124ms (Views: 123.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2015-03-16 18:16:50 +0200
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered users/show.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 157ms (Views: 155.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/groups" for 127.0.0.1 at 2015-03-16 18:16:52 +0200
+Processing by GroupsController#index as HTML
+  [1m[35mGroup Load (0.2ms)[0m  SELECT "groups".* FROM "groups"
+  Rendered groups/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 126ms (Views: 124.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/groups" for 127.0.0.1 at 2015-03-16 18:19:05 +0200
+Processing by GroupsController#index as HTML
+  [1m[36mGroup Load (0.3ms)[0m  [1mSELECT "groups".* FROM "groups"[0m
+  Rendered groups/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 135ms (Views: 133.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/groups-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-16 18:19:06 +0200
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-16 18:19:06 +0200
+
+
+Started GET "/assets/scaffolds-9fe0527a18558a65ba847be2e2f9571e.css?body=1" for 127.0.0.1 at 2015-03-16 18:19:06 +0200
+
+
+Started GET "/assets/tasks-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-16 18:19:06 +0200
+
+
+Started GET "/assets/application-2576406cb7d0583070526ea145936ce8.css?body=1" for 127.0.0.1 at 2015-03-16 18:19:06 +0200
+
+
+Started GET "/assets/assignments-46528123b54ad94d8656cc32083f9984.css?body=1" for 127.0.0.1 at 2015-03-16 18:19:06 +0200
+
+
+Started GET "/assets/fullcalendar-6bee23c458d42683dba9159c94f7547f.css?body=1" for 127.0.0.1 at 2015-03-16 18:19:06 +0200
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-03-16 18:19:06 +0200
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2015-03-16 18:19:06 +0200
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-03-16 18:19:06 +0200
+
+
+Started GET "/assets/assignments-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-16 18:19:06 +0200
+
+
+Started GET "/assets/moment-66988874bf5714cb1e4a6f53d733b6e1.js?body=1" for 127.0.0.1 at 2015-03-16 18:19:06 +0200
+
+
+Started GET "/assets/groups-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-16 18:19:06 +0200
+
+
+Started GET "/assets/tasks-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-16 18:19:06 +0200
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-16 18:19:06 +0200
+
+
+Started GET "/assets/fullcalendar-f09a2cee6bd3f7655c47cf7eab2b52b9.js?body=1" for 127.0.0.1 at 2015-03-16 18:19:06 +0200
+
+
+Started GET "/assets/application-7b561b070596c4845d460cc597932a7b.js?body=1" for 127.0.0.1 at 2015-03-16 18:19:06 +0200
+
+
+Started GET "/groups" for 127.0.0.1 at 2015-03-16 18:19:35 +0200
+Processing by GroupsController#index as HTML
+  [1m[35mGroup Load (0.2ms)[0m  SELECT "groups".* FROM "groups"
+  Rendered groups/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 142ms (Views: 141.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/assignments-46528123b54ad94d8656cc32083f9984.css?body=1" for 127.0.0.1 at 2015-03-16 18:19:35 +0200
+
+
+Started GET "/assets/groups-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-16 18:19:35 +0200
+
+
+Started GET "/assets/scaffolds-9fe0527a18558a65ba847be2e2f9571e.css?body=1" for 127.0.0.1 at 2015-03-16 18:19:35 +0200
+
+
+Started GET "/assets/tasks-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-16 18:19:35 +0200
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-16 18:19:35 +0200
+
+
+Started GET "/assets/application-2576406cb7d0583070526ea145936ce8.css?body=1" for 127.0.0.1 at 2015-03-16 18:19:35 +0200
+
+
+Started GET "/assets/fullcalendar-6bee23c458d42683dba9159c94f7547f.css?body=1" for 127.0.0.1 at 2015-03-16 18:19:35 +0200
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-03-16 18:19:35 +0200
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-03-16 18:19:35 +0200
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2015-03-16 18:19:35 +0200
+
+
+Started GET "/assets/assignments-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-16 18:19:35 +0200
+
+
+Started GET "/assets/groups-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-16 18:19:35 +0200
+
+
+Started GET "/assets/tasks-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-16 18:19:35 +0200
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-16 18:19:35 +0200
+
+
+Started GET "/assets/moment-66988874bf5714cb1e4a6f53d733b6e1.js?body=1" for 127.0.0.1 at 2015-03-16 18:19:35 +0200
+
+
+Started GET "/assets/fullcalendar-f09a2cee6bd3f7655c47cf7eab2b52b9.js?body=1" for 127.0.0.1 at 2015-03-16 18:19:35 +0200
+
+
+Started GET "/assets/application-7b561b070596c4845d460cc597932a7b.js?body=1" for 127.0.0.1 at 2015-03-16 18:19:35 +0200
+
+
+Started GET "/groups" for 127.0.0.1 at 2015-03-16 18:28:08 +0200
+Processing by GroupsController#index as HTML
+  [1m[36mGroup Load (0.6ms)[0m  [1mSELECT "groups".* FROM "groups"[0m
+  Rendered groups/index.html.erb within layouts/application (8.6ms)
+Completed 200 OK in 156ms (Views: 149.3ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/assignments-46528123b54ad94d8656cc32083f9984.css?body=1" for 127.0.0.1 at 2015-03-16 18:28:09 +0200
+
+
+Started GET "/assets/groups-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-16 18:28:09 +0200
+
+
+Started GET "/assets/tasks-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-16 18:28:09 +0200
+
+
+Started GET "/assets/scaffolds-9fe0527a18558a65ba847be2e2f9571e.css?body=1" for 127.0.0.1 at 2015-03-16 18:28:09 +0200
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-16 18:28:09 +0200
+
+
+Started GET "/assets/application-2576406cb7d0583070526ea145936ce8.css?body=1" for 127.0.0.1 at 2015-03-16 18:28:09 +0200
+
+
+Started GET "/assets/fullcalendar-6bee23c458d42683dba9159c94f7547f.css?body=1" for 127.0.0.1 at 2015-03-16 18:28:09 +0200
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-03-16 18:28:09 +0200
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-03-16 18:28:09 +0200
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2015-03-16 18:28:09 +0200
+
+
+Started GET "/assets/assignments-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-16 18:28:09 +0200
+
+
+Started GET "/assets/tasks-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-16 18:28:09 +0200
+
+
+Started GET "/assets/groups-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-16 18:28:09 +0200
+
+
+Started GET "/assets/fullcalendar-f09a2cee6bd3f7655c47cf7eab2b52b9.js?body=1" for 127.0.0.1 at 2015-03-16 18:28:09 +0200
+
+
+Started GET "/assets/application-7b561b070596c4845d460cc597932a7b.js?body=1" for 127.0.0.1 at 2015-03-16 18:28:09 +0200
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-16 18:28:09 +0200
+
+
+Started GET "/assets/moment-66988874bf5714cb1e4a6f53d733b6e1.js?body=1" for 127.0.0.1 at 2015-03-16 18:28:09 +0200
+
+
+Started GET "/groups" for 127.0.0.1 at 2015-03-16 18:28:31 +0200
+Processing by GroupsController#index as HTML
+  [1m[35mGroup Load (0.2ms)[0m  SELECT "groups".* FROM "groups"
+  Rendered groups/index.html.erb within layouts/application (2.5ms)
+Completed 500 Internal Server Error in 145ms
+
+NameError - undefined local variable or method `signup' for #<#<Class:0x007fa8a429f050>:0x007fa8a503c730>:
+  app/views/layouts/application.html.erb:15:in `_app_views_layouts_application_html_erb___2524505898306580279_70181149805280'
+  actionview (4.2.0) lib/action_view/template.rb:145:in `block in render'
+  activesupport (4.2.0) lib/active_support/notifications.rb:166:in `instrument'
+  actionview (4.2.0) lib/action_view/template.rb:333:in `instrument'
+  actionview (4.2.0) lib/action_view/template.rb:143:in `render'
+  actionview (4.2.0) lib/action_view/renderer/template_renderer.rb:66:in `render_with_layout'
+  actionview (4.2.0) lib/action_view/renderer/template_renderer.rb:52:in `render_template'
+  actionview (4.2.0) lib/action_view/renderer/template_renderer.rb:14:in `render'
+  actionview (4.2.0) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionview (4.2.0) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionview (4.2.0) lib/action_view/rendering.rb:100:in `_render_template'
+  actionpack (4.2.0) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.2.0) lib/action_view/rendering.rb:83:in `render_to_body'
+  actionpack (4.2.0) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.2.0) lib/action_controller/metal/renderers.rb:37:in `render_to_body'
+  actionpack (4.2.0) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.2.0) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.2.0) lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+  activesupport (4.2.0) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /home/kristianw/.rbenv/versions/2.2.0/lib/ruby/2.2.0/benchmark.rb:303:in `realtime'
+  activesupport (4.2.0) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.2.0) lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+  actionpack (4.2.0) lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+  activerecord (4.2.0) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.2.0) lib/action_controller/metal/instrumentation.rb:40:in `render'
+  actionpack (4.2.0) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.2.0) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.2.0) lib/abstract_controller/base.rb:198:in `process_action'
+  actionpack (4.2.0) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.2.0) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:151:in `block in halting_and_conditional'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:234:in `block in halting'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:234:in `block in halting'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:169:in `block in halting'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:169:in `block in halting'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:169:in `block in halting'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:92:in `_run_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:734:in `_run_process_action_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.0) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.0) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.0) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.2.0) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.0) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.0) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.0) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.0) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.0) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.0) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.0) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.0) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.2.0) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.0) lib/action_controller/metal.rb:236:in `block in action'
+  actionpack (4.2.0) lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+  actionpack (4.2.0) lib/action_dispatch/routing/route_set.rb:42:in `serve'
+  actionpack (4.2.0) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.0) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.0) lib/action_dispatch/routing/route_set.rb:802:in `call'
+  rack (1.6.0) lib/rack/etag.rb:24:in `call'
+  rack (1.6.0) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.0) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.0) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.0) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.0) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:647:in `call'
+  activerecord (4.2.0) lib/active_record/migration.rb:378:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:88:in `_run_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:734:in `_run_call_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.0) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.1.2) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /home/kristianw/.rbenv/versions/2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/kristianw/.rbenv/versions/2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/kristianw/.rbenv/versions/2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+
+Started POST "/__better_errors/a232bcd2042eb421/variables" for 127.0.0.1 at 2015-03-16 18:28:31 +0200
+
+
+Started GET "/groups" for 127.0.0.1 at 2015-03-16 18:28:38 +0200
+Processing by GroupsController#index as HTML
+  [1m[36mGroup Load (1.5ms)[0m  [1mSELECT "groups".* FROM "groups"[0m
+  Rendered groups/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 135ms (Views: 132.9ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/assignments-46528123b54ad94d8656cc32083f9984.css?body=1" for 127.0.0.1 at 2015-03-16 18:28:38 +0200
+
+
+Started GET "/assets/groups-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-16 18:28:38 +0200
+
+
+Started GET "/assets/scaffolds-9fe0527a18558a65ba847be2e2f9571e.css?body=1" for 127.0.0.1 at 2015-03-16 18:28:38 +0200
+
+
+Started GET "/assets/application-2576406cb7d0583070526ea145936ce8.css?body=1" for 127.0.0.1 at 2015-03-16 18:28:38 +0200
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-16 18:28:38 +0200
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-03-16 18:28:38 +0200
+
+
+Started GET "/assets/fullcalendar-6bee23c458d42683dba9159c94f7547f.css?body=1" for 127.0.0.1 at 2015-03-16 18:28:38 +0200
+
+
+Started GET "/assets/tasks-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-16 18:28:38 +0200
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-03-16 18:28:38 +0200
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2015-03-16 18:28:38 +0200
+
+
+Started GET "/assets/assignments-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-16 18:28:38 +0200
+
+
+Started GET "/assets/groups-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-16 18:28:38 +0200
+
+
+Started GET "/assets/tasks-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-16 18:28:39 +0200
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-16 18:28:39 +0200
+
+
+Started GET "/assets/moment-66988874bf5714cb1e4a6f53d733b6e1.js?body=1" for 127.0.0.1 at 2015-03-16 18:28:39 +0200
+
+
+Started GET "/assets/fullcalendar-f09a2cee6bd3f7655c47cf7eab2b52b9.js?body=1" for 127.0.0.1 at 2015-03-16 18:28:39 +0200
+
+
+Started GET "/assets/application-7b561b070596c4845d460cc597932a7b.js?body=1" for 127.0.0.1 at 2015-03-16 18:28:39 +0200
+
+
+Started GET "/groups" for 127.0.0.1 at 2015-03-16 18:28:51 +0200
+Processing by GroupsController#index as HTML
+  [1m[35mGroup Load (0.2ms)[0m  SELECT "groups".* FROM "groups"
+  Rendered groups/index.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 136ms (Views: 134.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/assignments-46528123b54ad94d8656cc32083f9984.css?body=1" for 127.0.0.1 at 2015-03-16 18:28:51 +0200
+
+
+Started GET "/assets/scaffolds-9fe0527a18558a65ba847be2e2f9571e.css?body=1" for 127.0.0.1 at 2015-03-16 18:28:51 +0200
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-16 18:28:51 +0200
+
+
+Started GET "/assets/groups-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-16 18:28:51 +0200
+
+
+Started GET "/assets/tasks-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-16 18:28:51 +0200
+
+
+Started GET "/assets/application-2576406cb7d0583070526ea145936ce8.css?body=1" for 127.0.0.1 at 2015-03-16 18:28:51 +0200
+
+
+Started GET "/assets/fullcalendar-6bee23c458d42683dba9159c94f7547f.css?body=1" for 127.0.0.1 at 2015-03-16 18:28:51 +0200
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-03-16 18:28:51 +0200
+
+
+Started GET "/assets/assignments-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-16 18:28:51 +0200
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2015-03-16 18:28:51 +0200
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-03-16 18:28:51 +0200
+
+
+Started GET "/assets/groups-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-16 18:28:51 +0200
+
+
+Started GET "/assets/tasks-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-16 18:28:51 +0200
+
+
+Started GET "/assets/moment-66988874bf5714cb1e4a6f53d733b6e1.js?body=1" for 127.0.0.1 at 2015-03-16 18:28:51 +0200
+
+
+Started GET "/assets/fullcalendar-f09a2cee6bd3f7655c47cf7eab2b52b9.js?body=1" for 127.0.0.1 at 2015-03-16 18:28:51 +0200
+
+
+Started GET "/assets/application-7b561b070596c4845d460cc597932a7b.js?body=1" for 127.0.0.1 at 2015-03-16 18:28:51 +0200
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-16 18:28:51 +0200
+
+
+Started GET "/signup" for 127.0.0.1 at 2015-03-16 18:29:34 +0200
+Processing by UsersController#new as HTML
+  Rendered users/_form.html.erb (5.8ms)
+  Rendered users/new.html.erb within layouts/application (8.2ms)
+Completed 200 OK in 156ms (Views: 144.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/assignments-46528123b54ad94d8656cc32083f9984.css?body=1" for 127.0.0.1 at 2015-03-16 18:29:34 +0200
+
+
+Started GET "/assets/groups-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-16 18:29:34 +0200
+
+
+Started GET "/assets/scaffolds-9fe0527a18558a65ba847be2e2f9571e.css?body=1" for 127.0.0.1 at 2015-03-16 18:29:34 +0200
+
+
+Started GET "/assets/tasks-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-16 18:29:34 +0200
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-16 18:29:34 +0200
+
+
+Started GET "/assets/application-2576406cb7d0583070526ea145936ce8.css?body=1" for 127.0.0.1 at 2015-03-16 18:29:34 +0200
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-03-16 18:29:34 +0200
+
+
+Started GET "/assets/fullcalendar-6bee23c458d42683dba9159c94f7547f.css?body=1" for 127.0.0.1 at 2015-03-16 18:29:34 +0200
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2015-03-16 18:29:34 +0200
+
+
+Started GET "/assets/assignments-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-16 18:29:34 +0200
+
+
+Started GET "/assets/tasks-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-16 18:29:34 +0200
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-03-16 18:29:34 +0200
+
+
+Started GET "/assets/groups-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-16 18:29:34 +0200
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-16 18:29:34 +0200
+
+
+Started GET "/assets/moment-66988874bf5714cb1e4a6f53d733b6e1.js?body=1" for 127.0.0.1 at 2015-03-16 18:29:34 +0200
+
+
+Started GET "/assets/application-7b561b070596c4845d460cc597932a7b.js?body=1" for 127.0.0.1 at 2015-03-16 18:29:34 +0200
+
+
+Started GET "/assets/fullcalendar-f09a2cee6bd3f7655c47cf7eab2b52b9.js?body=1" for 127.0.0.1 at 2015-03-16 18:29:34 +0200
+
+
+Started GET "/signup" for 127.0.0.1 at 2015-03-16 18:29:53 +0200
+Processing by UsersController#new as HTML
+  Rendered users/_form.html.erb (7.3ms)
+  Rendered users/new.html.erb within layouts/application (8.6ms)
+Completed 200 OK in 137ms (Views: 136.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/assignments-46528123b54ad94d8656cc32083f9984.css?body=1" for 127.0.0.1 at 2015-03-16 18:29:53 +0200
+
+
+Started GET "/assets/groups-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-16 18:29:53 +0200
+
+
+Started GET "/assets/scaffolds-9fe0527a18558a65ba847be2e2f9571e.css?body=1" for 127.0.0.1 at 2015-03-16 18:29:53 +0200
+
+
+Started GET "/assets/tasks-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-16 18:29:53 +0200
+
+
+Started GET "/assets/application-2576406cb7d0583070526ea145936ce8.css?body=1" for 127.0.0.1 at 2015-03-16 18:29:53 +0200
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-03-16 18:29:53 +0200
+
+
+Started GET "/assets/fullcalendar-6bee23c458d42683dba9159c94f7547f.css?body=1" for 127.0.0.1 at 2015-03-16 18:29:53 +0200
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-16 18:29:53 +0200
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-03-16 18:29:53 +0200
+
+
+Started GET "/assets/assignments-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-16 18:29:53 +0200
+
+
+Started GET "/assets/groups-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-16 18:29:53 +0200
+
+
+Started GET "/assets/tasks-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-16 18:29:53 +0200
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2015-03-16 18:29:53 +0200
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-16 18:29:53 +0200
+
+
+Started GET "/assets/moment-66988874bf5714cb1e4a6f53d733b6e1.js?body=1" for 127.0.0.1 at 2015-03-16 18:29:53 +0200
+
+
+Started GET "/assets/fullcalendar-f09a2cee6bd3f7655c47cf7eab2b52b9.js?body=1" for 127.0.0.1 at 2015-03-16 18:29:53 +0200
+
+
+Started GET "/assets/application-7b561b070596c4845d460cc597932a7b.js?body=1" for 127.0.0.1 at 2015-03-16 18:29:53 +0200
+
+
+Started GET "/signup" for 127.0.0.1 at 2015-03-16 18:29:55 +0200
+Processing by UsersController#new as HTML
+  Rendered users/_form.html.erb (4.9ms)
+  Rendered users/new.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 135ms (Views: 133.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2015-03-16 18:30:44 +0200
+Processing by UsersController#new as HTML
+  Rendered users/_form.html.erb (4.7ms)
+  Rendered users/new.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 129ms (Views: 128.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/assignments-46528123b54ad94d8656cc32083f9984.css?body=1" for 127.0.0.1 at 2015-03-16 18:30:44 +0200
+
+
+Started GET "/assets/groups-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-16 18:30:44 +0200
+
+
+Started GET "/assets/scaffolds-9fe0527a18558a65ba847be2e2f9571e.css?body=1" for 127.0.0.1 at 2015-03-16 18:30:44 +0200
+
+
+Started GET "/assets/application-2576406cb7d0583070526ea145936ce8.css?body=1" for 127.0.0.1 at 2015-03-16 18:30:44 +0200
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-16 18:30:44 +0200
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-03-16 18:30:44 +0200
+
+
+Started GET "/assets/tasks-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-16 18:30:44 +0200
+
+
+Started GET "/assets/fullcalendar-6bee23c458d42683dba9159c94f7547f.css?body=1" for 127.0.0.1 at 2015-03-16 18:30:44 +0200
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2015-03-16 18:30:44 +0200
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-03-16 18:30:44 +0200
+
+
+Started GET "/assets/assignments-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-16 18:30:44 +0200
+
+
+Started GET "/assets/groups-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-16 18:30:44 +0200
+
+
+Started GET "/assets/tasks-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-16 18:30:44 +0200
+
+
+Started GET "/assets/moment-66988874bf5714cb1e4a6f53d733b6e1.js?body=1" for 127.0.0.1 at 2015-03-16 18:30:44 +0200
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-16 18:30:44 +0200
+
+
+Started GET "/assets/fullcalendar-f09a2cee6bd3f7655c47cf7eab2b52b9.js?body=1" for 127.0.0.1 at 2015-03-16 18:30:44 +0200
+
+
+Started GET "/assets/application-7b561b070596c4845d460cc597932a7b.js?body=1" for 127.0.0.1 at 2015-03-16 18:30:44 +0200
+
+
+Started GET "/signup" for 127.0.0.1 at 2015-03-16 18:31:04 +0200
+Processing by UsersController#new as HTML
+  Rendered users/_form.html.erb (4.6ms)
+  Rendered users/new.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 140ms (Views: 138.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/groups-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-16 18:31:04 +0200
+
+
+Started GET "/assets/assignments-46528123b54ad94d8656cc32083f9984.css?body=1" for 127.0.0.1 at 2015-03-16 18:31:04 +0200
+
+
+Started GET "/assets/scaffolds-9fe0527a18558a65ba847be2e2f9571e.css?body=1" for 127.0.0.1 at 2015-03-16 18:31:04 +0200
+
+
+Started GET "/assets/tasks-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-16 18:31:04 +0200
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-16 18:31:04 +0200
+
+
+Started GET "/assets/application-2576406cb7d0583070526ea145936ce8.css?body=1" for 127.0.0.1 at 2015-03-16 18:31:04 +0200
+
+
+Started GET "/assets/fullcalendar-6bee23c458d42683dba9159c94f7547f.css?body=1" for 127.0.0.1 at 2015-03-16 18:31:04 +0200
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-03-16 18:31:04 +0200
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-03-16 18:31:04 +0200
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2015-03-16 18:31:04 +0200
+
+
+Started GET "/assets/groups-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-16 18:31:04 +0200
+
+
+Started GET "/assets/assignments-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-16 18:31:04 +0200
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-16 18:31:04 +0200
+
+
+Started GET "/assets/tasks-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-16 18:31:04 +0200
+
+
+Started GET "/assets/moment-66988874bf5714cb1e4a6f53d733b6e1.js?body=1" for 127.0.0.1 at 2015-03-16 18:31:04 +0200
+
+
+Started GET "/assets/fullcalendar-f09a2cee6bd3f7655c47cf7eab2b52b9.js?body=1" for 127.0.0.1 at 2015-03-16 18:31:04 +0200
+
+
+Started GET "/assets/application-7b561b070596c4845d460cc597932a7b.js?body=1" for 127.0.0.1 at 2015-03-16 18:31:04 +0200
+
+
+Started GET "/signup" for 127.0.0.1 at 2015-03-16 18:31:21 +0200
+Processing by UsersController#new as HTML
+  Rendered users/_form.html.erb (4.6ms)
+  Rendered users/new.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 133ms (Views: 132.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/assignments-46528123b54ad94d8656cc32083f9984.css?body=1" for 127.0.0.1 at 2015-03-16 18:31:21 +0200
+
+
+Started GET "/assets/groups-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-16 18:31:21 +0200
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-16 18:31:21 +0200
+
+
+Started GET "/assets/tasks-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-16 18:31:21 +0200
+
+
+Started GET "/assets/scaffolds-9fe0527a18558a65ba847be2e2f9571e.css?body=1" for 127.0.0.1 at 2015-03-16 18:31:21 +0200
+
+
+Started GET "/assets/application-2576406cb7d0583070526ea145936ce8.css?body=1" for 127.0.0.1 at 2015-03-16 18:31:21 +0200
+
+
+Started GET "/assets/fullcalendar-6bee23c458d42683dba9159c94f7547f.css?body=1" for 127.0.0.1 at 2015-03-16 18:31:21 +0200
+
+
+Started GET "/assets/assignments-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-16 18:31:21 +0200
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-03-16 18:31:21 +0200
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2015-03-16 18:31:21 +0200
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-03-16 18:31:21 +0200
+
+
+Started GET "/assets/tasks-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-16 18:31:21 +0200
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-16 18:31:21 +0200
+
+
+Started GET "/assets/fullcalendar-f09a2cee6bd3f7655c47cf7eab2b52b9.js?body=1" for 127.0.0.1 at 2015-03-16 18:31:21 +0200
+
+
+Started GET "/assets/application-7b561b070596c4845d460cc597932a7b.js?body=1" for 127.0.0.1 at 2015-03-16 18:31:21 +0200
+
+
+Started GET "/assets/groups-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-16 18:31:21 +0200
+
+
+Started GET "/assets/moment-66988874bf5714cb1e4a6f53d733b6e1.js?body=1" for 127.0.0.1 at 2015-03-16 18:31:21 +0200
+
+
+Started GET "/signup" for 127.0.0.1 at 2015-03-16 18:31:33 +0200
+Processing by UsersController#new as HTML
+  Rendered users/_form.html.erb (4.2ms)
+  Rendered users/new.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 122ms (Views: 121.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2015-03-16 18:33:01 +0200
+Processing by UsersController#new as HTML
+  Rendered users/_form.html.erb (7.4ms)
+  Rendered users/new.html.erb within layouts/application (9.7ms)
+Completed 200 OK in 131ms (Views: 129.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/assignments-46528123b54ad94d8656cc32083f9984.css?body=1" for 127.0.0.1 at 2015-03-16 18:33:02 +0200
+
+
+Started GET "/assets/groups-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-16 18:33:02 +0200
+
+
+Started GET "/assets/scaffolds-9fe0527a18558a65ba847be2e2f9571e.css?body=1" for 127.0.0.1 at 2015-03-16 18:33:02 +0200
+
+
+Started GET "/assets/tasks-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-16 18:33:02 +0200
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-16 18:33:02 +0200
+
+
+Started GET "/assets/application-2576406cb7d0583070526ea145936ce8.css?body=1" for 127.0.0.1 at 2015-03-16 18:33:02 +0200
+
+
+Started GET "/assets/fullcalendar-6bee23c458d42683dba9159c94f7547f.css?body=1" for 127.0.0.1 at 2015-03-16 18:33:02 +0200
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-03-16 18:33:02 +0200
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-03-16 18:33:02 +0200
+
+
+Started GET "/assets/moment-66988874bf5714cb1e4a6f53d733b6e1.js?body=1" for 127.0.0.1 at 2015-03-16 18:33:02 +0200
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2015-03-16 18:33:02 +0200
+
+
+Started GET "/assets/tasks-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-16 18:33:02 +0200
+
+
+Started GET "/assets/assignments-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-16 18:33:02 +0200
+
+
+Started GET "/assets/groups-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-16 18:33:02 +0200
+
+
+Started GET "/assets/fullcalendar-f09a2cee6bd3f7655c47cf7eab2b52b9.js?body=1" for 127.0.0.1 at 2015-03-16 18:33:02 +0200
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-16 18:33:02 +0200
+
+
+Started GET "/assets/application-7b561b070596c4845d460cc597932a7b.js?body=1" for 127.0.0.1 at 2015-03-16 18:33:02 +0200
+
+
+Started GET "/signup" for 127.0.0.1 at 2015-03-16 18:33:16 +0200
+Processing by UsersController#new as HTML
+  Rendered users/_form.html.erb (10.8ms)
+  Rendered users/new.html.erb within layouts/application (11.6ms)
+Completed 500 Internal Server Error in 14ms
+
+NoMethodError - undefined method `password' for #<User:0x007fa894086918>:
+  activemodel (4.2.0) lib/active_model/attribute_methods.rb:433:in `method_missing'
+  actionview (4.2.0) lib/action_view/helpers/tags/base.rb:28:in `value'
+  actionview (4.2.0) lib/action_view/helpers/tags/base.rb:37:in `value_before_type_cast'
+  actionview (4.2.0) lib/action_view/helpers/tags/text_field.rb:13:in `block in render'
+  actionview (4.2.0) lib/action_view/helpers/tags/text_field.rb:13:in `render'
+  actionview (4.2.0) lib/action_view/helpers/form_helper.rb:787:in `text_field'
+  actionview (4.2.0) lib/action_view/helpers/form_helper.rb:1322:in `text_field'
+  app/views/users/_form.html.erb:24:in `block in _app_views_users__form_html_erb___143373878576034593_70181155802120'
+  actionview (4.2.0) lib/action_view/helpers/capture_helper.rb:38:in `block in capture'
+  actionview (4.2.0) lib/action_view/helpers/capture_helper.rb:200:in `with_output_buffer'
+  actionview (4.2.0) lib/action_view/helpers/capture_helper.rb:38:in `capture'
+  actionview (4.2.0) lib/action_view/helpers/form_helper.rb:444:in `form_for'
+  app/views/users/_form.html.erb:1:in `_app_views_users__form_html_erb___143373878576034593_70181155802120'
+  actionview (4.2.0) lib/action_view/template.rb:145:in `block in render'
+  activesupport (4.2.0) lib/active_support/notifications.rb:166:in `instrument'
+  actionview (4.2.0) lib/action_view/template.rb:333:in `instrument'
+  actionview (4.2.0) lib/action_view/template.rb:143:in `render'
+  actionview (4.2.0) lib/action_view/renderer/partial_renderer.rb:339:in `render_partial'
+  actionview (4.2.0) lib/action_view/renderer/partial_renderer.rb:310:in `block in render'
+  actionview (4.2.0) lib/action_view/renderer/abstract_renderer.rb:39:in `block in instrument'
+  activesupport (4.2.0) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.0) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.0) lib/active_support/notifications.rb:164:in `instrument'
+  actionview (4.2.0) lib/action_view/renderer/abstract_renderer.rb:39:in `instrument'
+  actionview (4.2.0) lib/action_view/renderer/partial_renderer.rb:309:in `render'
+  actionview (4.2.0) lib/action_view/renderer/renderer.rb:47:in `render_partial'
+  actionview (4.2.0) lib/action_view/helpers/rendering_helper.rb:35:in `render'
+  app/views/users/new.html.erb:3:in `_app_views_users_new_html_erb__3727718832345496942_70181152812960'
+  actionview (4.2.0) lib/action_view/template.rb:145:in `block in render'
+  activesupport (4.2.0) lib/active_support/notifications.rb:166:in `instrument'
+  actionview (4.2.0) lib/action_view/template.rb:333:in `instrument'
+  actionview (4.2.0) lib/action_view/template.rb:143:in `render'
+  actionview (4.2.0) lib/action_view/renderer/template_renderer.rb:54:in `block (2 levels) in render_template'
+  actionview (4.2.0) lib/action_view/renderer/abstract_renderer.rb:39:in `block in instrument'
+  activesupport (4.2.0) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.0) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.0) lib/active_support/notifications.rb:164:in `instrument'
+  actionview (4.2.0) lib/action_view/renderer/abstract_renderer.rb:39:in `instrument'
+  actionview (4.2.0) lib/action_view/renderer/template_renderer.rb:53:in `block in render_template'
+  actionview (4.2.0) lib/action_view/renderer/template_renderer.rb:61:in `render_with_layout'
+  actionview (4.2.0) lib/action_view/renderer/template_renderer.rb:52:in `render_template'
+  actionview (4.2.0) lib/action_view/renderer/template_renderer.rb:14:in `render'
+  actionview (4.2.0) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionview (4.2.0) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionview (4.2.0) lib/action_view/rendering.rb:100:in `_render_template'
+  actionpack (4.2.0) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.2.0) lib/action_view/rendering.rb:83:in `render_to_body'
+  actionpack (4.2.0) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.2.0) lib/action_controller/metal/renderers.rb:37:in `render_to_body'
+  actionpack (4.2.0) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.2.0) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.2.0) lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+  activesupport (4.2.0) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /home/kristianw/.rbenv/versions/2.2.0/lib/ruby/2.2.0/benchmark.rb:303:in `realtime'
+  activesupport (4.2.0) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.2.0) lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+  actionpack (4.2.0) lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+  activerecord (4.2.0) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.2.0) lib/action_controller/metal/instrumentation.rb:40:in `render'
+  actionpack (4.2.0) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.2.0) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.2.0) lib/abstract_controller/base.rb:198:in `process_action'
+  actionpack (4.2.0) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.2.0) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:151:in `block in halting_and_conditional'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:234:in `block in halting'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:234:in `block in halting'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:169:in `block in halting'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:169:in `block in halting'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:169:in `block in halting'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:92:in `_run_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:734:in `_run_process_action_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.0) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.0) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.0) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.2.0) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.0) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.0) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.0) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.0) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.0) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.0) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.0) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.0) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.2.0) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.0) lib/action_controller/metal.rb:236:in `block in action'
+  actionpack (4.2.0) lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+  actionpack (4.2.0) lib/action_dispatch/routing/route_set.rb:42:in `serve'
+  actionpack (4.2.0) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.0) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.0) lib/action_dispatch/routing/route_set.rb:802:in `call'
+  rack (1.6.0) lib/rack/etag.rb:24:in `call'
+  rack (1.6.0) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.0) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.0) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.0) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.0) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:647:in `call'
+  activerecord (4.2.0) lib/active_record/migration.rb:378:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:88:in `_run_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:734:in `_run_call_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.0) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.1.2) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /home/kristianw/.rbenv/versions/2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/kristianw/.rbenv/versions/2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/kristianw/.rbenv/versions/2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+
+Started POST "/__better_errors/dc97f60729a4c201/variables" for 127.0.0.1 at 2015-03-16 18:33:16 +0200
+
+
+Started GET "/signup" for 127.0.0.1 at 2015-03-16 18:33:33 +0200
+Processing by UsersController#new as HTML
+  Rendered users/_form.html.erb (8.9ms)
+  Rendered users/new.html.erb within layouts/application (10.1ms)
+Completed 500 Internal Server Error in 16ms
+
+ArgumentError - wrong number of arguments (0 for 1..2):
+  app/views/users/_form.html.erb:24:in `block in _app_views_users__form_html_erb___143373878576034593_70181155825180'
+  actionview (4.2.0) lib/action_view/helpers/capture_helper.rb:38:in `block in capture'
+  actionview (4.2.0) lib/action_view/helpers/capture_helper.rb:200:in `with_output_buffer'
+  actionview (4.2.0) lib/action_view/helpers/capture_helper.rb:38:in `capture'
+  actionview (4.2.0) lib/action_view/helpers/form_helper.rb:444:in `form_for'
+  app/views/users/_form.html.erb:1:in `_app_views_users__form_html_erb___143373878576034593_70181155825180'
+  actionview (4.2.0) lib/action_view/template.rb:145:in `block in render'
+  activesupport (4.2.0) lib/active_support/notifications.rb:166:in `instrument'
+  actionview (4.2.0) lib/action_view/template.rb:333:in `instrument'
+  actionview (4.2.0) lib/action_view/template.rb:143:in `render'
+  actionview (4.2.0) lib/action_view/renderer/partial_renderer.rb:339:in `render_partial'
+  actionview (4.2.0) lib/action_view/renderer/partial_renderer.rb:310:in `block in render'
+  actionview (4.2.0) lib/action_view/renderer/abstract_renderer.rb:39:in `block in instrument'
+  activesupport (4.2.0) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.0) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.0) lib/active_support/notifications.rb:164:in `instrument'
+  actionview (4.2.0) lib/action_view/renderer/abstract_renderer.rb:39:in `instrument'
+  actionview (4.2.0) lib/action_view/renderer/partial_renderer.rb:309:in `render'
+  actionview (4.2.0) lib/action_view/renderer/renderer.rb:47:in `render_partial'
+  actionview (4.2.0) lib/action_view/helpers/rendering_helper.rb:35:in `render'
+  app/views/users/new.html.erb:3:in `_app_views_users_new_html_erb__3727718832345496942_70181152812960'
+  actionview (4.2.0) lib/action_view/template.rb:145:in `block in render'
+  activesupport (4.2.0) lib/active_support/notifications.rb:166:in `instrument'
+  actionview (4.2.0) lib/action_view/template.rb:333:in `instrument'
+  actionview (4.2.0) lib/action_view/template.rb:143:in `render'
+  actionview (4.2.0) lib/action_view/renderer/template_renderer.rb:54:in `block (2 levels) in render_template'
+  actionview (4.2.0) lib/action_view/renderer/abstract_renderer.rb:39:in `block in instrument'
+  activesupport (4.2.0) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.0) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.0) lib/active_support/notifications.rb:164:in `instrument'
+  actionview (4.2.0) lib/action_view/renderer/abstract_renderer.rb:39:in `instrument'
+  actionview (4.2.0) lib/action_view/renderer/template_renderer.rb:53:in `block in render_template'
+  actionview (4.2.0) lib/action_view/renderer/template_renderer.rb:61:in `render_with_layout'
+  actionview (4.2.0) lib/action_view/renderer/template_renderer.rb:52:in `render_template'
+  actionview (4.2.0) lib/action_view/renderer/template_renderer.rb:14:in `render'
+  actionview (4.2.0) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionview (4.2.0) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionview (4.2.0) lib/action_view/rendering.rb:100:in `_render_template'
+  actionpack (4.2.0) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.2.0) lib/action_view/rendering.rb:83:in `render_to_body'
+  actionpack (4.2.0) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.2.0) lib/action_controller/metal/renderers.rb:37:in `render_to_body'
+  actionpack (4.2.0) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.2.0) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.2.0) lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+  activesupport (4.2.0) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /home/kristianw/.rbenv/versions/2.2.0/lib/ruby/2.2.0/benchmark.rb:303:in `realtime'
+  activesupport (4.2.0) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.2.0) lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+  actionpack (4.2.0) lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+  activerecord (4.2.0) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.2.0) lib/action_controller/metal/instrumentation.rb:40:in `render'
+  actionpack (4.2.0) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.2.0) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.2.0) lib/abstract_controller/base.rb:198:in `process_action'
+  actionpack (4.2.0) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.2.0) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:151:in `block in halting_and_conditional'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:234:in `block in halting'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:234:in `block in halting'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:169:in `block in halting'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:169:in `block in halting'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:169:in `block in halting'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:92:in `_run_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:734:in `_run_process_action_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.0) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.0) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.0) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.2.0) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.0) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.0) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.0) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.0) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.0) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.0) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.0) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.0) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.2.0) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.0) lib/action_controller/metal.rb:236:in `block in action'
+  actionpack (4.2.0) lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+  actionpack (4.2.0) lib/action_dispatch/routing/route_set.rb:42:in `serve'
+  actionpack (4.2.0) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.0) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.0) lib/action_dispatch/routing/route_set.rb:802:in `call'
+  rack (1.6.0) lib/rack/etag.rb:24:in `call'
+  rack (1.6.0) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.0) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.0) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.0) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.0) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:647:in `call'
+  activerecord (4.2.0) lib/active_record/migration.rb:378:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:88:in `_run_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:734:in `_run_call_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.0) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.1.2) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /home/kristianw/.rbenv/versions/2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/kristianw/.rbenv/versions/2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/kristianw/.rbenv/versions/2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+
+Started POST "/__better_errors/f67a105cdb870b1d/variables" for 127.0.0.1 at 2015-03-16 18:33:33 +0200
+
+
+Started GET "/signup" for 127.0.0.1 at 2015-03-16 18:33:48 +0200
+Processing by UsersController#new as HTML
+  Rendered users/_form.html.erb (10.0ms)
+  Rendered users/new.html.erb within layouts/application (11.5ms)
+Completed 200 OK in 138ms (Views: 136.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/assignments-46528123b54ad94d8656cc32083f9984.css?body=1" for 127.0.0.1 at 2015-03-16 18:33:49 +0200
+
+
+Started GET "/assets/scaffolds-9fe0527a18558a65ba847be2e2f9571e.css?body=1" for 127.0.0.1 at 2015-03-16 18:33:49 +0200
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-16 18:33:49 +0200
+
+
+Started GET "/assets/application-2576406cb7d0583070526ea145936ce8.css?body=1" for 127.0.0.1 at 2015-03-16 18:33:49 +0200
+
+
+Started GET "/assets/tasks-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-16 18:33:49 +0200
+
+
+Started GET "/assets/groups-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-16 18:33:49 +0200
+
+
+Started GET "/assets/fullcalendar-6bee23c458d42683dba9159c94f7547f.css?body=1" for 127.0.0.1 at 2015-03-16 18:33:49 +0200
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2015-03-16 18:33:49 +0200
+
+
+Started GET "/assets/assignments-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-16 18:33:49 +0200
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-03-16 18:33:49 +0200
+
+
+Started GET "/assets/groups-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-16 18:33:49 +0200
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-03-16 18:33:49 +0200
+
+
+Started GET "/assets/tasks-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-16 18:33:49 +0200
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-16 18:33:49 +0200
+
+
+Started GET "/assets/moment-66988874bf5714cb1e4a6f53d733b6e1.js?body=1" for 127.0.0.1 at 2015-03-16 18:33:49 +0200
+
+
+Started GET "/assets/fullcalendar-f09a2cee6bd3f7655c47cf7eab2b52b9.js?body=1" for 127.0.0.1 at 2015-03-16 18:33:49 +0200
+
+
+Started GET "/assets/application-7b561b070596c4845d460cc597932a7b.js?body=1" for 127.0.0.1 at 2015-03-16 18:33:49 +0200
+
+
+Started GET "/signup" for 127.0.0.1 at 2015-03-16 18:34:46 +0200
+Processing by UsersController#new as HTML
+  Rendered users/_form.html.erb (7.1ms)
+  Rendered users/new.html.erb within layouts/application (8.8ms)
+Completed 200 OK in 133ms (Views: 131.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/assignments-46528123b54ad94d8656cc32083f9984.css?body=1" for 127.0.0.1 at 2015-03-16 18:34:46 +0200
+
+
+Started GET "/assets/groups-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-16 18:34:46 +0200
+
+
+Started GET "/assets/scaffolds-9fe0527a18558a65ba847be2e2f9571e.css?body=1" for 127.0.0.1 at 2015-03-16 18:34:46 +0200
+
+
+Started GET "/assets/tasks-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-16 18:34:46 +0200
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-16 18:34:47 +0200
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-03-16 18:34:47 +0200
+
+
+Started GET "/assets/application-2576406cb7d0583070526ea145936ce8.css?body=1" for 127.0.0.1 at 2015-03-16 18:34:47 +0200
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-03-16 18:34:47 +0200
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2015-03-16 18:34:47 +0200
+
+
+Started GET "/assets/fullcalendar-6bee23c458d42683dba9159c94f7547f.css?body=1" for 127.0.0.1 at 2015-03-16 18:34:47 +0200
+
+
+Started GET "/assets/groups-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-16 18:34:47 +0200
+
+
+Started GET "/assets/assignments-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-16 18:34:47 +0200
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-16 18:34:47 +0200
+
+
+Started GET "/assets/tasks-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-16 18:34:47 +0200
+
+
+Started GET "/assets/moment-66988874bf5714cb1e4a6f53d733b6e1.js?body=1" for 127.0.0.1 at 2015-03-16 18:34:47 +0200
+
+
+Started GET "/assets/fullcalendar-f09a2cee6bd3f7655c47cf7eab2b52b9.js?body=1" for 127.0.0.1 at 2015-03-16 18:34:47 +0200
+
+
+Started GET "/assets/application-7b561b070596c4845d460cc597932a7b.js?body=1" for 127.0.0.1 at 2015-03-16 18:34:47 +0200
+
+
+Started GET "/signup" for 127.0.0.1 at 2015-03-16 18:34:58 +0200
+Processing by UsersController#new as HTML
+  Rendered users/_form.html.erb (7.4ms)
+  Rendered users/new.html.erb within layouts/application (8.3ms)
+Completed 200 OK in 138ms (Views: 137.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/assignments-46528123b54ad94d8656cc32083f9984.css?body=1" for 127.0.0.1 at 2015-03-16 18:34:58 +0200
+
+
+Started GET "/assets/groups-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-16 18:34:58 +0200
+
+
+Started GET "/assets/scaffolds-9fe0527a18558a65ba847be2e2f9571e.css?body=1" for 127.0.0.1 at 2015-03-16 18:34:58 +0200
+
+
+Started GET "/assets/tasks-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-16 18:34:58 +0200
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-16 18:34:58 +0200
+
+
+Started GET "/assets/application-2576406cb7d0583070526ea145936ce8.css?body=1" for 127.0.0.1 at 2015-03-16 18:34:58 +0200
+
+
+Started GET "/assets/fullcalendar-6bee23c458d42683dba9159c94f7547f.css?body=1" for 127.0.0.1 at 2015-03-16 18:34:58 +0200
+
+
+Started GET "/assets/tasks-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-16 18:34:58 +0200
+
+
+Started GET "/assets/groups-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-16 18:34:58 +0200
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-03-16 18:34:58 +0200
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2015-03-16 18:34:58 +0200
+
+
+Started GET "/assets/assignments-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-16 18:34:58 +0200
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-03-16 18:34:58 +0200
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-16 18:34:58 +0200
+
+
+Started GET "/assets/moment-66988874bf5714cb1e4a6f53d733b6e1.js?body=1" for 127.0.0.1 at 2015-03-16 18:34:58 +0200
+
+
+Started GET "/assets/fullcalendar-f09a2cee6bd3f7655c47cf7eab2b52b9.js?body=1" for 127.0.0.1 at 2015-03-16 18:34:58 +0200
+
+
+Started GET "/assets/application-7b561b070596c4845d460cc597932a7b.js?body=1" for 127.0.0.1 at 2015-03-16 18:34:58 +0200
+
+
+Started GET "/signup" for 127.0.0.1 at 2015-03-16 18:35:01 +0200
+Processing by UsersController#new as HTML
+  Rendered users/_form.html.erb (5.6ms)
+  Rendered users/new.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 123ms (Views: 122.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signin" for 127.0.0.1 at 2015-03-16 18:35:04 +0200
+
+AbstractController::ActionNotFound - The action 'new' could not be found for SessionsController:
+  actionpack (4.2.0) lib/abstract_controller/base.rb:132:in `process'
+  actionview (4.2.0) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.0) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.2.0) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.0) lib/action_controller/metal.rb:236:in `block in action'
+  actionpack (4.2.0) lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+  actionpack (4.2.0) lib/action_dispatch/routing/route_set.rb:42:in `serve'
+  actionpack (4.2.0) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.0) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.0) lib/action_dispatch/routing/route_set.rb:802:in `call'
+  rack (1.6.0) lib/rack/etag.rb:24:in `call'
+  rack (1.6.0) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.0) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.0) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.0) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.0) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:647:in `call'
+  activerecord (4.2.0) lib/active_record/migration.rb:378:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:88:in `_run_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:734:in `_run_call_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.0) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.1.2) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /home/kristianw/.rbenv/versions/2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/kristianw/.rbenv/versions/2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/kristianw/.rbenv/versions/2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+
+Started GET "/signin" for 127.0.0.1 at 2015-03-16 18:35:05 +0200
+
+AbstractController::ActionNotFound - The action 'new' could not be found for SessionsController:
+  actionpack (4.2.0) lib/abstract_controller/base.rb:132:in `process'
+  actionview (4.2.0) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.0) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.2.0) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.0) lib/action_controller/metal.rb:236:in `block in action'
+  actionpack (4.2.0) lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+  actionpack (4.2.0) lib/action_dispatch/routing/route_set.rb:42:in `serve'
+  actionpack (4.2.0) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.0) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.0) lib/action_dispatch/routing/route_set.rb:802:in `call'
+  rack (1.6.0) lib/rack/etag.rb:24:in `call'
+  rack (1.6.0) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.0) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.0) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.0) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.0) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:647:in `call'
+  activerecord (4.2.0) lib/active_record/migration.rb:378:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:88:in `_run_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:734:in `_run_call_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.0) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.1.2) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /home/kristianw/.rbenv/versions/2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/kristianw/.rbenv/versions/2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/kristianw/.rbenv/versions/2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+
+Started POST "/__better_errors/cc98532443e19123/variables" for 127.0.0.1 at 2015-03-16 18:35:05 +0200
+>>>>>>> 1c32c129bb7367ebe7c8cfb2fffb836057547041
