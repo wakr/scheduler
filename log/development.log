@@ -13696,3 +13696,195 @@ Completed 200 OK in 117ms (Views: 116.1ms | ActiveRecord: 0.0ms)
 =======
 >>>>>>> 1c32c129bb7367ebe7c8cfb2fffb836057547041
 >>>>>>> 8d701b9d0549a9208394cd8dcadb6b48c8e125c9
+
+
+Started GET "/signin" for 127.0.0.1 at 2015-03-16 19:04:35 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 357ms (Views: 326.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/assignments-46528123b54ad94d8656cc32083f9984.css?body=1" for 127.0.0.1 at 2015-03-16 19:04:36 +0200
+
+
+Started GET "/assets/groups-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-16 19:04:36 +0200
+
+
+Started GET "/assets/application-2576406cb7d0583070526ea145936ce8.css?body=1" for 127.0.0.1 at 2015-03-16 19:04:36 +0200
+
+
+Started GET "/assets/tasks-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-16 19:04:36 +0200
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-16 19:04:36 +0200
+
+
+Started GET "/assets/fullcalendar-6bee23c458d42683dba9159c94f7547f.css?body=1" for 127.0.0.1 at 2015-03-16 19:04:36 +0200
+
+
+Started GET "/assets/scaffolds-9fe0527a18558a65ba847be2e2f9571e.css?body=1" for 127.0.0.1 at 2015-03-16 19:04:36 +0200
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-03-16 19:04:36 +0200
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2015-03-16 19:04:36 +0200
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-03-16 19:04:36 +0200
+
+
+Started GET "/assets/assignments-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-16 19:04:36 +0200
+
+
+Started GET "/assets/tasks-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-16 19:04:36 +0200
+
+
+Started GET "/assets/groups-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-16 19:04:36 +0200
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-16 19:04:36 +0200
+
+
+Started GET "/assets/application-7b561b070596c4845d460cc597932a7b.js?body=1" for 127.0.0.1 at 2015-03-16 19:04:36 +0200
+
+
+Started GET "/assets/moment-66988874bf5714cb1e4a6f53d733b6e1.js?body=1" for 127.0.0.1 at 2015-03-16 19:04:36 +0200
+
+
+Started GET "/assets/fullcalendar-f09a2cee6bd3f7655c47cf7eab2b52b9.js?body=1" for 127.0.0.1 at 2015-03-16 19:04:36 +0200
+
+
+Started POST "/session" for 127.0.0.1 at 2015-03-16 19:04:42 +0200
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"rpyZrdZ90FhEjkfL6Kh2JySq42nV3dUH9ggfhPRKEs3kR8hT52vSR8S8YC4j4IcuxUtJIMf1Y0I9JILPKMl9vA==", "name"=>"Samu", "password"=>"[FILTERED]", "commit"=>"Log in"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."name" = ? LIMIT 1  [["name", "Samu"]]
+Redirected to http://localhost:3000/users/2
+Completed 302 Found in 13032ms (ActiveRecord: 0.8ms)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2015-03-16 19:04:55 +0200
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.8ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered users/show.html.erb within layouts/application (5.3ms)
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+Completed 200 OK in 783ms (Views: 770.2ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/assignments-46528123b54ad94d8656cc32083f9984.css?body=1" for 127.0.0.1 at 2015-03-16 19:04:56 +0200
+
+
+Started GET "/assets/groups-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-16 19:04:56 +0200
+
+
+Started GET "/assets/scaffolds-9fe0527a18558a65ba847be2e2f9571e.css?body=1" for 127.0.0.1 at 2015-03-16 19:04:56 +0200
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-16 19:04:56 +0200
+
+
+Started GET "/assets/application-2576406cb7d0583070526ea145936ce8.css?body=1" for 127.0.0.1 at 2015-03-16 19:04:56 +0200
+
+
+Started GET "/assets/tasks-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-16 19:04:56 +0200
+
+
+Started GET "/assets/fullcalendar-6bee23c458d42683dba9159c94f7547f.css?body=1" for 127.0.0.1 at 2015-03-16 19:04:56 +0200
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-03-16 19:04:56 +0200
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-03-16 19:04:56 +0200
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2015-03-16 19:04:56 +0200
+
+
+Started GET "/assets/groups-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-16 19:04:56 +0200
+
+
+Started GET "/assets/assignments-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-16 19:04:57 +0200
+
+
+Started GET "/assets/tasks-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-16 19:04:57 +0200
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-16 19:04:57 +0200
+
+
+Started GET "/assets/moment-66988874bf5714cb1e4a6f53d733b6e1.js?body=1" for 127.0.0.1 at 2015-03-16 19:04:57 +0200
+
+
+Started GET "/assets/fullcalendar-f09a2cee6bd3f7655c47cf7eab2b52b9.js?body=1" for 127.0.0.1 at 2015-03-16 19:04:57 +0200
+
+
+Started GET "/assets/application-7b561b070596c4845d460cc597932a7b.js?body=1" for 127.0.0.1 at 2015-03-16 19:04:57 +0200
+
+
+Started DELETE "/signout" for 127.0.0.1 at 2015-03-16 19:05:09 +0200
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"fPbkyUQ/N29eBn0BGqK2LiwbCJQV3gA8/C/2uKRImlE2LbU3dSk1cN40WuTR6kcnzfqi3Qf2tnk3A2vzeMv1IA=="}
+Redirected to http://localhost:3000/
+Completed 302 Found in 7ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-16 19:05:09 +0200
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.7ms)[0m  SELECT "users".* FROM "users"
+  Rendered users/index.html.erb within layouts/application (18.6ms)
+Completed 200 OK in 693ms (Views: 688.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/assignments-46528123b54ad94d8656cc32083f9984.css?body=1" for 127.0.0.1 at 2015-03-16 19:05:10 +0200
+
+
+Started GET "/assets/scaffolds-9fe0527a18558a65ba847be2e2f9571e.css?body=1" for 127.0.0.1 at 2015-03-16 19:05:10 +0200
+
+
+Started GET "/assets/groups-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-16 19:05:10 +0200
+
+
+Started GET "/assets/tasks-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-16 19:05:10 +0200
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-16 19:05:10 +0200
+
+
+Started GET "/assets/application-2576406cb7d0583070526ea145936ce8.css?body=1" for 127.0.0.1 at 2015-03-16 19:05:10 +0200
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-03-16 19:05:10 +0200
+
+
+Started GET "/assets/fullcalendar-6bee23c458d42683dba9159c94f7547f.css?body=1" for 127.0.0.1 at 2015-03-16 19:05:10 +0200
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2015-03-16 19:05:10 +0200
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-03-16 19:05:10 +0200
+
+
+Started GET "/assets/assignments-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-16 19:05:10 +0200
+
+
+Started GET "/assets/groups-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-16 19:05:10 +0200
+
+
+Started GET "/assets/tasks-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-16 19:05:10 +0200
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-16 19:05:10 +0200
+
+
+Started GET "/assets/moment-66988874bf5714cb1e4a6f53d733b6e1.js?body=1" for 127.0.0.1 at 2015-03-16 19:05:10 +0200
+
+
+Started GET "/assets/fullcalendar-f09a2cee6bd3f7655c47cf7eab2b52b9.js?body=1" for 127.0.0.1 at 2015-03-16 19:05:10 +0200
+
+
+Started GET "/assets/application-7b561b070596c4845d460cc597932a7b.js?body=1" for 127.0.0.1 at 2015-03-16 19:05:10 +0200
