@@ -9,4 +9,5 @@ Rails.application.routes.draw do
 
   root :to => "users#index"
 
+  resources :memberships, only: [:new, :create, :destroy]
 end
