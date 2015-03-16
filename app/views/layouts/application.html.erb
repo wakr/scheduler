@@ -11,7 +11,10 @@
 <%=link_to 'users', users_path%> | 
 <%=link_to 'assignments', assignments_path%> | 
 <%=link_to 'tasks', tasks_path%> |
-<%=link_to 'groups', groups_path%>
+<%=link_to 'groups', groups_path%> <b>|</b>
+<%= link_to 'sign up', signup_path%> |
+<%= link_to 'sign in', signin_path%> |
+<%= link_to 'sign out', signout_path%>
 
 <%= yield %>
 
