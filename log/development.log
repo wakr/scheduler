@@ -11671,3 +11671,18 @@ Started GET "/assets/moment-66988874bf5714cb1e4a6f53d733b6e1.js?body=1" for ::1 
 
 
 Started GET "/assets/application-7b561b070596c4845d460cc597932a7b.js?body=1" for ::1 at 2015-03-16 18:12:23 +0200
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "groups" ("name", "created_at", "updated_at") VALUES (?, ?, ?)  [["name", "Hippijengi"], ["created_at", "2015-03-16 16:21:17.626567"], ["updated_at", "2015-03-16 16:21:17.626567"]]
+  [1m[36m (15.2ms)[0m  [1mcommit transaction[0m
+  [1m[35mGroup Load (0.4ms)[0m  SELECT "groups".* FROM "groups"
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "groups"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "groups"
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "groups" ("name", "created_at", "updated_at") VALUES (?, ?, ?)  [["name", "Hipit"], ["created_at", "2015-03-16 16:34:17.995537"], ["updated_at", "2015-03-16 16:34:17.995537"]]
+  [1m[36m (20.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
