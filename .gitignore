@@ -10,12 +10,12 @@
 /tmp/
 
 ## log
-/log/
+log/
 
 ## workspace
-/.idea/
+.idea/
 
-## gemfile for travis 
+## gemfile for travis
 .Gemfile.lock
 
 ## Specific to RubyMotion:
