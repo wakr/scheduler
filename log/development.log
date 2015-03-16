@@ -9969,3 +9969,181 @@ Migrating to CreateUserAssignments (20150313122823)
   [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
   [1m[36mUserAssignment Load (0.2ms)[0m  [1mSELECT "user_assignments".* FROM "user_assignments"[0m
   [1m[36mAssignment Load (2.0ms)[0m  [1mSELECT "assignments".* FROM "assignments"[0m
+
+
+Started GET "/" for ::1 at 2015-03-16 17:20:18 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users"
+  Rendered users/index.html.erb within layouts/application (8.8ms)
+Completed 200 OK in 745ms (Views: 723.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/assignments-a505786a4fa88b714a46e7cabd9e70c1.css?body=1" for ::1 at 2015-03-16 17:20:19 +0200
+
+
+Started GET "/assets/groups-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-16 17:20:19 +0200
+
+
+Started GET "/assets/scaffolds-fe83e2862ce513eda73c40184e7b3a51.css?body=1" for ::1 at 2015-03-16 17:20:19 +0200
+
+
+Started GET "/assets/tasks-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-16 17:20:19 +0200
+
+
+Started GET "/assets/application-2d7fb15a68bedc974ee2befcf042834e.css?body=1" for ::1 at 2015-03-16 17:20:19 +0200
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-16 17:20:19 +0200
+
+
+Started GET "/assets/fullcalendar-6bee23c458d42683dba9159c94f7547f.css?body=1" for ::1 at 2015-03-16 17:20:19 +0200
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-16 17:20:19 +0200
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-16 17:20:19 +0200
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-16 17:20:19 +0200
+
+
+Started GET "/assets/assignments-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-16 17:20:19 +0200
+
+
+Started GET "/assets/groups-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-16 17:20:19 +0200
+
+
+Started GET "/assets/tasks-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-16 17:20:19 +0200
+
+
+Started GET "/assets/moment-66988874bf5714cb1e4a6f53d733b6e1.js?body=1" for ::1 at 2015-03-16 17:20:19 +0200
+
+
+Started GET "/assets/fullcalendar-f09a2cee6bd3f7655c47cf7eab2b52b9.js?body=1" for ::1 at 2015-03-16 17:20:19 +0200
+
+
+Started GET "/assets/application-7b561b070596c4845d460cc597932a7b.js?body=1" for ::1 at 2015-03-16 17:20:19 +0200
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-16 17:20:19 +0200
+
+
+Started GET "/groups" for ::1 at 2015-03-16 17:20:24 +0200
+Processing by GroupsController#index as HTML
+  [1m[36mGroup Load (0.2ms)[0m  [1mSELECT "groups".* FROM "groups"[0m
+  Rendered groups/index.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 147ms (Views: 142.3ms | ActiveRecord: 0.4ms)
+  [1m[36mGroup Load (1.9ms)[0m  [1mSELECT "groups".* FROM "groups"[0m
+  [1m[35mGroup Load (0.3ms)[0m  SELECT  "groups".* FROM "groups"  ORDER BY "groups"."id" ASC LIMIT 1
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" INNER JOIN "memberships" ON "users"."id" = "memberships"."user_id" WHERE "memberships"."group_id" = ?[0m  [["group_id", 1]]
+
+
+Started GET "/groups/1" for ::1 at 2015-03-16 17:25:05 +0200
+Processing by GroupsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mGroup Load (0.2ms)[0m  SELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered groups/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 130ms (Views: 120.2ms | ActiveRecord: 0.2ms)
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users"  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "memberships" ("group_id", "user_id") VALUES (?, ?)  [["group_id", 1], ["user_id", 1]]
+  [1m[36m (20.6ms)[0m  [1mcommit transaction[0m
+  [1m[35mGroup Load (0.4ms)[0m  SELECT  "groups".* FROM "groups"  ORDER BY "groups"."id" ASC LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" INNER JOIN "memberships" ON "users"."id" = "memberships"."user_id" WHERE "memberships"."group_id" = ?[0m  [["group_id", 1]]
+
+
+Started GET "/groups/1" for ::1 at 2015-03-16 17:25:51 +0200
+Processing by GroupsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mGroup Load (0.1ms)[0m  [1mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered groups/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 95ms (Views: 93.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/assignments-a505786a4fa88b714a46e7cabd9e70c1.css?body=1" for ::1 at 2015-03-16 17:25:51 +0200
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-16 17:25:51 +0200
+
+
+Started GET "/assets/scaffolds-fe83e2862ce513eda73c40184e7b3a51.css?body=1" for ::1 at 2015-03-16 17:25:51 +0200
+
+
+Started GET "/assets/tasks-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-16 17:25:51 +0200
+
+
+Started GET "/assets/groups-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-16 17:25:51 +0200
+
+
+Started GET "/assets/application-2d7fb15a68bedc974ee2befcf042834e.css?body=1" for ::1 at 2015-03-16 17:25:51 +0200
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-16 17:25:51 +0200
+
+
+Started GET "/assets/fullcalendar-6bee23c458d42683dba9159c94f7547f.css?body=1" for ::1 at 2015-03-16 17:25:51 +0200
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-03-16 17:25:51 +0200
+
+
+Started GET "/assets/assignments-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-16 17:25:51 +0200
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-16 17:25:51 +0200
+
+
+Started GET "/assets/groups-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-16 17:25:51 +0200
+
+
+Started GET "/assets/tasks-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-16 17:25:51 +0200
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-16 17:25:51 +0200
+
+
+Started GET "/assets/moment-66988874bf5714cb1e4a6f53d733b6e1.js?body=1" for ::1 at 2015-03-16 17:25:51 +0200
+
+
+Started GET "/assets/fullcalendar-f09a2cee6bd3f7655c47cf7eab2b52b9.js?body=1" for ::1 at 2015-03-16 17:25:51 +0200
+
+
+Started GET "/assets/application-7b561b070596c4845d460cc597932a7b.js?body=1" for ::1 at 2015-03-16 17:25:51 +0200
+
+
+Started GET "/users" for ::1 at 2015-03-16 17:25:54 +0200
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users"
+  Rendered users/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 104ms (Views: 102.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/tasks" for ::1 at 2015-03-16 17:25:57 +0200
+Processing by TasksController#index as HTML
+  [1m[36mTask Load (0.2ms)[0m  [1mSELECT "tasks".* FROM "tasks"[0m
+  Rendered tasks/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 99ms (Views: 93.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assignments" for ::1 at 2015-03-16 17:25:59 +0200
+Processing by AssignmentsController#index as HTML
+  [1m[35mAssignment Load (0.2ms)[0m  SELECT "assignments".* FROM "assignments"
+  Rendered assignments/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 105ms (Views: 99.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assignments.json?start=2015-02-23&end=2015-04-06&_=1426519551590" for ::1 at 2015-03-16 17:26:00 +0200
+Processing by AssignmentsController#index as JSON
+  Parameters: {"start"=>"2015-02-23", "end"=>"2015-04-06", "_"=>"1426519551590"}
+  [1m[36mAssignment Load (0.3ms)[0m  [1mSELECT "assignments".* FROM "assignments"[0m
+  Rendered assignments/index.json.jbuilder (6.3ms)
+Completed 200 OK in 10ms (Views: 9.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/groups" for ::1 at 2015-03-16 17:26:03 +0200
+Processing by GroupsController#index as HTML
+  [1m[35mGroup Load (0.2ms)[0m  SELECT "groups".* FROM "groups"
+  Rendered groups/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 91ms (Views: 90.1ms | ActiveRecord: 0.2ms)
