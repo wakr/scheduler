@@ -15,8 +15,7 @@ class AssignmentsController < ApplicationController
   # GET /assignments/new
   def new
     @assignment = Assignment.new
-    @users = User.all
-    @memberships = Membership.all
+    @users = User.all_except(current_user) # users can't assign themselves
   end
 
   # GET /assignments/1/edit
@@ -28,6 +27,10 @@ class AssignmentsController < ApplicationController
   # POST /assignments.json
   def create
     @assignment = Assignment.new(assignment_params)
+
+    # user assignment could also be done here via params-hash
+
+    byebug
 
     respond_to do |format|
       if @assignment.save

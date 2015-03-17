@@ -6,7 +6,7 @@ class MembershipsController < ApplicationController
 
   def create
     @membership = Membership.new(membership_params)
-    @membership.save
+    @membership.save # ? :D if @membership.save already checks this
 
     respond_to do |format|
      if @membership.save
@@ -18,6 +18,8 @@ class MembershipsController < ApplicationController
      end
    end
   end
+
+  private
 
   def membership_params
     params.require(:membership).permit(:user_id, :group_id)

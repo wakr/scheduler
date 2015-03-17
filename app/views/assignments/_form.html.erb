@@ -16,12 +16,17 @@
     <%= f.text_field :name %>
   </div>
 
+    <div class="field">
+      <%= f.label :user_id%>
+      <%= f.collection_select(:user_id, @users, :id, :name)%> <!-- FIX to form a connection user_assignment-type! -->
+    </div>
 
 
   <div class="field">
     <%= f.label :deadline %><br>
     <%= f.datetime_select :deadline, :start_year => Time.now.year, :end_year => Time.now.year %>
   </div>
+
   <div class="actions">
     <%= f.submit %>
   </div>

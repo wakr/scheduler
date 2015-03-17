@@ -12,7 +12,15 @@
 
 <p>
   <strong>Users:</strong>
-  <%= @group.members %>
+        <table>
+          <tbody>
+          <% @group.members.each do |member| %>
+              <tr>
+                <td><%= link_to member.name, member %></td>
+              </tr>
+          <% end %>
+          </tbody>
+        </table>
 </p>
 
 <%= form_for(@membership, method: :post) do |f| %>

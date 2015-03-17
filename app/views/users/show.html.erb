@@ -13,14 +13,30 @@
 
 <h3>Joined organizations</h3>
 
-<p><%= @user.groups %></p>
+<table>
+    <tbody>
+        <% @user.groups.each do |group| %>
+                <tr>
+                  <td><%= link_to group.name, group %></td>
+                </tr>
+        <% end %>
+    </tbody>
+</table>
 
 <h3>
   Assigned assignments
 </h3>
 
 <h3>Assigned to assignments</h3>
-<p> <%= @user.assignments %></p>
+<table>
+  <tbody>
+  <% @user.assignments.each do |assignment| %>
+      <tr>
+        <td><%= link_to assignment.name, assignment %></td>
+      </tr>
+  <% end %>
+  </tbody>
+</table>
 
 <%= link_to 'Edit', edit_user_path(@user) %> |
 <%= link_to 'Back', users_path %>

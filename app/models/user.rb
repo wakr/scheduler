@@ -7,7 +7,7 @@ class User < ActiveRecord::Base
   has_many :assignments, :through => :user_assignments
   has_many :tasks, :through => :assignments
 
-  #passowrd
+  #passwrd
   has_secure_password
 
   validates :name, uniqueness: true
@@ -16,9 +16,17 @@ class User < ActiveRecord::Base
   validates_format_of :password, :with => /(?=.*\d)(?=.*([A-Z]))/
   validates :password, length: {minimum: 4}
 
+  #scopes
+
+  scope :all_except, ->(user) { where.not(id: user) } #returns all except parameter user
 
   def to_s
     self.name
+  end
+
+  private
+  def self.all_except(user)
+    where.not(id: user)
   end
 
 end
