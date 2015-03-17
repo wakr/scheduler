@@ -7,6 +7,9 @@ class User < ActiveRecord::Base
   has_many :assignments, :through => :user_assignments
   has_many :tasks, :through => :assignments
 
+  #passowrd
+  has_secure_password
+
   validates :name, uniqueness: true
   validates :name, length: {minimum: 3,
                             maximum: 15}

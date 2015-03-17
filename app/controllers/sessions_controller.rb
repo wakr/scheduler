@@ -6,7 +6,7 @@ class SessionsController < ApplicationController
   def create
       user = User.find_by name: params[:name]
 
-      byebug
+
 
       if user
         session[:user_id] = user.id
