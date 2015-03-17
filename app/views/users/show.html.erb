@@ -10,5 +10,17 @@
   <%= @user.birthdate %>
 </p>
 
+
+<h3>Joined organizations</h3>
+
+<p><%= @user.groups %></p>
+
+<h3>
+  Assigned assignments
+</h3>
+
+<h3>Assigned to assignments</h3>
+<p> <%= @user.assignments %></p>
+
 <%= link_to 'Edit', edit_user_path(@user) %> |
 <%= link_to 'Back', users_path %>

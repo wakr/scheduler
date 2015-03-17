@@ -36,7 +36,7 @@
     <% @assignments.each do |assignment| %>
       <tr>
         <td><%= link_to assignment.name, assignment %></td>
-        <td><%= link_to assignment.user, assignment.user %></td>
+        <td> fix this to show the user that is assigned to this task</td>
         <td><%= assignment.deadline %></td>
         <td><%= link_to 'Edit', edit_assignment_path(assignment) %></td>
         <td><%= link_to 'Destroy', assignment, method: :delete, data: { confirm: 'Are you sure?' } %></td>

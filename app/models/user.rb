@@ -13,6 +13,8 @@ class User < ActiveRecord::Base
   validates :name, uniqueness: true
   validates :name, length: {minimum: 3,
                             maximum: 15}
+  validates_format_of :password, :with => /(?=.*\d)(?=.*([A-Z]))/
+  validates :password, length: {minimum: 4}
 
 
   def to_s

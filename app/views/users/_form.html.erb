@@ -11,17 +11,24 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= f.label :name %><br>
-    <%= f.text_field :name %>
-  </div>
+    <% if @user.new_record? %>
+      <div class="field">
+        <%= f.label :name %><br>
+        <%= f.text_field :name %>
+      </div>
+
   <div class="field">
     <%= f.label :birthdate %><br>
     <%= f.date_select :birthdate, :start_year => Time.now.year - 60, :end_year => Time.now.year %>
   </div>
+    <% end %>
     <div class="field">
-      <%= f.label :passwordToDO %><br>
-
+      <%= f.label :password %><br>
+      <%= f.password_field :password %>
+    </div>
+    <div class="field">
+      <%= f.label :password_confirmation %><br>
+      <%= f.password_field :password_confirmation %>
     </div>
   <div class="actions">
     <%= f.submit %>

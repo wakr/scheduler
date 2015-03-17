@@ -6,8 +6,16 @@ describe User do
     expect(User.all.count).to eq(0)
   end
 
-  it "does not allow to create user without name" do
+  it "does not allow to create user without a name" do
     expect(User.create(birthdate: Date.new(1999,9,2))).not_to be_valid
+  end
+
+  it "does not allow to create user with a bad password" do
+    expect(User.create(name: "Samu",birthdate: Date.new(1999,9,2), password: "abc", password_confirmation: "abc")).not_to be_valid
+  end
+
+  it "does not allow to create user with a mismatched password" do
+    expect(User.create(name: "Samu",birthdate: Date.new(1999,9,2), password: "abc", password_confirmation: "abs")).not_to be_valid
   end
 
   describe "created and" do
@@ -37,5 +45,14 @@ describe User do
     it "to_s method returns name" do
       expect(User.first.to_s).to eq(@user.name)
     end
+
+    describe " logged in and" do
+
+      it "has a secure password hashed" do
+        expect(@user.password_digest != @user.password)
+      end
+
+    end
+
   end
 end

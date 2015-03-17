@@ -10,6 +10,11 @@
   <%= @group.description %>
 </p>
 
+<p>
+  <strong>Users:</strong>
+  <%= @group.members %>
+</p>
+
 <%= form_for(@membership, method: :post) do |f| %>
     <div class="field">
       <%= f.label :user_id %>
