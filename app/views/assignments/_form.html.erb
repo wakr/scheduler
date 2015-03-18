@@ -16,10 +16,14 @@
     <%= f.text_field :name %>
   </div>
 
-    <div class="field">
-      <%= f.label :user_id%>
-      <%= f.puts :user_id, options_from_collection_for_select(@users, :id, :name)%> <!-- FIX to form a connection user_assignment-type! -->
-    </div>
+    <%= f.fields_for :user_assignments do |ua| %>
+
+        <div class="field">
+          <%= ua.label :user_id %><br>
+          <%= ua.select :user_id, options_from_collection_for_select(@users,:id,:name) %>
+        </div>
+
+        <% end %>
 
 
   <div class="field">

@@ -6,6 +6,18 @@
 </p>
 
 
+<h3>People doing this assignment</h3>
+
+<table>
+  <tbody>
+  <% @assignment.doers.each do |worker| %>
+      <tr>
+        <td><%= link_to worker.name, worker %></td>
+      </tr>
+  <% end %>
+  </tbody>
+</table>
+
 <p>
   <strong>Is done:</strong>
   <%= @assignment.is_done %>
