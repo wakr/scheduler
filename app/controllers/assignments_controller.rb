@@ -32,6 +32,8 @@ class AssignmentsController < ApplicationController
 
     byebug
 
+
+
     respond_to do |format|
       if @assignment.save
         @assignment.update_attribute(:is_done, false)
