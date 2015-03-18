@@ -18,7 +18,7 @@
 
     <div class="field">
       <%= f.label :user_id%>
-      <%= f.collection_select(:user_id, @users, :id, :name)%> <!-- FIX to form a connection user_assignment-type! -->
+      <%= f.puts :user_id, options_from_collection_for_select(@users, :id, :name)%> <!-- FIX to form a connection user_assignment-type! -->
     </div>
 
 
