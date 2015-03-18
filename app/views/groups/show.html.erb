@@ -22,11 +22,9 @@
           </tbody>
         </table>
 </p>
-
 <%= form_for(@membership, method: :post) do |f| %>
     <div class="field">
-      <%= f.label :user_id %>
-      <%= f.text_field :user_id %>
+      <%= f.hidden_field :user_id, :value => current_user.id %>
     </div>
     <div class="field">
       <%= f.hidden_field :group_id, :value => @group.id %>
