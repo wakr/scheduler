@@ -22,7 +22,10 @@
           </tbody>
         </table>
 </p>
-<%= form_for(@membership, method: :post) do |f| %>
+<% if Membership.membership_exists?(current_user.id, @group.id) %>
+  <%= link_to('Leave the group', membership_path(Membership.find_mem(current_user, @group.id)), method: :delete) %>
+<% else %>
+  <%= form_for(@membership, method: :post) do |f| %>
     <div class="field">
       <%= f.hidden_field :user_id, :value => current_user.id %>
     </div>
@@ -32,7 +35,8 @@
     <div class="actions">
       <%= f.submit "join the club" %>
     </div>
+  <% end %>
 <% end %>
-
+<br/>
 <%= link_to 'Edit', edit_group_path(@group) %> |
 <%= link_to 'Back', groups_path %>

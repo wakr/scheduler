@@ -6,9 +6,8 @@ class MembershipsController < ApplicationController
 
   def create
     @membership = Membership.new(membership_params)
-    allready_exists = Membership.where(:user_id => @membership.user_id, :group_id => @membership.group_id).first
-    #byebug
-    if !allready_exists.nil?
+
+    if Membership.membership_exists?(@membership.user_id, @membership.group_id)
       return respond_to do |format|
         format.html { redirect_to :back, notice: "You are allready in this group!"}
         format.json { render json: @membership, status: :unprocessable_entity }
@@ -17,12 +16,21 @@ class MembershipsController < ApplicationController
 
     respond_to do |format|
       if @membership.save
-           format.html { redirect_to :back, notice: "Yes!" }
+           format.html { redirect_to :back, notice: "Welcome to group!" }
            format.json { render :show, status: :created, location: @membership }
       else
            format.html { render :new }
            format.json { render json: @membership.errors, status: :unprocessable_entity }
       end
+    end
+  end
+
+  def destroy
+    Membership.find(params[:id]).destroy
+
+    respond_to do |format|
+      format.html { redirect_to :back, notice: 'You are not in the group anymore.' }
+      format.json { head :no_content }
     end
   end
 
