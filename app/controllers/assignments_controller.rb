@@ -15,6 +15,7 @@ class AssignmentsController < ApplicationController
   # GET /assignments/new
   def new
     @assignment = Assignment.new
+    @assignment.user_assignments.build # required for nested structure?
     @users = User.all_except(current_user) # users can't assign themselves
   end
 
@@ -28,15 +29,14 @@ class AssignmentsController < ApplicationController
   def create
     @assignment = Assignment.new(assignment_params)
 
-    # user assignment could also be done here via params-hash
-
-    byebug
-
+    # THIS IS ONLY FOR CREATING ASSIGNMENT FOR THE VERY FIRST TIME
+    # if users wants to add more users to this, edit should be used and user_assignment_controller for it
 
 
     respond_to do |format|
       if @assignment.save
         @assignment.update_attribute(:is_done, false)
+        @assignment.user_assignments.first.update_attribute(:assignment_id, @assignment.id) 
         format.html { redirect_to assignments_path, notice: 'Assignment was successfully created.' }
         format.json { render :show, status: :created, location: @assignment }
       else
@@ -78,6 +78,7 @@ class AssignmentsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def assignment_params
-      params.require(:assignment).permit(:name, :user_id, :is_done, :deadline)
+      params.require(:assignment).permit(:name, :is_done, :deadline, user_assignments_attributes: [:user_id])
     end
+
 end
