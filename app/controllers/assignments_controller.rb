@@ -28,6 +28,7 @@ class AssignmentsController < ApplicationController
   # POST /assignments.json
   def create
     @assignment = Assignment.new(assignment_params)
+    @assignment.creator_id = current_user.id
 
     # THIS IS ONLY FOR CREATING ASSIGNMENT FOR THE VERY FIRST TIME
     # if users wants to add more users to this, edit should be used and user_assignment_controller for it

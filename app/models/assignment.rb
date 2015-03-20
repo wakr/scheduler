@@ -14,4 +14,8 @@ class Assignment < ActiveRecord::Base
     self.name
   end
 
+  def get_creator
+    User.all.find(self.creator_id)
+  end
+
 end

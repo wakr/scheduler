@@ -2,10 +2,14 @@ class User < ActiveRecord::Base
   #group
   has_many :memberships
   has_many :groups, :through => :memberships
+
   #assignments
   has_many :user_assignments
   has_many :assignments, :through => :user_assignments
   has_many :tasks, :through => :assignments
+
+
+
 
   #passwrd
   has_secure_password
@@ -22,6 +26,10 @@ class User < ActiveRecord::Base
 
   def to_s
     self.name
+  end
+
+  def get_created_assignments
+    Assignment.all.where(creator_id: self.id)
   end
 
   private
