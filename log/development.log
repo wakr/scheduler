@@ -37520,3 +37520,2566 @@ Started GET "/assets/application-6cf64470d396df0b53e1f9b8b2dce0fb.js?body=1" for
 =======
 >>>>>>> ebfb10a4d1db03b79d77bc689134d335ede8f56a
 >>>>>>> 10d67840546e6eb9ee7ba4845870b3518c0efd1b
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-20 13:26:42 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users"
+  Rendered users/index.html.erb within layouts/application (10.4ms)
+Completed 200 OK in 430ms (Views: 381.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/assignments-f09d8098f270ab8762c2eb4a8e59ea70.css?body=1" for 127.0.0.1 at 2015-03-20 13:26:43 +0200
+
+
+Started GET "/assets/tasks-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-20 13:26:43 +0200
+
+
+Started GET "/assets/scaffolds-9fe0527a18558a65ba847be2e2f9571e.css?body=1" for 127.0.0.1 at 2015-03-20 13:26:43 +0200
+
+
+Started GET "/assets/groups-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-20 13:26:43 +0200
+
+
+Started GET "/assets/fullcalendar-32ecbd03711357d4342240d33e768eba.css?body=1" for 127.0.0.1 at 2015-03-20 13:26:43 +0200
+
+
+Started GET "/assets/application-4ba3e11653928f5f71e1c1df20d46e32.css?body=1" for 127.0.0.1 at 2015-03-20 13:26:43 +0200
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-20 13:26:43 +0200
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-03-20 13:26:43 +0200
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-03-20 13:26:43 +0200
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2015-03-20 13:26:43 +0200
+
+
+Started GET "/assets/groups-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-20 13:26:43 +0200
+
+
+Started GET "/assets/assignments-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-20 13:26:43 +0200
+
+
+Started GET "/assets/tasks-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-20 13:26:43 +0200
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-20 13:26:43 +0200
+
+
+Started GET "/assets/moment-66988874bf5714cb1e4a6f53d733b6e1.js?body=1" for 127.0.0.1 at 2015-03-20 13:26:43 +0200
+
+
+Started GET "/assets/fullcalendar-c6d8932cb3cd5ce4daf967fec5ffb732.js?body=1" for 127.0.0.1 at 2015-03-20 13:26:43 +0200
+
+
+Started GET "/assets/application-6cf64470d396df0b53e1f9b8b2dce0fb.js?body=1" for 127.0.0.1 at 2015-03-20 13:26:43 +0200
+
+
+Started GET "/assignments" for 127.0.0.1 at 2015-03-20 13:26:50 +0200
+Processing by AssignmentsController#index as HTML
+  [1m[36mAssignment Load (0.2ms)[0m  [1mSELECT "assignments".* FROM "assignments"[0m
+  Rendered assignments/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 145ms (Views: 137.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assignments.json?start=2015-02-23&end=2015-04-06&_=1426850803806" for 127.0.0.1 at 2015-03-20 13:26:50 +0200
+Processing by AssignmentsController#index as JSON
+  Parameters: {"start"=>"2015-02-23", "end"=>"2015-04-06", "_"=>"1426850803806"}
+  [1m[35mAssignment Load (0.2ms)[0m  SELECT "assignments".* FROM "assignments"
+  Rendered assignments/index.json.jbuilder (5.5ms)
+Completed 200 OK in 11ms (Views: 9.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/tasks" for 127.0.0.1 at 2015-03-20 13:26:55 +0200
+Processing by TasksController#index as HTML
+  [1m[36mTask Load (0.2ms)[0m  [1mSELECT "tasks".* FROM "tasks"[0m
+  Rendered tasks/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 142ms (Views: 135.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/tasks" for 127.0.0.1 at 2015-03-20 13:27:12 +0200
+Processing by TasksController#index as HTML
+  [1m[35mTask Load (0.2ms)[0m  SELECT "tasks".* FROM "tasks"
+  Rendered tasks/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 131ms (Views: 130.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/groups" for 127.0.0.1 at 2015-03-20 13:27:13 +0200
+Processing by GroupsController#index as HTML
+  [1m[36mGroup Load (0.2ms)[0m  [1mSELECT "groups".* FROM "groups"[0m
+  Rendered groups/index.html.erb within layouts/application (8.6ms)
+Completed 200 OK in 146ms (Views: 140.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2015-03-20 13:27:14 +0200
+Processing by UsersController#new as HTML
+  Rendered users/_form.html.erb (34.8ms)
+  Rendered users/new.html.erb within layouts/application (40.9ms)
+Completed 200 OK in 175ms (Views: 174.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/groups" for 127.0.0.1 at 2015-03-20 13:27:15 +0200
+Processing by GroupsController#index as HTML
+  [1m[35mGroup Load (0.2ms)[0m  SELECT "groups".* FROM "groups"
+  Rendered groups/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 137ms (Views: 136.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/groups/1" for 127.0.0.1 at 2015-03-20 13:27:17 +0200
+Processing by GroupsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mGroup Load (0.3ms)[0m  [1mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" INNER JOIN "memberships" ON "users"."id" = "memberships"."user_id" WHERE "memberships"."group_id" = ?  [["group_id", 1]]
+  Rendered groups/show.html.erb within layouts/application (36.2ms)
+Completed 500 Internal Server Error in 63ms
+
+NoMethodError - undefined method `id' for nil:NilClass:
+  app/views/groups/show.html.erb:25:in `_app_views_groups_show_html_erb___3936442552282813108_70030621276840'
+  actionview (4.2.0) lib/action_view/template.rb:145:in `block in render'
+  activesupport (4.2.0) lib/active_support/notifications.rb:166:in `instrument'
+  actionview (4.2.0) lib/action_view/template.rb:333:in `instrument'
+  actionview (4.2.0) lib/action_view/template.rb:143:in `render'
+  actionview (4.2.0) lib/action_view/renderer/template_renderer.rb:54:in `block (2 levels) in render_template'
+  actionview (4.2.0) lib/action_view/renderer/abstract_renderer.rb:39:in `block in instrument'
+  activesupport (4.2.0) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.0) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.0) lib/active_support/notifications.rb:164:in `instrument'
+  actionview (4.2.0) lib/action_view/renderer/abstract_renderer.rb:39:in `instrument'
+  actionview (4.2.0) lib/action_view/renderer/template_renderer.rb:53:in `block in render_template'
+  actionview (4.2.0) lib/action_view/renderer/template_renderer.rb:61:in `render_with_layout'
+  actionview (4.2.0) lib/action_view/renderer/template_renderer.rb:52:in `render_template'
+  actionview (4.2.0) lib/action_view/renderer/template_renderer.rb:14:in `render'
+  actionview (4.2.0) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionview (4.2.0) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionview (4.2.0) lib/action_view/rendering.rb:100:in `_render_template'
+  actionpack (4.2.0) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.2.0) lib/action_view/rendering.rb:83:in `render_to_body'
+  actionpack (4.2.0) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.2.0) lib/action_controller/metal/renderers.rb:37:in `render_to_body'
+  actionpack (4.2.0) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.2.0) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.2.0) lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+  activesupport (4.2.0) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /home/kristianw/.rbenv/versions/2.2.0/lib/ruby/2.2.0/benchmark.rb:303:in `realtime'
+  activesupport (4.2.0) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.2.0) lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+  actionpack (4.2.0) lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+  activerecord (4.2.0) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.2.0) lib/action_controller/metal/instrumentation.rb:40:in `render'
+  actionpack (4.2.0) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.2.0) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.2.0) lib/abstract_controller/base.rb:198:in `process_action'
+  actionpack (4.2.0) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.2.0) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:151:in `block in halting_and_conditional'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:234:in `block in halting'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:234:in `block in halting'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:169:in `block in halting'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:169:in `block in halting'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:169:in `block in halting'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:92:in `_run_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:734:in `_run_process_action_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.0) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.0) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.0) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.2.0) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.0) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.0) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.0) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.0) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.0) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.0) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.0) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.0) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.2.0) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.0) lib/action_controller/metal.rb:236:in `block in action'
+  actionpack (4.2.0) lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+  actionpack (4.2.0) lib/action_dispatch/routing/route_set.rb:42:in `serve'
+  actionpack (4.2.0) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.0) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.0) lib/action_dispatch/routing/route_set.rb:802:in `call'
+  rack (1.6.0) lib/rack/etag.rb:24:in `call'
+  rack (1.6.0) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.0) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.0) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.0) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.0) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:647:in `call'
+  activerecord (4.2.0) lib/active_record/migration.rb:378:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:88:in `_run_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:734:in `_run_call_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.0) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.1.2) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /home/kristianw/.rbenv/versions/2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/kristianw/.rbenv/versions/2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/kristianw/.rbenv/versions/2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+
+Started GET "/groups/1" for 127.0.0.1 at 2015-03-20 13:27:17 +0200
+Processing by GroupsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mGroup Load (0.1ms)[0m  [1mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" INNER JOIN "memberships" ON "users"."id" = "memberships"."user_id" WHERE "memberships"."group_id" = ?  [["group_id", 1]]
+  Rendered groups/show.html.erb within layouts/application (8.1ms)
+Completed 500 Internal Server Error in 12ms
+
+NoMethodError - undefined method `id' for nil:NilClass:
+  app/views/groups/show.html.erb:25:in `_app_views_groups_show_html_erb___3936442552282813108_70030607502400'
+  actionview (4.2.0) lib/action_view/template.rb:145:in `block in render'
+  activesupport (4.2.0) lib/active_support/notifications.rb:166:in `instrument'
+  actionview (4.2.0) lib/action_view/template.rb:333:in `instrument'
+  actionview (4.2.0) lib/action_view/template.rb:143:in `render'
+  actionview (4.2.0) lib/action_view/renderer/template_renderer.rb:54:in `block (2 levels) in render_template'
+  actionview (4.2.0) lib/action_view/renderer/abstract_renderer.rb:39:in `block in instrument'
+  activesupport (4.2.0) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.0) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.0) lib/active_support/notifications.rb:164:in `instrument'
+  actionview (4.2.0) lib/action_view/renderer/abstract_renderer.rb:39:in `instrument'
+  actionview (4.2.0) lib/action_view/renderer/template_renderer.rb:53:in `block in render_template'
+  actionview (4.2.0) lib/action_view/renderer/template_renderer.rb:61:in `render_with_layout'
+  actionview (4.2.0) lib/action_view/renderer/template_renderer.rb:52:in `render_template'
+  actionview (4.2.0) lib/action_view/renderer/template_renderer.rb:14:in `render'
+  actionview (4.2.0) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionview (4.2.0) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionview (4.2.0) lib/action_view/rendering.rb:100:in `_render_template'
+  actionpack (4.2.0) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.2.0) lib/action_view/rendering.rb:83:in `render_to_body'
+  actionpack (4.2.0) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.2.0) lib/action_controller/metal/renderers.rb:37:in `render_to_body'
+  actionpack (4.2.0) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.2.0) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.2.0) lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+  activesupport (4.2.0) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /home/kristianw/.rbenv/versions/2.2.0/lib/ruby/2.2.0/benchmark.rb:303:in `realtime'
+  activesupport (4.2.0) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.2.0) lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+  actionpack (4.2.0) lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+  activerecord (4.2.0) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.2.0) lib/action_controller/metal/instrumentation.rb:40:in `render'
+  actionpack (4.2.0) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.2.0) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.2.0) lib/abstract_controller/base.rb:198:in `process_action'
+  actionpack (4.2.0) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.2.0) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:151:in `block in halting_and_conditional'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:234:in `block in halting'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:234:in `block in halting'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:169:in `block in halting'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:169:in `block in halting'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:169:in `block in halting'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:92:in `_run_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:734:in `_run_process_action_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.0) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.0) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.0) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.2.0) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.0) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.0) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.0) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.0) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.0) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.0) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.0) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.0) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.2.0) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.0) lib/action_controller/metal.rb:236:in `block in action'
+  actionpack (4.2.0) lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+  actionpack (4.2.0) lib/action_dispatch/routing/route_set.rb:42:in `serve'
+  actionpack (4.2.0) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.0) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.0) lib/action_dispatch/routing/route_set.rb:802:in `call'
+  rack (1.6.0) lib/rack/etag.rb:24:in `call'
+  rack (1.6.0) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.0) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.0) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.0) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.0) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:647:in `call'
+  activerecord (4.2.0) lib/active_record/migration.rb:378:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:88:in `_run_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:734:in `_run_call_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.0) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.1.2) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /home/kristianw/.rbenv/versions/2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /home/kristianw/.rbenv/versions/2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /home/kristianw/.rbenv/versions/2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+
+Started POST "/__better_errors/ba0c3a7a8727cb30/variables" for 127.0.0.1 at 2015-03-20 13:27:18 +0200
+
+
+Started GET "/groups" for 127.0.0.1 at 2015-03-20 13:27:23 +0200
+Processing by GroupsController#index as HTML
+  [1m[36mGroup Load (0.3ms)[0m  [1mSELECT "groups".* FROM "groups"[0m
+  Rendered groups/index.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 195ms (Views: 193.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/signin" for 127.0.0.1 at 2015-03-20 13:27:30 +0200
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 123ms (Views: 122.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/session" for 127.0.0.1 at 2015-03-20 13:27:34 +0200
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/jqCKvUd8Py7IlkWHAUzltbIPTT9CDZASfaHQHkNdLLjoFIoBI5dqwuvziu4GbziXi9L616WNXbSjsrJ2yJ9Sw==", "name"=>"Samu", "password"=>"[FILTERED]", "commit"=>"Log in"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."name" = ? LIMIT 1  [["name", "Samu"]]
+Redirected to http://localhost:3000/users/2
+Completed 302 Found in 185ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2015-03-20 13:27:34 +0200
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mGroup Load (0.3ms)[0m  SELECT "groups".* FROM "groups" INNER JOIN "memberships" ON "groups"."id" = "memberships"."group_id" WHERE "memberships"."user_id" = ?  [["user_id", 2]]
+  [1m[36mAssignment Load (0.2ms)[0m  [1mSELECT "assignments".* FROM "assignments" INNER JOIN "user_assignments" ON "assignments"."id" = "user_assignments"."assignment_id" WHERE "user_assignments"."user_id" = ?[0m  [["user_id", 2]]
+  Rendered users/show.html.erb within layouts/application (18.7ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+Completed 200 OK in 140ms (Views: 137.4ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assignments" for 127.0.0.1 at 2015-03-20 13:27:42 +0200
+Processing by AssignmentsController#index as HTML
+  [1m[35mAssignment Load (0.2ms)[0m  SELECT "assignments".* FROM "assignments"
+  Rendered assignments/index.html.erb within layouts/application (1.0ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+Completed 200 OK in 147ms (Views: 145.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assignments.json?start=2015-02-23&end=2015-04-06&_=1426850854651" for 127.0.0.1 at 2015-03-20 13:27:42 +0200
+Processing by AssignmentsController#index as JSON
+  Parameters: {"start"=>"2015-02-23", "end"=>"2015-04-06", "_"=>"1426850854651"}
+  [1m[36mAssignment Load (0.2ms)[0m  [1mSELECT "assignments".* FROM "assignments"[0m
+  Rendered assignments/index.json.jbuilder (1.0ms)
+Completed 200 OK in 5ms (Views: 3.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/groups" for 127.0.0.1 at 2015-03-20 13:27:44 +0200
+Processing by GroupsController#index as HTML
+  [1m[35mGroup Load (0.3ms)[0m  SELECT "groups".* FROM "groups"
+  Rendered groups/index.html.erb within layouts/application (3.4ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+Completed 200 OK in 137ms (Views: 135.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/groups/1" for 127.0.0.1 at 2015-03-20 13:27:46 +0200
+Processing by GroupsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mGroup Load (0.1ms)[0m  [1mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" INNER JOIN "memberships" ON "users"."id" = "memberships"."user_id" WHERE "memberships"."group_id" = ?  [["group_id", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mMembership Load (0.2ms)[0m  SELECT  "memberships".* FROM "memberships" WHERE "memberships"."user_id" = ? AND "memberships"."group_id" = ?  ORDER BY "memberships"."id" ASC LIMIT 1  [["user_id", 2], ["group_id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered groups/show.html.erb within layouts/application (6.9ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+Completed 200 OK in 114ms (Views: 111.7ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/memberships" for 127.0.0.1 at 2015-03-20 13:27:50 +0200
+Processing by MembershipsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"HN5VoBmMUKEDga9RcV1ng8XWd07f4qUgSTrcaD7onBEBRIWi6B/99rMMOGzVQej3TTEBkXx8phbSQpHhnMeV6A==", "membership"=>{"user_id"=>"2", "group_id"=>"1"}, "commit"=>"join the club"}
+  [1m[35mMembership Load (0.1ms)[0m  SELECT  "memberships".* FROM "memberships" WHERE "memberships"."user_id" = ? AND "memberships"."group_id" = ?  ORDER BY "memberships"."id" ASC LIMIT 1  [["user_id", 2], ["group_id", 1]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.2ms)[0m  INSERT INTO "memberships" ("user_id", "group_id") VALUES (?, ?)  [["user_id", 2], ["group_id", 1]]
+  [1m[36m (30.5ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/groups/1
+Completed 302 Found in 38ms (ActiveRecord: 31.9ms)
+
+
+Started GET "/groups/1" for 127.0.0.1 at 2015-03-20 13:27:50 +0200
+Processing by GroupsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mGroup Load (0.1ms)[0m  SELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" INNER JOIN "memberships" ON "users"."id" = "memberships"."user_id" WHERE "memberships"."group_id" = ?[0m  [["group_id", 1]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mMembership Load (0.1ms)[0m  [1mSELECT  "memberships".* FROM "memberships" WHERE "memberships"."user_id" = ? AND "memberships"."group_id" = ?  ORDER BY "memberships"."id" ASC LIMIT 1[0m  [["user_id", 2], ["group_id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mMembership Load (0.2ms)[0m  [1mSELECT  "memberships".* FROM "memberships" WHERE "memberships"."group_id" = ? AND "memberships"."user_id" = 2  ORDER BY "memberships"."id" ASC LIMIT 1[0m  [["group_id", 1]]
+  Rendered groups/show.html.erb within layouts/application (5.4ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+Completed 200 OK in 139ms (Views: 136.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2015-03-20 13:27:58 +0200
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users"
+  Rendered users/index.html.erb within layouts/application (2.7ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+Completed 200 OK in 144ms (Views: 142.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assignments" for 127.0.0.1 at 2015-03-20 13:27:59 +0200
+Processing by AssignmentsController#index as HTML
+  [1m[36mAssignment Load (0.2ms)[0m  [1mSELECT "assignments".* FROM "assignments"[0m
+  Rendered assignments/index.html.erb within layouts/application (1.1ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+Completed 200 OK in 112ms (Views: 110.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assignments.json?start=2015-02-23&end=2015-04-06&_=1426850870609" for 127.0.0.1 at 2015-03-20 13:27:59 +0200
+Processing by AssignmentsController#index as JSON
+  Parameters: {"start"=>"2015-02-23", "end"=>"2015-04-06", "_"=>"1426850870609"}
+  [1m[35mAssignment Load (0.2ms)[0m  SELECT "assignments".* FROM "assignments"
+  Rendered assignments/index.json.jbuilder (1.3ms)
+Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2015-03-20 13:28:04 +0200
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (1.7ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+Completed 200 OK in 127ms (Views: 125.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2015-03-20 13:28:08 +0200
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users"
+  Rendered users/index.html.erb within layouts/application (1.9ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+Completed 200 OK in 147ms (Views: 145.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2015-03-20 13:28:17 +0200
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mGroup Load (0.1ms)[0m  SELECT "groups".* FROM "groups" INNER JOIN "memberships" ON "groups"."id" = "memberships"."group_id" WHERE "memberships"."user_id" = ?  [["user_id", 1]]
+  [1m[36mAssignment Load (0.1ms)[0m  [1mSELECT "assignments".* FROM "assignments" INNER JOIN "user_assignments" ON "assignments"."id" = "user_assignments"."assignment_id" WHERE "user_assignments"."user_id" = ?[0m  [["user_id", 1]]
+  Rendered users/show.html.erb within layouts/application (4.2ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+Completed 200 OK in 121ms (Views: 119.1ms | ActiveRecord: 0.6ms)
+
+
+Started DELETE "/signout" for 127.0.0.1 at 2015-03-20 13:28:22 +0200
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"XMuaNgpHzW57H7xsb11oSWQsKBPE78curW25Xt+kvHJBUUo0+9RgOcuSK1HLQec97MtezGdxxBg2FfTXfYu1iw=="}
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-20 13:28:22 +0200
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users"
+  Rendered users/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 127ms (Views: 125.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2015-03-20 13:28:24 +0200
+Processing by UsersController#new as HTML
+  Rendered users/_form.html.erb (7.1ms)
+  Rendered users/new.html.erb within layouts/application (8.3ms)
+Completed 200 OK in 157ms (Views: 156.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assignments" for 127.0.0.1 at 2015-03-20 13:28:51 +0200
+Processing by AssignmentsController#index as HTML
+  [1m[36mAssignment Load (0.2ms)[0m  [1mSELECT "assignments".* FROM "assignments"[0m
+  Rendered assignments/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 138ms (Views: 136.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assignments.json?start=2015-02-23&end=2015-04-06&_=1426850932056" for 127.0.0.1 at 2015-03-20 13:28:52 +0200
+Processing by AssignmentsController#index as JSON
+  Parameters: {"start"=>"2015-02-23", "end"=>"2015-04-06", "_"=>"1426850932056"}
+  [1m[35mAssignment Load (0.2ms)[0m  SELECT "assignments".* FROM "assignments"
+  Rendered assignments/index.json.jbuilder (2.8ms)
+Completed 200 OK in 6ms (Views: 4.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assignments/new" for 127.0.0.1 at 2015-03-20 13:28:54 +0200
+Processing by AssignmentsController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE ("users"."id" IS NOT NULL)[0m
+  Rendered assignments/_form.html.erb (12.4ms)
+  Rendered assignments/new.html.erb within layouts/application (14.9ms)
+Completed 200 OK in 143ms (Views: 131.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/signin" for 127.0.0.1 at 2015-03-20 13:29:24 +0200
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 144ms (Views: 142.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/session" for 127.0.0.1 at 2015-03-20 13:29:27 +0200
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"lFsBwHX+sljL8sKqV563RLRbidBLcMkJTuahcOBKaO6JwdHChG0fD3t/VZfzgjgwPLz/D+juyj/Vnuz5QmVhFw==", "name"=>"Samu", "password"=>"[FILTERED]", "commit"=>"Log in"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."name" = ? LIMIT 1  [["name", "Samu"]]
+Redirected to http://localhost:3000/users/2
+Completed 302 Found in 150ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2015-03-20 13:29:27 +0200
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mGroup Load (0.1ms)[0m  SELECT "groups".* FROM "groups" INNER JOIN "memberships" ON "groups"."id" = "memberships"."group_id" WHERE "memberships"."user_id" = ?  [["user_id", 2]]
+  [1m[36mAssignment Load (0.1ms)[0m  [1mSELECT "assignments".* FROM "assignments" INNER JOIN "user_assignments" ON "assignments"."id" = "user_assignments"."assignment_id" WHERE "user_assignments"."user_id" = ?[0m  [["user_id", 2]]
+  Rendered users/show.html.erb within layouts/application (4.1ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+Completed 200 OK in 139ms (Views: 136.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2015-03-20 13:29:34 +0200
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users"
+  Rendered users/index.html.erb within layouts/application (1.6ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+Completed 200 OK in 108ms (Views: 106.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assignments" for 127.0.0.1 at 2015-03-20 13:29:35 +0200
+Processing by AssignmentsController#index as HTML
+  [1m[36mAssignment Load (0.2ms)[0m  [1mSELECT "assignments".* FROM "assignments"[0m
+  Rendered assignments/index.html.erb within layouts/application (1.0ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+Completed 200 OK in 159ms (Views: 157.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assignments.json?start=2015-02-23&end=2015-04-06&_=1426850967997" for 127.0.0.1 at 2015-03-20 13:29:35 +0200
+Processing by AssignmentsController#index as JSON
+  Parameters: {"start"=>"2015-02-23", "end"=>"2015-04-06", "_"=>"1426850967997"}
+  [1m[35mAssignment Load (0.3ms)[0m  SELECT "assignments".* FROM "assignments"
+  Rendered assignments/index.json.jbuilder (1.0ms)
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/groups" for 127.0.0.1 at 2015-03-20 13:29:36 +0200
+Processing by GroupsController#index as HTML
+  [1m[36mGroup Load (0.2ms)[0m  [1mSELECT "groups".* FROM "groups"[0m
+  Rendered groups/index.html.erb within layouts/application (3.0ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+Completed 200 OK in 134ms (Views: 132.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/groups/1" for 127.0.0.1 at 2015-03-20 13:29:38 +0200
+Processing by GroupsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mGroup Load (0.1ms)[0m  SELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" INNER JOIN "memberships" ON "users"."id" = "memberships"."user_id" WHERE "memberships"."group_id" = ?[0m  [["group_id", 1]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mMembership Load (0.1ms)[0m  [1mSELECT  "memberships".* FROM "memberships" WHERE "memberships"."user_id" = ? AND "memberships"."group_id" = ?  ORDER BY "memberships"."id" ASC LIMIT 1[0m  [["user_id", 2], ["group_id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mMembership Load (0.1ms)[0m  [1mSELECT  "memberships".* FROM "memberships" WHERE "memberships"."group_id" = ? AND "memberships"."user_id" = 2  ORDER BY "memberships"."id" ASC LIMIT 1[0m  [["group_id", 1]]
+  Rendered groups/show.html.erb within layouts/application (5.2ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+Completed 200 OK in 111ms (Views: 108.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/groups/1" for 127.0.0.1 at 2015-03-20 13:29:43 +0200
+Processing by GroupsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mGroup Load (0.1ms)[0m  SELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" INNER JOIN "memberships" ON "users"."id" = "memberships"."user_id" WHERE "memberships"."group_id" = ?[0m  [["group_id", 1]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mMembership Load (0.1ms)[0m  [1mSELECT  "memberships".* FROM "memberships" WHERE "memberships"."user_id" = ? AND "memberships"."group_id" = ?  ORDER BY "memberships"."id" ASC LIMIT 1[0m  [["user_id", 2], ["group_id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mMembership Load (0.1ms)[0m  [1mSELECT  "memberships".* FROM "memberships" WHERE "memberships"."group_id" = ? AND "memberships"."user_id" = 2  ORDER BY "memberships"."id" ASC LIMIT 1[0m  [["group_id", 1]]
+  Rendered groups/show.html.erb within layouts/application (4.8ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+Completed 200 OK in 156ms (Views: 154.2ms | ActiveRecord: 0.7ms)
+
+
+Started DELETE "/memberships/15" for 127.0.0.1 at 2015-03-20 13:29:46 +0200
+Processing by MembershipsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"+caWUzHV+LtZb080pl2R2ee+j1noS6PdEYa1dH4Pu3/kXEZRwEZV7Oni2AkCQR6tb1n5hkvVoOuK/vj93CCyhg==", "id"=>"15"}
+  [1m[35mMembership Load (0.3ms)[0m  SELECT  "memberships".* FROM "memberships" WHERE "memberships"."id" = ? LIMIT 1  [["id", 15]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  DELETE FROM "memberships" WHERE "memberships"."id" = ?  [["id", 15]]
+  [1m[36m (114.3ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/groups/1
+Completed 302 Found in 118ms (ActiveRecord: 114.9ms)
+
+
+Started GET "/groups/1" for 127.0.0.1 at 2015-03-20 13:29:46 +0200
+Processing by GroupsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mGroup Load (0.1ms)[0m  SELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" INNER JOIN "memberships" ON "users"."id" = "memberships"."user_id" WHERE "memberships"."group_id" = ?[0m  [["group_id", 1]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mMembership Load (0.1ms)[0m  [1mSELECT  "memberships".* FROM "memberships" WHERE "memberships"."user_id" = ? AND "memberships"."group_id" = ?  ORDER BY "memberships"."id" ASC LIMIT 1[0m  [["user_id", 2], ["group_id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered groups/show.html.erb within layouts/application (5.2ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+Completed 200 OK in 152ms (Views: 149.3ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/memberships" for 127.0.0.1 at 2015-03-20 13:29:48 +0200
+Processing by MembershipsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"i7LEzqK2Bp5c772bqbBlsVp9aUMBmQ3i1qeBZf1nFfWWKBTMUyWryexiKqYNrOrF0pofnKIHDtRN38zsX0gcDA==", "membership"=>{"user_id"=>"2", "group_id"=>"1"}, "commit"=>"join the club"}
+  [1m[36mMembership Load (0.3ms)[0m  [1mSELECT  "memberships".* FROM "memberships" WHERE "memberships"."user_id" = ? AND "memberships"."group_id" = ?  ORDER BY "memberships"."id" ASC LIMIT 1[0m  [["user_id", 2], ["group_id", 1]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "memberships" ("user_id", "group_id") VALUES (?, ?)[0m  [["user_id", 2], ["group_id", 1]]
+  [1m[35m (26.0ms)[0m  commit transaction
+Redirected to http://localhost:3000/groups/1
+Completed 302 Found in 33ms (ActiveRecord: 26.6ms)
+
+
+Started GET "/groups/1" for 127.0.0.1 at 2015-03-20 13:29:48 +0200
+Processing by GroupsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mGroup Load (0.1ms)[0m  [1mSELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" INNER JOIN "memberships" ON "users"."id" = "memberships"."user_id" WHERE "memberships"."group_id" = ?  [["group_id", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mMembership Load (0.1ms)[0m  SELECT  "memberships".* FROM "memberships" WHERE "memberships"."user_id" = ? AND "memberships"."group_id" = ?  ORDER BY "memberships"."id" ASC LIMIT 1  [["user_id", 2], ["group_id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mMembership Load (0.1ms)[0m  SELECT  "memberships".* FROM "memberships" WHERE "memberships"."group_id" = ? AND "memberships"."user_id" = 2  ORDER BY "memberships"."id" ASC LIMIT 1  [["group_id", 1]]
+  Rendered groups/show.html.erb within layouts/application (4.9ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+Completed 200 OK in 115ms (Views: 112.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assignments" for 127.0.0.1 at 2015-03-20 13:29:55 +0200
+Processing by AssignmentsController#index as HTML
+  [1m[36mAssignment Load (0.2ms)[0m  [1mSELECT "assignments".* FROM "assignments"[0m
+  Rendered assignments/index.html.erb within layouts/application (1.6ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+Completed 200 OK in 152ms (Views: 150.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assignments.json?start=2015-02-23&end=2015-04-06&_=1426850988412" for 127.0.0.1 at 2015-03-20 13:29:56 +0200
+Processing by AssignmentsController#index as JSON
+  Parameters: {"start"=>"2015-02-23", "end"=>"2015-04-06", "_"=>"1426850988412"}
+  [1m[35mAssignment Load (0.2ms)[0m  SELECT "assignments".* FROM "assignments"
+  Rendered assignments/index.json.jbuilder (1.0ms)
+Completed 200 OK in 5ms (Views: 3.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2015-03-20 13:29:57 +0200
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (1.7ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+Completed 200 OK in 139ms (Views: 137.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assignments" for 127.0.0.1 at 2015-03-20 13:30:05 +0200
+Processing by AssignmentsController#index as HTML
+  [1m[35mAssignment Load (0.2ms)[0m  SELECT "assignments".* FROM "assignments"
+  Rendered assignments/index.html.erb within layouts/application (1.0ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+Completed 200 OK in 107ms (Views: 106.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assignments.json?start=2015-02-23&end=2015-04-06&_=1426850988413" for 127.0.0.1 at 2015-03-20 13:30:06 +0200
+Processing by AssignmentsController#index as JSON
+  Parameters: {"start"=>"2015-02-23", "end"=>"2015-04-06", "_"=>"1426850988413"}
+  [1m[36mAssignment Load (0.2ms)[0m  [1mSELECT "assignments".* FROM "assignments"[0m
+  Rendered assignments/index.json.jbuilder (1.2ms)
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assignments/new" for 127.0.0.1 at 2015-03-20 13:30:13 +0200
+Processing by AssignmentsController#new as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE ("users"."id" != 2)[0m
+  Rendered assignments/_form.html.erb (6.7ms)
+  Rendered assignments/new.html.erb within layouts/application (7.8ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+Completed 200 OK in 158ms (Views: 154.6ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/assignments" for 127.0.0.1 at 2015-03-20 13:30:31 +0200
+Processing by AssignmentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"V4L94cJ5Pin4rrp6Je9MqdeArUpbcNZkoWznk/kkU3RKGC3jM+qTfkgjLUeB88PdX2fblfju1VI6FKoaWwtajQ==", "assignment"=>{"name"=>"Tee sitä rorii", "user_assignments_attributes"=>{"0"=>{"user_id"=>"1"}}, "deadline(1i)"=>"2015", "deadline(2i)"=>"3", "deadline(3i)"=>"20", "deadline(4i)"=>"15", "deadline(5i)"=>"00"}, "commit"=>"Create Assignment"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "assignments" ("name", "deadline", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Tee sitä rorii"], ["deadline", "2015-03-20 15:00:00.000000"], ["created_at", "2015-03-20 11:30:31.620519"], ["updated_at", "2015-03-20 11:30:31.620519"]]
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "user_assignments" ("user_id", "assignment_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["user_id", 1], ["assignment_id", 10], ["created_at", "2015-03-20 11:30:31.623086"], ["updated_at", "2015-03-20 11:30:31.623086"]]
+  [1m[36m (26.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "assignments" SET "is_done" = ?, "updated_at" = ? WHERE "assignments"."id" = ?[0m  [["is_done", "f"], ["updated_at", "2015-03-20 11:30:31.655113"], ["id", 10]]
+  [1m[35m (29.8ms)[0m  commit transaction
+  [1m[36mUserAssignment Load (0.3ms)[0m  [1mSELECT  "user_assignments".* FROM "user_assignments" WHERE "user_assignments"."assignment_id" = ?  ORDER BY "user_assignments"."id" ASC LIMIT 1[0m  [["assignment_id", 10]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/assignments
+Completed 302 Found in 76ms (ActiveRecord: 58.4ms)
+
+
+Started GET "/assignments" for 127.0.0.1 at 2015-03-20 13:30:31 +0200
+Processing by AssignmentsController#index as HTML
+  [1m[35mAssignment Load (0.3ms)[0m  SELECT "assignments".* FROM "assignments"
+  Rendered assignments/index.html.erb within layouts/application (2.0ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+Completed 200 OK in 143ms (Views: 141.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assignments.json?start=2015-02-23&end=2015-04-06&_=1426851031986" for 127.0.0.1 at 2015-03-20 13:30:32 +0200
+Processing by AssignmentsController#index as JSON
+  Parameters: {"start"=>"2015-02-23", "end"=>"2015-04-06", "_"=>"1426851031986"}
+  [1m[36mAssignment Load (0.3ms)[0m  [1mSELECT "assignments".* FROM "assignments"[0m
+  Rendered assignments/index.json.jbuilder (2.1ms)
+Completed 200 OK in 6ms (Views: 5.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assignments" for 127.0.0.1 at 2015-03-20 13:32:44 +0200
+Processing by AssignmentsController#index as HTML
+  [1m[35mAssignment Load (0.3ms)[0m  SELECT "assignments".* FROM "assignments"
+  Rendered assignments/index.html.erb within layouts/application (11.3ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+Completed 200 OK in 121ms (Views: 119.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/assignments-f09d8098f270ab8762c2eb4a8e59ea70.css?body=1" for 127.0.0.1 at 2015-03-20 13:32:44 +0200
+
+
+Started GET "/assets/application-4ba3e11653928f5f71e1c1df20d46e32.css?body=1" for 127.0.0.1 at 2015-03-20 13:32:45 +0200
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-20 13:32:45 +0200
+
+
+Started GET "/assets/tasks-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-20 13:32:45 +0200
+
+
+Started GET "/assets/scaffolds-9fe0527a18558a65ba847be2e2f9571e.css?body=1" for 127.0.0.1 at 2015-03-20 13:32:45 +0200
+
+
+Started GET "/assets/fullcalendar-32ecbd03711357d4342240d33e768eba.css?body=1" for 127.0.0.1 at 2015-03-20 13:32:45 +0200
+
+
+Started GET "/assets/groups-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-20 13:32:45 +0200
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-03-20 13:32:45 +0200
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2015-03-20 13:32:45 +0200
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-03-20 13:32:45 +0200
+
+
+Started GET "/assets/assignments-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-20 13:32:45 +0200
+
+
+Started GET "/assets/groups-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-20 13:32:45 +0200
+
+
+Started GET "/assets/moment-66988874bf5714cb1e4a6f53d733b6e1.js?body=1" for 127.0.0.1 at 2015-03-20 13:32:45 +0200
+
+
+Started GET "/assets/tasks-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-20 13:32:45 +0200
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-20 13:32:45 +0200
+
+
+Started GET "/assets/fullcalendar-c6d8932cb3cd5ce4daf967fec5ffb732.js?body=1" for 127.0.0.1 at 2015-03-20 13:32:45 +0200
+
+
+Started GET "/assets/application-6cf64470d396df0b53e1f9b8b2dce0fb.js?body=1" for 127.0.0.1 at 2015-03-20 13:32:45 +0200
+
+
+Started GET "/assignments.json?start=2015-02-23&end=2015-04-06&_=1426851165132" for 127.0.0.1 at 2015-03-20 13:32:45 +0200
+Processing by AssignmentsController#index as JSON
+  Parameters: {"start"=>"2015-02-23", "end"=>"2015-04-06", "_"=>"1426851165132"}
+  [1m[36mAssignment Load (0.2ms)[0m  [1mSELECT "assignments".* FROM "assignments"[0m
+  Rendered assignments/index.json.jbuilder (1.8ms)
+Completed 200 OK in 5ms (Views: 4.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assignments" for 127.0.0.1 at 2015-03-20 13:33:02 +0200
+Processing by AssignmentsController#index as HTML
+  [1m[35mAssignment Load (0.2ms)[0m  SELECT "assignments".* FROM "assignments"
+  Rendered assignments/index.html.erb within layouts/application (3.5ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+Completed 200 OK in 152ms (Views: 150.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assignments.json?start=2015-02-23&end=2015-04-06&_=1426851165133" for 127.0.0.1 at 2015-03-20 13:33:02 +0200
+Processing by AssignmentsController#index as JSON
+  Parameters: {"start"=>"2015-02-23", "end"=>"2015-04-06", "_"=>"1426851165133"}
+  [1m[36mAssignment Load (4.4ms)[0m  [1mSELECT "assignments".* FROM "assignments"[0m
+  Rendered assignments/index.json.jbuilder (6.0ms)
+Completed 200 OK in 13ms (Views: 6.7ms | ActiveRecord: 4.4ms)
+
+
+Started GET "/assignments" for 127.0.0.1 at 2015-03-20 13:34:08 +0200
+Processing by AssignmentsController#index as HTML
+  [1m[35mAssignment Load (0.5ms)[0m  SELECT "assignments".* FROM "assignments"
+  Rendered assignments/index.html.erb within layouts/application (25.4ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+Completed 200 OK in 151ms (Views: 142.7ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assignments.json?start=2015-02-23&end=2015-04-06&_=1426851165134" for 127.0.0.1 at 2015-03-20 13:34:08 +0200
+Processing by AssignmentsController#index as JSON
+  Parameters: {"start"=>"2015-02-23", "end"=>"2015-04-06", "_"=>"1426851165134"}
+  [1m[36mAssignment Load (0.2ms)[0m  [1mSELECT "assignments".* FROM "assignments"[0m
+  Rendered assignments/index.json.jbuilder (1.6ms)
+Completed 200 OK in 5ms (Views: 4.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assignments" for 127.0.0.1 at 2015-03-20 13:35:06 +0200
+Processing by AssignmentsController#index as HTML
+  [1m[35mAssignment Load (0.2ms)[0m  SELECT "assignments".* FROM "assignments"
+  Rendered assignments/index.html.erb within layouts/application (2.5ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+Completed 200 OK in 136ms (Views: 134.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/assignments-f09d8098f270ab8762c2eb4a8e59ea70.css?body=1" for 127.0.0.1 at 2015-03-20 13:35:06 +0200
+
+
+Started GET "/assets/groups-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-20 13:35:06 +0200
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-20 13:35:06 +0200
+
+
+Started GET "/assets/tasks-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-20 13:35:06 +0200
+
+
+Started GET "/assets/scaffolds-9fe0527a18558a65ba847be2e2f9571e.css?body=1" for 127.0.0.1 at 2015-03-20 13:35:06 +0200
+
+
+Started GET "/assets/application-4ba3e11653928f5f71e1c1df20d46e32.css?body=1" for 127.0.0.1 at 2015-03-20 13:35:06 +0200
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-03-20 13:35:06 +0200
+
+
+Started GET "/assets/fullcalendar-32ecbd03711357d4342240d33e768eba.css?body=1" for 127.0.0.1 at 2015-03-20 13:35:06 +0200
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-03-20 13:35:06 +0200
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2015-03-20 13:35:06 +0200
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-20 13:35:06 +0200
+
+
+Started GET "/assets/tasks-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-20 13:35:06 +0200
+
+
+Started GET "/assets/groups-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-20 13:35:06 +0200
+
+
+Started GET "/assets/assignments-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-20 13:35:06 +0200
+
+
+Started GET "/assets/moment-66988874bf5714cb1e4a6f53d733b6e1.js?body=1" for 127.0.0.1 at 2015-03-20 13:35:06 +0200
+
+
+Started GET "/assets/fullcalendar-c6d8932cb3cd5ce4daf967fec5ffb732.js?body=1" for 127.0.0.1 at 2015-03-20 13:35:06 +0200
+
+
+Started GET "/assets/application-6cf64470d396df0b53e1f9b8b2dce0fb.js?body=1" for 127.0.0.1 at 2015-03-20 13:35:06 +0200
+
+
+Started GET "/assignments.json?start=2015-02-23&end=2015-04-06&_=1426851306908" for 127.0.0.1 at 2015-03-20 13:35:07 +0200
+Processing by AssignmentsController#index as JSON
+  Parameters: {"start"=>"2015-02-23", "end"=>"2015-04-06", "_"=>"1426851306908"}
+  [1m[36mAssignment Load (0.2ms)[0m  [1mSELECT "assignments".* FROM "assignments"[0m
+  Rendered assignments/index.json.jbuilder (1.9ms)
+Completed 200 OK in 5ms (Views: 3.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assignments" for 127.0.0.1 at 2015-03-20 13:35:19 +0200
+Processing by AssignmentsController#index as HTML
+  [1m[35mAssignment Load (0.2ms)[0m  SELECT "assignments".* FROM "assignments"
+  Rendered assignments/index.html.erb within layouts/application (2.5ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+Completed 200 OK in 129ms (Views: 127.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/assignments-f09d8098f270ab8762c2eb4a8e59ea70.css?body=1" for 127.0.0.1 at 2015-03-20 13:35:19 +0200
+
+
+Started GET "/assets/tasks-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-20 13:35:19 +0200
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-20 13:35:19 +0200
+
+
+Started GET "/assets/scaffolds-9fe0527a18558a65ba847be2e2f9571e.css?body=1" for 127.0.0.1 at 2015-03-20 13:35:19 +0200
+
+
+Started GET "/assets/groups-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-20 13:35:19 +0200
+
+
+Started GET "/assets/application-4ba3e11653928f5f71e1c1df20d46e32.css?body=1" for 127.0.0.1 at 2015-03-20 13:35:19 +0200
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-03-20 13:35:19 +0200
+
+
+Started GET "/assets/fullcalendar-32ecbd03711357d4342240d33e768eba.css?body=1" for 127.0.0.1 at 2015-03-20 13:35:19 +0200
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-03-20 13:35:19 +0200
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2015-03-20 13:35:19 +0200
+
+
+Started GET "/assets/assignments-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-20 13:35:19 +0200
+
+
+Started GET "/assets/tasks-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-20 13:35:19 +0200
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-20 13:35:19 +0200
+
+
+Started GET "/assets/groups-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-20 13:35:19 +0200
+
+
+Started GET "/assets/moment-66988874bf5714cb1e4a6f53d733b6e1.js?body=1" for 127.0.0.1 at 2015-03-20 13:35:19 +0200
+
+
+Started GET "/assets/application-6cf64470d396df0b53e1f9b8b2dce0fb.js?body=1" for 127.0.0.1 at 2015-03-20 13:35:19 +0200
+
+
+Started GET "/assets/fullcalendar-c6d8932cb3cd5ce4daf967fec5ffb732.js?body=1" for 127.0.0.1 at 2015-03-20 13:35:19 +0200
+
+
+Started GET "/assignments.json?start=2015-02-23&end=2015-04-06&_=1426851319655" for 127.0.0.1 at 2015-03-20 13:35:19 +0200
+Processing by AssignmentsController#index as JSON
+  Parameters: {"start"=>"2015-02-23", "end"=>"2015-04-06", "_"=>"1426851319655"}
+  [1m[36mAssignment Load (0.2ms)[0m  [1mSELECT "assignments".* FROM "assignments"[0m
+  Rendered assignments/index.json.jbuilder (1.8ms)
+Completed 200 OK in 5ms (Views: 3.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assignments" for 127.0.0.1 at 2015-03-20 13:36:16 +0200
+Processing by AssignmentsController#index as HTML
+  [1m[35mAssignment Load (0.2ms)[0m  SELECT "assignments".* FROM "assignments"
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" INNER JOIN "user_assignments" ON "users"."id" = "user_assignments"."user_id" WHERE "user_assignments"."assignment_id" = ?[0m  [["assignment_id", 10]]
+  Rendered assignments/index.html.erb within layouts/application (7.5ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+Completed 200 OK in 127ms (Views: 126.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/assignments-f09d8098f270ab8762c2eb4a8e59ea70.css?body=1" for 127.0.0.1 at 2015-03-20 13:36:16 +0200
+
+
+Started GET "/assets/groups-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-20 13:36:16 +0200
+
+
+Started GET "/assets/scaffolds-9fe0527a18558a65ba847be2e2f9571e.css?body=1" for 127.0.0.1 at 2015-03-20 13:36:16 +0200
+
+
+Started GET "/assets/tasks-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-20 13:36:16 +0200
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-20 13:36:16 +0200
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2015-03-20 13:36:16 +0200
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-03-20 13:36:16 +0200
+
+
+Started GET "/assets/application-4ba3e11653928f5f71e1c1df20d46e32.css?body=1" for 127.0.0.1 at 2015-03-20 13:36:16 +0200
+
+
+Started GET "/assets/assignments-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-20 13:36:16 +0200
+
+
+Started GET "/assets/fullcalendar-32ecbd03711357d4342240d33e768eba.css?body=1" for 127.0.0.1 at 2015-03-20 13:36:16 +0200
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-03-20 13:36:16 +0200
+
+
+Started GET "/assets/tasks-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-20 13:36:16 +0200
+
+
+Started GET "/assets/groups-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-20 13:36:16 +0200
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-20 13:36:16 +0200
+
+
+Started GET "/assets/moment-66988874bf5714cb1e4a6f53d733b6e1.js?body=1" for 127.0.0.1 at 2015-03-20 13:36:16 +0200
+
+
+Started GET "/assets/fullcalendar-c6d8932cb3cd5ce4daf967fec5ffb732.js?body=1" for 127.0.0.1 at 2015-03-20 13:36:16 +0200
+
+
+Started GET "/assets/application-6cf64470d396df0b53e1f9b8b2dce0fb.js?body=1" for 127.0.0.1 at 2015-03-20 13:36:16 +0200
+
+
+Started GET "/assignments.json?start=2015-02-23&end=2015-04-06&_=1426851376630" for 127.0.0.1 at 2015-03-20 13:36:16 +0200
+Processing by AssignmentsController#index as JSON
+  Parameters: {"start"=>"2015-02-23", "end"=>"2015-04-06", "_"=>"1426851376630"}
+  [1m[35mAssignment Load (0.2ms)[0m  SELECT "assignments".* FROM "assignments"
+  Rendered assignments/index.json.jbuilder (1.6ms)
+Completed 200 OK in 5ms (Views: 4.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assignments" for 127.0.0.1 at 2015-03-20 13:36:34 +0200
+Processing by AssignmentsController#index as HTML
+  [1m[36mAssignment Load (0.3ms)[0m  [1mSELECT "assignments".* FROM "assignments"[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" INNER JOIN "user_assignments" ON "users"."id" = "user_assignments"."user_id" WHERE "user_assignments"."assignment_id" = ?  [["assignment_id", 10]]
+  Rendered assignments/index.html.erb within layouts/application (5.2ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+Completed 200 OK in 139ms (Views: 137.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/assignments-f09d8098f270ab8762c2eb4a8e59ea70.css?body=1" for 127.0.0.1 at 2015-03-20 13:36:35 +0200
+
+
+Started GET "/assets/groups-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-20 13:36:35 +0200
+
+
+Started GET "/assets/scaffolds-9fe0527a18558a65ba847be2e2f9571e.css?body=1" for 127.0.0.1 at 2015-03-20 13:36:35 +0200
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-20 13:36:35 +0200
+
+
+Started GET "/assets/tasks-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-20 13:36:35 +0200
+
+
+Started GET "/assets/application-4ba3e11653928f5f71e1c1df20d46e32.css?body=1" for 127.0.0.1 at 2015-03-20 13:36:35 +0200
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-03-20 13:36:35 +0200
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2015-03-20 13:36:35 +0200
+
+
+Started GET "/assets/fullcalendar-32ecbd03711357d4342240d33e768eba.css?body=1" for 127.0.0.1 at 2015-03-20 13:36:35 +0200
+
+
+Started GET "/assets/assignments-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-20 13:36:35 +0200
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-03-20 13:36:35 +0200
+
+
+Started GET "/assets/tasks-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-20 13:36:35 +0200
+
+
+Started GET "/assets/moment-66988874bf5714cb1e4a6f53d733b6e1.js?body=1" for 127.0.0.1 at 2015-03-20 13:36:35 +0200
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-20 13:36:35 +0200
+
+
+Started GET "/assets/fullcalendar-c6d8932cb3cd5ce4daf967fec5ffb732.js?body=1" for 127.0.0.1 at 2015-03-20 13:36:35 +0200
+
+
+Started GET "/assets/application-6cf64470d396df0b53e1f9b8b2dce0fb.js?body=1" for 127.0.0.1 at 2015-03-20 13:36:35 +0200
+
+
+Started GET "/assets/groups-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-20 13:36:35 +0200
+
+
+Started GET "/assignments.json?start=2015-02-23&end=2015-04-06&_=1426851395187" for 127.0.0.1 at 2015-03-20 13:36:35 +0200
+Processing by AssignmentsController#index as JSON
+  Parameters: {"start"=>"2015-02-23", "end"=>"2015-04-06", "_"=>"1426851395187"}
+  [1m[36mAssignment Load (0.2ms)[0m  [1mSELECT "assignments".* FROM "assignments"[0m
+  Rendered assignments/index.json.jbuilder (1.3ms)
+Completed 200 OK in 5ms (Views: 3.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assignments" for 127.0.0.1 at 2015-03-20 13:36:42 +0200
+Processing by AssignmentsController#index as HTML
+  [1m[35mAssignment Load (0.2ms)[0m  SELECT "assignments".* FROM "assignments"
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" INNER JOIN "user_assignments" ON "users"."id" = "user_assignments"."user_id" WHERE "user_assignments"."assignment_id" = ?[0m  [["assignment_id", 10]]
+  Rendered assignments/index.html.erb within layouts/application (6.0ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+Completed 200 OK in 114ms (Views: 112.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/assignments-f09d8098f270ab8762c2eb4a8e59ea70.css?body=1" for 127.0.0.1 at 2015-03-20 13:36:42 +0200
+
+
+Started GET "/assets/groups-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-20 13:36:42 +0200
+
+
+Started GET "/assets/scaffolds-9fe0527a18558a65ba847be2e2f9571e.css?body=1" for 127.0.0.1 at 2015-03-20 13:36:42 +0200
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-20 13:36:42 +0200
+
+
+Started GET "/assets/application-4ba3e11653928f5f71e1c1df20d46e32.css?body=1" for 127.0.0.1 at 2015-03-20 13:36:42 +0200
+
+
+Started GET "/assets/tasks-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-20 13:36:42 +0200
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-03-20 13:36:42 +0200
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2015-03-20 13:36:42 +0200
+
+
+Started GET "/assets/groups-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-20 13:36:42 +0200
+
+
+Started GET "/assets/tasks-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-20 13:36:42 +0200
+
+
+Started GET "/assets/assignments-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-20 13:36:42 +0200
+
+
+Started GET "/assets/fullcalendar-32ecbd03711357d4342240d33e768eba.css?body=1" for 127.0.0.1 at 2015-03-20 13:36:42 +0200
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-03-20 13:36:42 +0200
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-20 13:36:42 +0200
+
+
+Started GET "/assets/moment-66988874bf5714cb1e4a6f53d733b6e1.js?body=1" for 127.0.0.1 at 2015-03-20 13:36:42 +0200
+
+
+Started GET "/assets/application-6cf64470d396df0b53e1f9b8b2dce0fb.js?body=1" for 127.0.0.1 at 2015-03-20 13:36:42 +0200
+
+
+Started GET "/assets/fullcalendar-c6d8932cb3cd5ce4daf967fec5ffb732.js?body=1" for 127.0.0.1 at 2015-03-20 13:36:42 +0200
+
+
+Started GET "/assignments.json?start=2015-02-23&end=2015-04-06&_=1426851402394" for 127.0.0.1 at 2015-03-20 13:36:42 +0200
+Processing by AssignmentsController#index as JSON
+  Parameters: {"start"=>"2015-02-23", "end"=>"2015-04-06", "_"=>"1426851402394"}
+  [1m[35mAssignment Load (0.2ms)[0m  SELECT "assignments".* FROM "assignments"
+  Rendered assignments/index.json.jbuilder (1.7ms)
+Completed 200 OK in 5ms (Views: 3.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assignments" for 127.0.0.1 at 2015-03-20 13:40:58 +0200
+Processing by AssignmentsController#index as HTML
+  [1m[36mAssignment Load (0.3ms)[0m  [1mSELECT "assignments".* FROM "assignments"[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" INNER JOIN "user_assignments" ON "users"."id" = "user_assignments"."user_id" WHERE "user_assignments"."assignment_id" = ?  [["assignment_id", 10]]
+  Rendered assignments/index.html.erb within layouts/application (5.0ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+Completed 200 OK in 134ms (Views: 131.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/assignments-f09d8098f270ab8762c2eb4a8e59ea70.css?body=1" for 127.0.0.1 at 2015-03-20 13:40:58 +0200
+
+
+Started GET "/assets/scaffolds-9fe0527a18558a65ba847be2e2f9571e.css?body=1" for 127.0.0.1 at 2015-03-20 13:40:58 +0200
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-20 13:40:58 +0200
+
+
+Started GET "/assets/groups-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-20 13:40:58 +0200
+
+
+Started GET "/assets/application-4ba3e11653928f5f71e1c1df20d46e32.css?body=1" for 127.0.0.1 at 2015-03-20 13:40:58 +0200
+
+
+Started GET "/assets/tasks-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-20 13:40:58 +0200
+
+
+Started GET "/assets/fullcalendar-32ecbd03711357d4342240d33e768eba.css?body=1" for 127.0.0.1 at 2015-03-20 13:40:58 +0200
+
+
+Started GET "/assets/groups-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-20 13:40:58 +0200
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-03-20 13:40:58 +0200
+
+
+Started GET "/assets/assignments-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-20 13:40:58 +0200
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-03-20 13:40:58 +0200
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2015-03-20 13:40:58 +0200
+
+
+Started GET "/assets/tasks-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-20 13:40:58 +0200
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-20 13:40:58 +0200
+
+
+Started GET "/assets/moment-66988874bf5714cb1e4a6f53d733b6e1.js?body=1" for 127.0.0.1 at 2015-03-20 13:40:58 +0200
+
+
+Started GET "/assets/fullcalendar-c6d8932cb3cd5ce4daf967fec5ffb732.js?body=1" for 127.0.0.1 at 2015-03-20 13:40:58 +0200
+
+
+Started GET "/assets/application-6cf64470d396df0b53e1f9b8b2dce0fb.js?body=1" for 127.0.0.1 at 2015-03-20 13:40:58 +0200
+
+
+Started GET "/assignments.json?start=2015-02-23&end=2015-04-06&_=1426851658296" for 127.0.0.1 at 2015-03-20 13:40:58 +0200
+Processing by AssignmentsController#index as JSON
+  Parameters: {"start"=>"2015-02-23", "end"=>"2015-04-06", "_"=>"1426851658296"}
+  [1m[36mAssignment Load (0.2ms)[0m  [1mSELECT "assignments".* FROM "assignments"[0m
+  Rendered assignments/index.json.jbuilder (2.9ms)
+Completed 200 OK in 6ms (Views: 4.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assignments" for 127.0.0.1 at 2015-03-20 13:41:28 +0200
+Processing by AssignmentsController#index as HTML
+  [1m[35mAssignment Load (0.2ms)[0m  SELECT "assignments".* FROM "assignments"
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" INNER JOIN "user_assignments" ON "users"."id" = "user_assignments"."user_id" WHERE "user_assignments"."assignment_id" = ?[0m  [["assignment_id", 10]]
+  Rendered assignments/index.html.erb within layouts/application (4.6ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+Completed 200 OK in 116ms (Views: 115.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/assignments-f09d8098f270ab8762c2eb4a8e59ea70.css?body=1" for 127.0.0.1 at 2015-03-20 13:41:29 +0200
+
+
+Started GET "/assets/groups-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-20 13:41:29 +0200
+
+
+Started GET "/assets/scaffolds-9fe0527a18558a65ba847be2e2f9571e.css?body=1" for 127.0.0.1 at 2015-03-20 13:41:29 +0200
+
+
+Started GET "/assets/tasks-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-20 13:41:29 +0200
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-03-20 13:41:29 +0200
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-20 13:41:29 +0200
+
+
+Started GET "/assets/application-4ba3e11653928f5f71e1c1df20d46e32.css?body=1" for 127.0.0.1 at 2015-03-20 13:41:29 +0200
+
+
+Started GET "/assets/fullcalendar-32ecbd03711357d4342240d33e768eba.css?body=1" for 127.0.0.1 at 2015-03-20 13:41:29 +0200
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-03-20 13:41:29 +0200
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2015-03-20 13:41:29 +0200
+
+
+Started GET "/assets/tasks-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-20 13:41:29 +0200
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-20 13:41:29 +0200
+
+
+Started GET "/assets/moment-66988874bf5714cb1e4a6f53d733b6e1.js?body=1" for 127.0.0.1 at 2015-03-20 13:41:29 +0200
+
+
+Started GET "/assets/groups-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-20 13:41:29 +0200
+
+
+Started GET "/assets/assignments-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-20 13:41:29 +0200
+
+
+Started GET "/assets/fullcalendar-c6d8932cb3cd5ce4daf967fec5ffb732.js?body=1" for 127.0.0.1 at 2015-03-20 13:41:29 +0200
+
+
+Started GET "/assets/application-6cf64470d396df0b53e1f9b8b2dce0fb.js?body=1" for 127.0.0.1 at 2015-03-20 13:41:29 +0200
+
+
+Started GET "/assignments.json?start=2015-02-23&end=2015-04-06&_=1426851689151" for 127.0.0.1 at 2015-03-20 13:41:29 +0200
+Processing by AssignmentsController#index as JSON
+  Parameters: {"start"=>"2015-02-23", "end"=>"2015-04-06", "_"=>"1426851689151"}
+  [1m[35mAssignment Load (0.2ms)[0m  SELECT "assignments".* FROM "assignments"
+  Rendered assignments/index.json.jbuilder (1.5ms)
+Completed 200 OK in 5ms (Views: 3.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assignments" for 127.0.0.1 at 2015-03-20 13:41:52 +0200
+Processing by AssignmentsController#index as HTML
+  [1m[36mAssignment Load (0.2ms)[0m  [1mSELECT "assignments".* FROM "assignments"[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" INNER JOIN "user_assignments" ON "users"."id" = "user_assignments"."user_id" WHERE "user_assignments"."assignment_id" = ?  [["assignment_id", 10]]
+  Rendered assignments/index.html.erb within layouts/application (4.1ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+Completed 200 OK in 141ms (Views: 139.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/assignments-f09d8098f270ab8762c2eb4a8e59ea70.css?body=1" for 127.0.0.1 at 2015-03-20 13:41:52 +0200
+
+
+Started GET "/assets/scaffolds-9fe0527a18558a65ba847be2e2f9571e.css?body=1" for 127.0.0.1 at 2015-03-20 13:41:52 +0200
+
+
+Started GET "/assets/tasks-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-20 13:41:52 +0200
+
+
+Started GET "/assets/groups-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-20 13:41:52 +0200
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-03-20 13:41:52 +0200
+
+
+Started GET "/assets/application-4ba3e11653928f5f71e1c1df20d46e32.css?body=1" for 127.0.0.1 at 2015-03-20 13:41:52 +0200
+
+
+Started GET "/assets/fullcalendar-32ecbd03711357d4342240d33e768eba.css?body=1" for 127.0.0.1 at 2015-03-20 13:41:52 +0200
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-20 13:41:52 +0200
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-03-20 13:41:52 +0200
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2015-03-20 13:41:52 +0200
+
+
+Started GET "/assets/assignments-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-20 13:41:52 +0200
+
+
+Started GET "/assets/groups-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-20 13:41:52 +0200
+
+
+Started GET "/assets/tasks-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-20 13:41:52 +0200
+
+
+Started GET "/assets/moment-66988874bf5714cb1e4a6f53d733b6e1.js?body=1" for 127.0.0.1 at 2015-03-20 13:41:52 +0200
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-20 13:41:52 +0200
+
+
+Started GET "/assets/application-6cf64470d396df0b53e1f9b8b2dce0fb.js?body=1" for 127.0.0.1 at 2015-03-20 13:41:52 +0200
+
+
+Started GET "/assets/fullcalendar-c6d8932cb3cd5ce4daf967fec5ffb732.js?body=1" for 127.0.0.1 at 2015-03-20 13:41:52 +0200
+
+
+Started GET "/assignments.json?start=2015-02-23&end=2015-04-06&_=1426851712960" for 127.0.0.1 at 2015-03-20 13:41:53 +0200
+Processing by AssignmentsController#index as JSON
+  Parameters: {"start"=>"2015-02-23", "end"=>"2015-04-06", "_"=>"1426851712960"}
+  [1m[36mAssignment Load (0.3ms)[0m  [1mSELECT "assignments".* FROM "assignments"[0m
+  Rendered assignments/index.json.jbuilder (1.6ms)
+Completed 200 OK in 5ms (Views: 4.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assignments" for 127.0.0.1 at 2015-03-20 13:42:27 +0200
+Processing by AssignmentsController#index as HTML
+  [1m[35mAssignment Load (0.2ms)[0m  SELECT "assignments".* FROM "assignments"
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" INNER JOIN "user_assignments" ON "users"."id" = "user_assignments"."user_id" WHERE "user_assignments"."assignment_id" = ?[0m  [["assignment_id", 10]]
+  Rendered assignments/index.html.erb within layouts/application (4.1ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+Completed 200 OK in 126ms (Views: 124.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/assignments-f09d8098f270ab8762c2eb4a8e59ea70.css?body=1" for 127.0.0.1 at 2015-03-20 13:42:28 +0200
+
+
+Started GET "/assets/groups-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-20 13:42:28 +0200
+
+
+Started GET "/assets/scaffolds-9fe0527a18558a65ba847be2e2f9571e.css?body=1" for 127.0.0.1 at 2015-03-20 13:42:28 +0200
+
+
+Started GET "/assets/tasks-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-20 13:42:28 +0200
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-03-20 13:42:28 +0200
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2015-03-20 13:42:28 +0200
+
+
+Started GET "/assets/assignments-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-20 13:42:28 +0200
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-03-20 13:42:28 +0200
+
+
+Started GET "/assets/application-4ba3e11653928f5f71e1c1df20d46e32.css?body=1" for 127.0.0.1 at 2015-03-20 13:42:28 +0200
+
+
+Started GET "/assets/fullcalendar-32ecbd03711357d4342240d33e768eba.css?body=1" for 127.0.0.1 at 2015-03-20 13:42:28 +0200
+
+
+Started GET "/assets/groups-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-20 13:42:28 +0200
+
+
+Started GET "/assets/tasks-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-20 13:42:28 +0200
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-20 13:42:28 +0200
+
+
+Started GET "/assets/moment-66988874bf5714cb1e4a6f53d733b6e1.js?body=1" for 127.0.0.1 at 2015-03-20 13:42:28 +0200
+
+
+Started GET "/assets/fullcalendar-c6d8932cb3cd5ce4daf967fec5ffb732.js?body=1" for 127.0.0.1 at 2015-03-20 13:42:28 +0200
+
+
+Started GET "/assets/application-6cf64470d396df0b53e1f9b8b2dce0fb.js?body=1" for 127.0.0.1 at 2015-03-20 13:42:28 +0200
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-20 13:42:28 +0200
+
+
+Started GET "/assignments.json?start=2015-02-23&end=2015-04-06&_=1426851748286" for 127.0.0.1 at 2015-03-20 13:42:28 +0200
+Processing by AssignmentsController#index as JSON
+  Parameters: {"start"=>"2015-02-23", "end"=>"2015-04-06", "_"=>"1426851748286"}
+  [1m[35mAssignment Load (0.2ms)[0m  SELECT "assignments".* FROM "assignments"
+  Rendered assignments/index.json.jbuilder (1.8ms)
+Completed 200 OK in 5ms (Views: 3.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assignments" for 127.0.0.1 at 2015-03-20 13:43:54 +0200
+Processing by AssignmentsController#index as HTML
+  [1m[36mAssignment Load (0.2ms)[0m  [1mSELECT "assignments".* FROM "assignments"[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" INNER JOIN "user_assignments" ON "users"."id" = "user_assignments"."user_id" WHERE "user_assignments"."assignment_id" = ?  [["assignment_id", 10]]
+  Rendered assignments/index.html.erb within layouts/application (11.4ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+Completed 200 OK in 151ms (Views: 150.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/assignments-f09d8098f270ab8762c2eb4a8e59ea70.css?body=1" for 127.0.0.1 at 2015-03-20 13:43:54 +0200
+
+
+Started GET "/assets/tasks-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-20 13:43:54 +0200
+
+
+Started GET "/assets/scaffolds-9fe0527a18558a65ba847be2e2f9571e.css?body=1" for 127.0.0.1 at 2015-03-20 13:43:54 +0200
+
+
+Started GET "/assets/groups-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-20 13:43:54 +0200
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-20 13:43:54 +0200
+
+
+Started GET "/assets/application-4ba3e11653928f5f71e1c1df20d46e32.css?body=1" for 127.0.0.1 at 2015-03-20 13:43:54 +0200
+
+
+Started GET "/assets/fullcalendar-32ecbd03711357d4342240d33e768eba.css?body=1" for 127.0.0.1 at 2015-03-20 13:43:54 +0200
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-03-20 13:43:54 +0200
+
+
+Started GET "/assets/assignments-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-20 13:43:54 +0200
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-03-20 13:43:54 +0200
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2015-03-20 13:43:54 +0200
+
+
+Started GET "/assets/groups-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-20 13:43:54 +0200
+
+
+Started GET "/assets/tasks-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-20 13:43:54 +0200
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-20 13:43:54 +0200
+
+
+Started GET "/assets/fullcalendar-c6d8932cb3cd5ce4daf967fec5ffb732.js?body=1" for 127.0.0.1 at 2015-03-20 13:43:54 +0200
+
+
+Started GET "/assets/moment-66988874bf5714cb1e4a6f53d733b6e1.js?body=1" for 127.0.0.1 at 2015-03-20 13:43:54 +0200
+
+
+Started GET "/assets/application-6cf64470d396df0b53e1f9b8b2dce0fb.js?body=1" for 127.0.0.1 at 2015-03-20 13:43:54 +0200
+
+
+Started GET "/assignments.json?start=2015-02-23&end=2015-04-06&_=1426851834801" for 127.0.0.1 at 2015-03-20 13:43:55 +0200
+Processing by AssignmentsController#index as JSON
+  Parameters: {"start"=>"2015-02-23", "end"=>"2015-04-06", "_"=>"1426851834801"}
+  [1m[36mAssignment Load (0.2ms)[0m  [1mSELECT "assignments".* FROM "assignments"[0m
+  Rendered assignments/index.json.jbuilder (4.7ms)
+Completed 200 OK in 8ms (Views: 6.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assignments" for 127.0.0.1 at 2015-03-20 13:44:21 +0200
+Processing by AssignmentsController#index as HTML
+  [1m[35mAssignment Load (0.3ms)[0m  SELECT "assignments".* FROM "assignments"
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" INNER JOIN "user_assignments" ON "users"."id" = "user_assignments"."user_id" WHERE "user_assignments"."assignment_id" = ?[0m  [["assignment_id", 10]]
+  Rendered assignments/index.html.erb within layouts/application (4.7ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+Completed 200 OK in 128ms (Views: 126.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/assignments-f09d8098f270ab8762c2eb4a8e59ea70.css?body=1" for 127.0.0.1 at 2015-03-20 13:44:21 +0200
+
+
+Started GET "/assets/groups-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-20 13:44:21 +0200
+
+
+Started GET "/assets/scaffolds-9fe0527a18558a65ba847be2e2f9571e.css?body=1" for 127.0.0.1 at 2015-03-20 13:44:21 +0200
+
+
+Started GET "/assets/tasks-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-20 13:44:21 +0200
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-20 13:44:21 +0200
+
+
+Started GET "/assets/application-4ba3e11653928f5f71e1c1df20d46e32.css?body=1" for 127.0.0.1 at 2015-03-20 13:44:21 +0200
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2015-03-20 13:44:21 +0200
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-03-20 13:44:21 +0200
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-03-20 13:44:21 +0200
+
+
+Started GET "/assets/fullcalendar-32ecbd03711357d4342240d33e768eba.css?body=1" for 127.0.0.1 at 2015-03-20 13:44:21 +0200
+
+
+Started GET "/assets/assignments-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-20 13:44:21 +0200
+
+
+Started GET "/assets/groups-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-20 13:44:21 +0200
+
+
+Started GET "/assets/tasks-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-20 13:44:21 +0200
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-20 13:44:21 +0200
+
+
+Started GET "/assets/fullcalendar-c6d8932cb3cd5ce4daf967fec5ffb732.js?body=1" for 127.0.0.1 at 2015-03-20 13:44:21 +0200
+
+
+Started GET "/assets/moment-66988874bf5714cb1e4a6f53d733b6e1.js?body=1" for 127.0.0.1 at 2015-03-20 13:44:21 +0200
+
+
+Started GET "/assets/application-6cf64470d396df0b53e1f9b8b2dce0fb.js?body=1" for 127.0.0.1 at 2015-03-20 13:44:21 +0200
+
+
+Started GET "/assignments.json?start=2015-02-23&end=2015-04-06&_=1426851861343" for 127.0.0.1 at 2015-03-20 13:44:21 +0200
+Processing by AssignmentsController#index as JSON
+  Parameters: {"start"=>"2015-02-23", "end"=>"2015-04-06", "_"=>"1426851861343"}
+  [1m[35mAssignment Load (0.2ms)[0m  SELECT "assignments".* FROM "assignments"
+  Rendered assignments/index.json.jbuilder (1.9ms)
+Completed 200 OK in 5ms (Views: 3.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assignments" for 127.0.0.1 at 2015-03-20 13:44:40 +0200
+Processing by AssignmentsController#index as HTML
+  [1m[36mAssignment Load (0.4ms)[0m  [1mSELECT "assignments".* FROM "assignments"[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" INNER JOIN "user_assignments" ON "users"."id" = "user_assignments"."user_id" WHERE "user_assignments"."assignment_id" = ?  [["assignment_id", 10]]
+  Rendered assignments/index.html.erb within layouts/application (4.3ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+Completed 200 OK in 126ms (Views: 124.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/assignments-f09d8098f270ab8762c2eb4a8e59ea70.css?body=1" for 127.0.0.1 at 2015-03-20 13:44:40 +0200
+
+
+Started GET "/assets/scaffolds-9fe0527a18558a65ba847be2e2f9571e.css?body=1" for 127.0.0.1 at 2015-03-20 13:44:40 +0200
+
+
+Started GET "/assets/tasks-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-20 13:44:40 +0200
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-20 13:44:40 +0200
+
+
+Started GET "/assets/groups-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-20 13:44:40 +0200
+
+
+Started GET "/assets/application-4ba3e11653928f5f71e1c1df20d46e32.css?body=1" for 127.0.0.1 at 2015-03-20 13:44:40 +0200
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2015-03-20 13:44:40 +0200
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-03-20 13:44:40 +0200
+
+
+Started GET "/assets/fullcalendar-32ecbd03711357d4342240d33e768eba.css?body=1" for 127.0.0.1 at 2015-03-20 13:44:40 +0200
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-03-20 13:44:40 +0200
+
+
+Started GET "/assets/assignments-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-20 13:44:40 +0200
+
+
+Started GET "/assets/fullcalendar-c6d8932cb3cd5ce4daf967fec5ffb732.js?body=1" for 127.0.0.1 at 2015-03-20 13:44:40 +0200
+
+
+Started GET "/assets/tasks-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-20 13:44:40 +0200
+
+
+Started GET "/assets/moment-66988874bf5714cb1e4a6f53d733b6e1.js?body=1" for 127.0.0.1 at 2015-03-20 13:44:40 +0200
+
+
+Started GET "/assets/groups-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-20 13:44:40 +0200
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-20 13:44:40 +0200
+
+
+Started GET "/assets/application-6cf64470d396df0b53e1f9b8b2dce0fb.js?body=1" for 127.0.0.1 at 2015-03-20 13:44:40 +0200
+
+
+Started GET "/assignments.json?start=2015-02-23&end=2015-04-06&_=1426851880765" for 127.0.0.1 at 2015-03-20 13:44:41 +0200
+Processing by AssignmentsController#index as JSON
+  Parameters: {"start"=>"2015-02-23", "end"=>"2015-04-06", "_"=>"1426851880765"}
+  [1m[36mAssignment Load (0.3ms)[0m  [1mSELECT "assignments".* FROM "assignments"[0m
+  Rendered assignments/index.json.jbuilder (1.8ms)
+Completed 200 OK in 5ms (Views: 4.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assignments" for 127.0.0.1 at 2015-03-20 13:44:53 +0200
+Processing by AssignmentsController#index as HTML
+  [1m[35mAssignment Load (0.2ms)[0m  SELECT "assignments".* FROM "assignments"
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" INNER JOIN "user_assignments" ON "users"."id" = "user_assignments"."user_id" WHERE "user_assignments"."assignment_id" = ?[0m  [["assignment_id", 10]]
+  Rendered assignments/index.html.erb within layouts/application (4.0ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+Completed 200 OK in 126ms (Views: 124.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/assignments-f09d8098f270ab8762c2eb4a8e59ea70.css?body=1" for 127.0.0.1 at 2015-03-20 13:44:53 +0200
+
+
+Started GET "/assets/tasks-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-20 13:44:53 +0200
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-20 13:44:53 +0200
+
+
+Started GET "/assets/scaffolds-9fe0527a18558a65ba847be2e2f9571e.css?body=1" for 127.0.0.1 at 2015-03-20 13:44:53 +0200
+
+
+Started GET "/assets/groups-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-20 13:44:53 +0200
+
+
+Started GET "/assets/fullcalendar-32ecbd03711357d4342240d33e768eba.css?body=1" for 127.0.0.1 at 2015-03-20 13:44:53 +0200
+
+
+Started GET "/assets/assignments-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-20 13:44:53 +0200
+
+
+Started GET "/assets/groups-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-20 13:44:53 +0200
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-03-20 13:44:53 +0200
+
+
+Started GET "/assets/application-4ba3e11653928f5f71e1c1df20d46e32.css?body=1" for 127.0.0.1 at 2015-03-20 13:44:53 +0200
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-03-20 13:44:53 +0200
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2015-03-20 13:44:53 +0200
+
+
+Started GET "/assets/moment-66988874bf5714cb1e4a6f53d733b6e1.js?body=1" for 127.0.0.1 at 2015-03-20 13:44:53 +0200
+
+
+Started GET "/assets/tasks-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-20 13:44:53 +0200
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-20 13:44:53 +0200
+
+
+Started GET "/assets/application-6cf64470d396df0b53e1f9b8b2dce0fb.js?body=1" for 127.0.0.1 at 2015-03-20 13:44:53 +0200
+
+
+Started GET "/assets/fullcalendar-c6d8932cb3cd5ce4daf967fec5ffb732.js?body=1" for 127.0.0.1 at 2015-03-20 13:44:53 +0200
+
+
+Started GET "/assignments.json?start=2015-02-23&end=2015-04-06&_=1426851893546" for 127.0.0.1 at 2015-03-20 13:44:53 +0200
+Processing by AssignmentsController#index as JSON
+  Parameters: {"start"=>"2015-02-23", "end"=>"2015-04-06", "_"=>"1426851893546"}
+  [1m[35mAssignment Load (0.3ms)[0m  SELECT "assignments".* FROM "assignments"
+  Rendered assignments/index.json.jbuilder (2.0ms)
+Completed 200 OK in 5ms (Views: 4.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assignments" for 127.0.0.1 at 2015-03-20 13:45:26 +0200
+Processing by AssignmentsController#index as HTML
+  [1m[36mAssignment Load (0.2ms)[0m  [1mSELECT "assignments".* FROM "assignments"[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" INNER JOIN "user_assignments" ON "users"."id" = "user_assignments"."user_id" WHERE "user_assignments"."assignment_id" = ?  [["assignment_id", 10]]
+  Rendered assignments/index.html.erb within layouts/application (4.8ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+Completed 200 OK in 116ms (Views: 114.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/assignments-f09d8098f270ab8762c2eb4a8e59ea70.css?body=1" for 127.0.0.1 at 2015-03-20 13:45:26 +0200
+
+
+Started GET "/assets/groups-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-20 13:45:26 +0200
+
+
+Started GET "/assets/scaffolds-9fe0527a18558a65ba847be2e2f9571e.css?body=1" for 127.0.0.1 at 2015-03-20 13:45:26 +0200
+
+
+Started GET "/assets/tasks-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-20 13:45:26 +0200
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-20 13:45:26 +0200
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-03-20 13:45:26 +0200
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-03-20 13:45:26 +0200
+
+
+Started GET "/assets/fullcalendar-32ecbd03711357d4342240d33e768eba.css?body=1" for 127.0.0.1 at 2015-03-20 13:45:26 +0200
+
+
+Started GET "/assets/application-4ba3e11653928f5f71e1c1df20d46e32.css?body=1" for 127.0.0.1 at 2015-03-20 13:45:26 +0200
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2015-03-20 13:45:26 +0200
+
+
+Started GET "/assets/assignments-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-20 13:45:26 +0200
+
+
+Started GET "/assets/groups-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-20 13:45:26 +0200
+
+
+Started GET "/assets/tasks-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-20 13:45:26 +0200
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-20 13:45:26 +0200
+
+
+Started GET "/assets/fullcalendar-c6d8932cb3cd5ce4daf967fec5ffb732.js?body=1" for 127.0.0.1 at 2015-03-20 13:45:26 +0200
+
+
+Started GET "/assets/moment-66988874bf5714cb1e4a6f53d733b6e1.js?body=1" for 127.0.0.1 at 2015-03-20 13:45:27 +0200
+
+
+Started GET "/assets/application-6cf64470d396df0b53e1f9b8b2dce0fb.js?body=1" for 127.0.0.1 at 2015-03-20 13:45:27 +0200
+
+
+Started GET "/assignments.json?start=2015-02-23&end=2015-04-06&_=1426851927057" for 127.0.0.1 at 2015-03-20 13:45:27 +0200
+Processing by AssignmentsController#index as JSON
+  Parameters: {"start"=>"2015-02-23", "end"=>"2015-04-06", "_"=>"1426851927057"}
+  [1m[36mAssignment Load (0.4ms)[0m  [1mSELECT "assignments".* FROM "assignments"[0m
+  Rendered assignments/index.json.jbuilder (1.9ms)
+Completed 200 OK in 6ms (Views: 4.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2015-03-20 13:45:29 +0200
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mGroup Load (0.2ms)[0m  [1mSELECT "groups".* FROM "groups" INNER JOIN "memberships" ON "groups"."id" = "memberships"."group_id" WHERE "memberships"."user_id" = ?[0m  [["user_id", 1]]
+  [1m[35mAssignment Load (0.2ms)[0m  SELECT "assignments".* FROM "assignments" INNER JOIN "user_assignments" ON "assignments"."id" = "user_assignments"."assignment_id" WHERE "user_assignments"."user_id" = ?  [["user_id", 1]]
+  Rendered users/show.html.erb within layouts/application (24.5ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+Completed 200 OK in 148ms (Views: 145.2ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assignments" for 127.0.0.1 at 2015-03-20 13:45:41 +0200
+Processing by AssignmentsController#index as HTML
+  [1m[36mAssignment Load (0.2ms)[0m  [1mSELECT "assignments".* FROM "assignments"[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" INNER JOIN "user_assignments" ON "users"."id" = "user_assignments"."user_id" WHERE "user_assignments"."assignment_id" = ?  [["assignment_id", 10]]
+  Rendered assignments/index.html.erb within layouts/application (4.7ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+Completed 200 OK in 121ms (Views: 120.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/assignments-f09d8098f270ab8762c2eb4a8e59ea70.css?body=1" for 127.0.0.1 at 2015-03-20 13:45:41 +0200
+
+
+Started GET "/assets/groups-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-20 13:45:41 +0200
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-20 13:45:41 +0200
+
+
+Started GET "/assets/tasks-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-20 13:45:41 +0200
+
+
+Started GET "/assets/scaffolds-9fe0527a18558a65ba847be2e2f9571e.css?body=1" for 127.0.0.1 at 2015-03-20 13:45:41 +0200
+
+
+Started GET "/assets/application-4ba3e11653928f5f71e1c1df20d46e32.css?body=1" for 127.0.0.1 at 2015-03-20 13:45:41 +0200
+
+
+Started GET "/assets/fullcalendar-32ecbd03711357d4342240d33e768eba.css?body=1" for 127.0.0.1 at 2015-03-20 13:45:41 +0200
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-03-20 13:45:41 +0200
+
+
+Started GET "/assets/assignments-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-20 13:45:41 +0200
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2015-03-20 13:45:41 +0200
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-03-20 13:45:41 +0200
+
+
+Started GET "/assets/groups-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-20 13:45:41 +0200
+
+
+Started GET "/assets/tasks-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-20 13:45:41 +0200
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-20 13:45:41 +0200
+
+
+Started GET "/assets/moment-66988874bf5714cb1e4a6f53d733b6e1.js?body=1" for 127.0.0.1 at 2015-03-20 13:45:41 +0200
+
+
+Started GET "/assets/fullcalendar-c6d8932cb3cd5ce4daf967fec5ffb732.js?body=1" for 127.0.0.1 at 2015-03-20 13:45:41 +0200
+
+
+Started GET "/assets/application-6cf64470d396df0b53e1f9b8b2dce0fb.js?body=1" for 127.0.0.1 at 2015-03-20 13:45:41 +0200
+
+
+Started GET "/assignments.json?start=2015-02-23&end=2015-04-06&_=1426851941861" for 127.0.0.1 at 2015-03-20 13:45:42 +0200
+Processing by AssignmentsController#index as JSON
+  Parameters: {"start"=>"2015-02-23", "end"=>"2015-04-06", "_"=>"1426851941861"}
+  [1m[36mAssignment Load (0.2ms)[0m  [1mSELECT "assignments".* FROM "assignments"[0m
+  Rendered assignments/index.json.jbuilder (1.4ms)
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assignments/10" for 127.0.0.1 at 2015-03-20 13:45:52 +0200
+Processing by AssignmentsController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[35mAssignment Load (0.2ms)[0m  SELECT  "assignments".* FROM "assignments" WHERE "assignments"."id" = ? LIMIT 1  [["id", 10]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" INNER JOIN "user_assignments" ON "users"."id" = "user_assignments"."user_id" WHERE "user_assignments"."assignment_id" = ?[0m  [["assignment_id", 10]]
+  Rendered assignments/show.html.erb within layouts/application (2.7ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+Completed 200 OK in 131ms (Views: 128.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2015-03-20 13:46:00 +0200
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mGroup Load (0.1ms)[0m  [1mSELECT "groups".* FROM "groups" INNER JOIN "memberships" ON "groups"."id" = "memberships"."group_id" WHERE "memberships"."user_id" = ?[0m  [["user_id", 2]]
+  [1m[35mAssignment Load (0.1ms)[0m  SELECT "assignments".* FROM "assignments" INNER JOIN "user_assignments" ON "assignments"."id" = "user_assignments"."assignment_id" WHERE "user_assignments"."user_id" = ?  [["user_id", 2]]
+  Rendered users/show.html.erb within layouts/application (6.6ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+Completed 200 OK in 126ms (Views: 124.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assignments" for 127.0.0.1 at 2015-03-20 13:46:04 +0200
+Processing by AssignmentsController#index as HTML
+  [1m[36mAssignment Load (0.2ms)[0m  [1mSELECT "assignments".* FROM "assignments"[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" INNER JOIN "user_assignments" ON "users"."id" = "user_assignments"."user_id" WHERE "user_assignments"."assignment_id" = ?  [["assignment_id", 10]]
+  Rendered assignments/index.html.erb within layouts/application (4.6ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+Completed 200 OK in 115ms (Views: 114.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assignments.json?start=2015-02-23&end=2015-04-06&_=1426851941862" for 127.0.0.1 at 2015-03-20 13:46:05 +0200
+Processing by AssignmentsController#index as JSON
+  Parameters: {"start"=>"2015-02-23", "end"=>"2015-04-06", "_"=>"1426851941862"}
+  [1m[36mAssignment Load (0.2ms)[0m  [1mSELECT "assignments".* FROM "assignments"[0m
+  Rendered assignments/index.json.jbuilder (1.5ms)
+Completed 200 OK in 5ms (Views: 3.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assignments" for 127.0.0.1 at 2015-03-20 13:46:34 +0200
+Processing by AssignmentsController#index as HTML
+  [1m[35mAssignment Load (0.2ms)[0m  SELECT "assignments".* FROM "assignments"
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" INNER JOIN "user_assignments" ON "users"."id" = "user_assignments"."user_id" WHERE "user_assignments"."assignment_id" = ?[0m  [["assignment_id", 10]]
+  Rendered assignments/index.html.erb within layouts/application (4.1ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+Completed 200 OK in 143ms (Views: 141.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/assignments-f09d8098f270ab8762c2eb4a8e59ea70.css?body=1" for 127.0.0.1 at 2015-03-20 13:46:34 +0200
+
+
+Started GET "/assets/groups-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-20 13:46:34 +0200
+
+
+Started GET "/assets/tasks-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-20 13:46:34 +0200
+
+
+Started GET "/assets/fullcalendar-32ecbd03711357d4342240d33e768eba.css?body=1" for 127.0.0.1 at 2015-03-20 13:46:34 +0200
+
+
+Started GET "/assets/scaffolds-9fe0527a18558a65ba847be2e2f9571e.css?body=1" for 127.0.0.1 at 2015-03-20 13:46:34 +0200
+
+
+Started GET "/assets/application-4ba3e11653928f5f71e1c1df20d46e32.css?body=1" for 127.0.0.1 at 2015-03-20 13:46:34 +0200
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-03-20 13:46:34 +0200
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-20 13:46:34 +0200
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-03-20 13:46:34 +0200
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2015-03-20 13:46:34 +0200
+
+
+Started GET "/assets/assignments-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-20 13:46:34 +0200
+
+
+Started GET "/assets/tasks-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-20 13:46:34 +0200
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-20 13:46:34 +0200
+
+
+Started GET "/assets/groups-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-20 13:46:34 +0200
+
+
+Started GET "/assets/fullcalendar-c6d8932cb3cd5ce4daf967fec5ffb732.js?body=1" for 127.0.0.1 at 2015-03-20 13:46:34 +0200
+
+
+Started GET "/assets/moment-66988874bf5714cb1e4a6f53d733b6e1.js?body=1" for 127.0.0.1 at 2015-03-20 13:46:34 +0200
+
+
+Started GET "/assets/application-6cf64470d396df0b53e1f9b8b2dce0fb.js?body=1" for 127.0.0.1 at 2015-03-20 13:46:34 +0200
+
+
+Started GET "/assignments.json?start=2015-02-23&end=2015-04-06&_=1426851995013" for 127.0.0.1 at 2015-03-20 13:46:35 +0200
+Processing by AssignmentsController#index as JSON
+  Parameters: {"start"=>"2015-02-23", "end"=>"2015-04-06", "_"=>"1426851995013"}
+  [1m[35mAssignment Load (0.3ms)[0m  SELECT "assignments".* FROM "assignments"
+  Rendered assignments/index.json.jbuilder (1.7ms)
+Completed 200 OK in 6ms (Views: 4.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assignments/10" for 127.0.0.1 at 2015-03-20 13:49:41 +0200
+Processing by AssignmentsController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mAssignment Load (0.1ms)[0m  [1mSELECT  "assignments".* FROM "assignments" WHERE "assignments"."id" = ? LIMIT 1[0m  [["id", 10]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" INNER JOIN "user_assignments" ON "users"."id" = "user_assignments"."user_id" WHERE "user_assignments"."assignment_id" = ?  [["assignment_id", 10]]
+  Rendered assignments/show.html.erb within layouts/application (2.4ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+Completed 200 OK in 123ms (Views: 121.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assignments.json?start=2015-03-30&end=2015-05-11&_=1426851995014" for 127.0.0.1 at 2015-03-20 13:50:09 +0200
+Processing by AssignmentsController#index as JSON
+  Parameters: {"start"=>"2015-03-30", "end"=>"2015-05-11", "_"=>"1426851995014"}
+  [1m[36mAssignment Load (0.2ms)[0m  [1mSELECT "assignments".* FROM "assignments"[0m
+  Rendered assignments/index.json.jbuilder (1.6ms)
+Completed 200 OK in 5ms (Views: 3.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assignments.json?start=2015-02-23&end=2015-04-06&_=1426851995015" for 127.0.0.1 at 2015-03-20 13:50:09 +0200
+Processing by AssignmentsController#index as JSON
+  Parameters: {"start"=>"2015-02-23", "end"=>"2015-04-06", "_"=>"1426851995015"}
+  [1m[35mAssignment Load (0.2ms)[0m  SELECT "assignments".* FROM "assignments"
+  Rendered assignments/index.json.jbuilder (1.5ms)
+Completed 200 OK in 5ms (Views: 4.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assignments/10" for 127.0.0.1 at 2015-03-20 13:50:14 +0200
+Processing by AssignmentsController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mAssignment Load (0.1ms)[0m  [1mSELECT  "assignments".* FROM "assignments" WHERE "assignments"."id" = ? LIMIT 1[0m  [["id", 10]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" INNER JOIN "user_assignments" ON "users"."id" = "user_assignments"."user_id" WHERE "user_assignments"."assignment_id" = ?  [["assignment_id", 10]]
+  Rendered assignments/show.html.erb within layouts/application (2.0ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+Completed 200 OK in 115ms (Views: 113.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assignments" for 127.0.0.1 at 2015-03-20 13:50:15 +0200
+Processing by AssignmentsController#index as HTML
+  [1m[36mAssignment Load (0.5ms)[0m  [1mSELECT "assignments".* FROM "assignments"[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" INNER JOIN "user_assignments" ON "users"."id" = "user_assignments"."user_id" WHERE "user_assignments"."assignment_id" = ?  [["assignment_id", 10]]
+  Rendered assignments/index.html.erb within layouts/application (4.8ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+Completed 200 OK in 126ms (Views: 124.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assignments.json?start=2015-02-23&end=2015-04-06&_=1426851995016" for 127.0.0.1 at 2015-03-20 13:50:16 +0200
+Processing by AssignmentsController#index as JSON
+  Parameters: {"start"=>"2015-02-23", "end"=>"2015-04-06", "_"=>"1426851995016"}
+  [1m[36mAssignment Load (0.2ms)[0m  [1mSELECT "assignments".* FROM "assignments"[0m
+  Rendered assignments/index.json.jbuilder (1.8ms)
+Completed 200 OK in 5ms (Views: 3.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assignments" for 127.0.0.1 at 2015-03-20 13:50:36 +0200
+Processing by AssignmentsController#index as HTML
+  [1m[35mAssignment Load (0.2ms)[0m  SELECT "assignments".* FROM "assignments"
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" INNER JOIN "user_assignments" ON "users"."id" = "user_assignments"."user_id" WHERE "user_assignments"."assignment_id" = ?[0m  [["assignment_id", 10]]
+  Rendered assignments/index.html.erb within layouts/application (3.9ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+Completed 200 OK in 125ms (Views: 124.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assignments.json?start=2015-02-23&end=2015-04-06&_=1426851995017" for 127.0.0.1 at 2015-03-20 13:50:36 +0200
+Processing by AssignmentsController#index as JSON
+  Parameters: {"start"=>"2015-02-23", "end"=>"2015-04-06", "_"=>"1426851995017"}
+  [1m[35mAssignment Load (0.2ms)[0m  SELECT "assignments".* FROM "assignments"
+  Rendered assignments/index.json.jbuilder (1.6ms)
+Completed 200 OK in 5ms (Views: 4.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assignments" for 127.0.0.1 at 2015-03-20 13:50:59 +0200
+Processing by AssignmentsController#index as HTML
+  [1m[36mAssignment Load (0.2ms)[0m  [1mSELECT "assignments".* FROM "assignments"[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" INNER JOIN "user_assignments" ON "users"."id" = "user_assignments"."user_id" WHERE "user_assignments"."assignment_id" = ?  [["assignment_id", 10]]
+  Rendered assignments/index.html.erb within layouts/application (4.0ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+Completed 200 OK in 121ms (Views: 119.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/assignments-f09d8098f270ab8762c2eb4a8e59ea70.css?body=1" for 127.0.0.1 at 2015-03-20 13:50:59 +0200
+
+
+Started GET "/assets/groups-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-20 13:50:59 +0200
+
+
+Started GET "/assets/application-4ba3e11653928f5f71e1c1df20d46e32.css?body=1" for 127.0.0.1 at 2015-03-20 13:50:59 +0200
+
+
+Started GET "/assets/scaffolds-9fe0527a18558a65ba847be2e2f9571e.css?body=1" for 127.0.0.1 at 2015-03-20 13:50:59 +0200
+
+
+Started GET "/assets/users-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-20 13:50:59 +0200
+
+
+Started GET "/assets/tasks-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-20 13:50:59 +0200
+
+
+Started GET "/assets/fullcalendar-32ecbd03711357d4342240d33e768eba.css?body=1" for 127.0.0.1 at 2015-03-20 13:50:59 +0200
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-03-20 13:50:59 +0200
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-03-20 13:50:59 +0200
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for 127.0.0.1 at 2015-03-20 13:50:59 +0200
+
+
+Started GET "/assets/assignments-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-20 13:50:59 +0200
+
+
+Started GET "/assets/groups-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-20 13:50:59 +0200
+
+
+Started GET "/assets/tasks-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-20 13:50:59 +0200
+
+
+Started GET "/assets/fullcalendar-c6d8932cb3cd5ce4daf967fec5ffb732.js?body=1" for 127.0.0.1 at 2015-03-20 13:50:59 +0200
+
+
+Started GET "/assets/moment-66988874bf5714cb1e4a6f53d733b6e1.js?body=1" for 127.0.0.1 at 2015-03-20 13:50:59 +0200
+
+
+Started GET "/assets/application-6cf64470d396df0b53e1f9b8b2dce0fb.js?body=1" for 127.0.0.1 at 2015-03-20 13:50:59 +0200
+
+
+Started GET "/assets/users-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-03-20 13:50:59 +0200
+
+
+Started GET "/assignments.json?start=2015-02-23&end=2015-04-06&_=1426852259372" for 127.0.0.1 at 2015-03-20 13:50:59 +0200
+Processing by AssignmentsController#index as JSON
+  Parameters: {"start"=>"2015-02-23", "end"=>"2015-04-06", "_"=>"1426852259372"}
+  [1m[36mAssignment Load (0.2ms)[0m  [1mSELECT "assignments".* FROM "assignments"[0m
+  Rendered assignments/index.json.jbuilder (1.5ms)
+Completed 200 OK in 5ms (Views: 3.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2015-03-20 13:51:12 +0200
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users"
+  Rendered users/index.html.erb within layouts/application (1.6ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+Completed 200 OK in 122ms (Views: 120.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assignments" for 127.0.0.1 at 2015-03-20 13:51:19 +0200
+Processing by AssignmentsController#index as HTML
+  [1m[36mAssignment Load (0.2ms)[0m  [1mSELECT "assignments".* FROM "assignments"[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" INNER JOIN "user_assignments" ON "users"."id" = "user_assignments"."user_id" WHERE "user_assignments"."assignment_id" = ?  [["assignment_id", 10]]
+  Rendered assignments/index.html.erb within layouts/application (4.1ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+Completed 200 OK in 122ms (Views: 120.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assignments.json?start=2015-02-23&end=2015-04-06&_=1426852259373" for 127.0.0.1 at 2015-03-20 13:51:19 +0200
+Processing by AssignmentsController#index as JSON
+  Parameters: {"start"=>"2015-02-23", "end"=>"2015-04-06", "_"=>"1426852259373"}
+  [1m[36mAssignment Load (0.2ms)[0m  [1mSELECT "assignments".* FROM "assignments"[0m
+  Rendered assignments/index.json.jbuilder (1.4ms)
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/tasks" for 127.0.0.1 at 2015-03-20 13:51:20 +0200
+Processing by TasksController#index as HTML
+  [1m[35mTask Load (0.2ms)[0m  SELECT "tasks".* FROM "tasks"
+  Rendered tasks/index.html.erb within layouts/application (1.4ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+Completed 200 OK in 134ms (Views: 130.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assignments" for 127.0.0.1 at 2015-03-20 13:51:21 +0200
+Processing by AssignmentsController#index as HTML
+  [1m[36mAssignment Load (0.2ms)[0m  [1mSELECT "assignments".* FROM "assignments"[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" INNER JOIN "user_assignments" ON "users"."id" = "user_assignments"."user_id" WHERE "user_assignments"."assignment_id" = ?  [["assignment_id", 10]]
+  Rendered assignments/index.html.erb within layouts/application (3.2ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+Completed 200 OK in 131ms (Views: 129.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assignments.json?start=2015-02-23&end=2015-04-06&_=1426852259374" for 127.0.0.1 at 2015-03-20 13:51:22 +0200
+Processing by AssignmentsController#index as JSON
+  Parameters: {"start"=>"2015-02-23", "end"=>"2015-04-06", "_"=>"1426852259374"}
+  [1m[36mAssignment Load (0.2ms)[0m  [1mSELECT "assignments".* FROM "assignments"[0m
+  Rendered assignments/index.json.jbuilder (1.5ms)
+Completed 200 OK in 5ms (Views: 3.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2015-03-20 13:51:22 +0200
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mGroup Load (0.1ms)[0m  [1mSELECT "groups".* FROM "groups" INNER JOIN "memberships" ON "groups"."id" = "memberships"."group_id" WHERE "memberships"."user_id" = ?[0m  [["user_id", 2]]
+  [1m[35mAssignment Load (0.1ms)[0m  SELECT "assignments".* FROM "assignments" INNER JOIN "user_assignments" ON "assignments"."id" = "user_assignments"."assignment_id" WHERE "user_assignments"."user_id" = ?  [["user_id", 2]]
+  Rendered users/show.html.erb within layouts/application (3.2ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+Completed 200 OK in 120ms (Views: 119.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assignments" for 127.0.0.1 at 2015-03-20 13:51:26 +0200
+Processing by AssignmentsController#index as HTML
+  [1m[36mAssignment Load (0.2ms)[0m  [1mSELECT "assignments".* FROM "assignments"[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" INNER JOIN "user_assignments" ON "users"."id" = "user_assignments"."user_id" WHERE "user_assignments"."assignment_id" = ?  [["assignment_id", 10]]
+  Rendered assignments/index.html.erb within layouts/application (2.9ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+Completed 200 OK in 129ms (Views: 127.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assignments.json?start=2015-02-23&end=2015-04-06&_=1426852259375" for 127.0.0.1 at 2015-03-20 13:51:26 +0200
+Processing by AssignmentsController#index as JSON
+  Parameters: {"start"=>"2015-02-23", "end"=>"2015-04-06", "_"=>"1426852259375"}
+  [1m[36mAssignment Load (0.2ms)[0m  [1mSELECT "assignments".* FROM "assignments"[0m
+  Rendered assignments/index.json.jbuilder (1.5ms)
+Completed 200 OK in 5ms (Views: 3.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assignments/10" for 127.0.0.1 at 2015-03-20 13:51:44 +0200
+Processing by AssignmentsController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[35mAssignment Load (0.1ms)[0m  SELECT  "assignments".* FROM "assignments" WHERE "assignments"."id" = ? LIMIT 1  [["id", 10]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" INNER JOIN "user_assignments" ON "users"."id" = "user_assignments"."user_id" WHERE "user_assignments"."assignment_id" = ?[0m  [["assignment_id", 10]]
+  Rendered assignments/show.html.erb within layouts/application (2.0ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+Completed 200 OK in 121ms (Views: 119.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/tasks" for 127.0.0.1 at 2015-03-20 13:51:55 +0200
+Processing by TasksController#index as HTML
+  [1m[35mTask Load (0.2ms)[0m  SELECT "tasks".* FROM "tasks"
+  Rendered tasks/index.html.erb within layouts/application (0.9ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+Completed 200 OK in 120ms (Views: 118.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/groups" for 127.0.0.1 at 2015-03-20 13:51:56 +0200
+Processing by GroupsController#index as HTML
+  [1m[36mGroup Load (0.2ms)[0m  [1mSELECT "groups".* FROM "groups"[0m
+  Rendered groups/index.html.erb within layouts/application (2.6ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+Completed 200 OK in 132ms (Views: 130.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assignments" for 127.0.0.1 at 2015-03-20 13:51:58 +0200
+Processing by AssignmentsController#index as HTML
+  [1m[35mAssignment Load (0.2ms)[0m  SELECT "assignments".* FROM "assignments"
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" INNER JOIN "user_assignments" ON "users"."id" = "user_assignments"."user_id" WHERE "user_assignments"."assignment_id" = ?[0m  [["assignment_id", 10]]
+  Rendered assignments/index.html.erb within layouts/application (3.1ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+Completed 200 OK in 125ms (Views: 123.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assignments.json?start=2015-02-23&end=2015-04-06&_=1426852259376" for 127.0.0.1 at 2015-03-20 13:51:58 +0200
+Processing by AssignmentsController#index as JSON
+  Parameters: {"start"=>"2015-02-23", "end"=>"2015-04-06", "_"=>"1426852259376"}
+  [1m[35mAssignment Load (0.2ms)[0m  SELECT "assignments".* FROM "assignments"
+  Rendered assignments/index.json.jbuilder (1.5ms)
+Completed 200 OK in 5ms (Views: 4.1ms | ActiveRecord: 0.2ms)
+  [1m[36mAssignment Load (2.6ms)[0m  [1mSELECT "assignments".* FROM "assignments"[0m
