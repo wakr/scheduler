@@ -36,7 +36,7 @@ class AssignmentsController < ApplicationController
     respond_to do |format|
       if @assignment.save
         @assignment.update_attribute(:is_done, false)
-        @assignment.user_assignments.first.update_attribute(:assignment_id, @assignment.id) 
+        @assignment.user_assignments.first.update_attribute(:assignment_id, @assignment.id)
         format.html { redirect_to assignments_path, notice: 'Assignment was successfully created.' }
         format.json { render :show, status: :created, location: @assignment }
       else

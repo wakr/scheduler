@@ -3,10 +3,12 @@ class Assignment < ActiveRecord::Base
   has_many :doers, :through => :user_assignments, source: :user
   has_many :tasks, dependent: :destroy
 
+
   validates :name, presence: true
   #is_done depends if subtasks are all done
 
   accepts_nested_attributes_for :user_assignments # for nesting
+  accepts_nested_attributes_for :tasks
 
   def to_s
     self.name
