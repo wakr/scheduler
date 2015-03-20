@@ -10,7 +10,7 @@
 /tmp/
 
 ## log
-log/
+log/**
 
 ## workspace
 .idea/
