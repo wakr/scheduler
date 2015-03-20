@@ -14,7 +14,6 @@ describe AssignmentsController do
       tasks = assigns(:tasks)
       expect(tasks.first).to eq(task)
     end
-<<<<<<< HEAD
   end
   describe "GET index" do
     it "renders index" do
@@ -33,8 +32,4 @@ describe AssignmentsController do
       expect(assigns(:assignment).nil?).to eq(false)
     end
   end
-=======
-  
->>>>>>> a205c757824c9033c3d988c40cbd5e2dbd00d465
-
 end
