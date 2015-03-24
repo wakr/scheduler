@@ -10,6 +10,6 @@ describe AssignmentsController do
       tasks = assigns(:tasks)
       expect(tasks.first).to eq(task)
     end
-  
+
 
 end

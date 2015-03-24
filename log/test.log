@@ -24547,3 +24547,426 @@ Completed 302 Found in 3ms (ActiveRecord: 0.5ms)
   [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("name", "birthdate", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Samu"], ["birthdate", "1992-08-27"], ["password_digest", "$2a$04$O/bMpt4.54secvLB5pCNPunOF/0RGnDV/FE5b38hhstuhapl14cEq"], ["created_at", "2015-03-20 13:04:59.726565"], ["updated_at", "2015-03-20 13:04:59.726565"]]
   [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
   [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "assignments" ("name", "is_done", "deadline", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Tee rori-labra"], ["is_done", "f"], ["deadline", "2015-04-30 00:00:00.000000"], ["created_at", "2015-03-24 11:22:14.776485"], ["updated_at", "2015-03-24 11:22:14.776485"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "assignments" ("name", "is_done", "deadline", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Tee rori-labra"], ["is_done", "f"], ["deadline", "2015-04-30 00:00:00.000000"], ["created_at", "2015-03-24 11:22:14.793072"], ["updated_at", "2015-03-24 11:22:14.793072"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "tasks" ("name", "location", "assignment_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Väsää angularilla single-page-app"], ["location", "Kumpula"], ["assignment_id", 2], ["created_at", "2015-03-24 11:22:14.803988"], ["updated_at", "2015-03-24 11:22:14.803988"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by AssignmentsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mAssignment Load (0.2ms)[0m  SELECT  "assignments".* FROM "assignments" WHERE "assignments"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered assignments/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 24ms (Views: 14.5ms | ActiveRecord: 0.2ms)
+  [1m[36mTask Load (0.2ms)[0m  [1mSELECT  "tasks".* FROM "tasks"  ORDER BY "tasks"."id" ASC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "groups" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Test group"], ["description", "the most tested group in the world"], ["created_at", "2015-03-24 11:22:14.848813"], ["updated_at", "2015-03-24 11:22:14.848813"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by GroupsController#index as HTML
+  Rendered groups/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 9ms (Views: 8.3ms | ActiveRecord: 0.0ms)
+  [1m[36mGroup Load (0.2ms)[0m  [1mSELECT "groups".* FROM "groups"[0m
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by GroupsController#index as HTML
+  Rendered groups/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by GroupsController#new as HTML
+  Rendered groups/new.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "groups" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Test group"], ["description", "the most tested group in the world"], ["created_at", "2015-03-24 11:22:14.879991"], ["updated_at", "2015-03-24 11:22:14.879991"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "groups" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Test group"], ["description", "the most tested group in the world"], ["created_at", "2015-03-24 11:22:14.888750"], ["updated_at", "2015-03-24 11:22:14.888750"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by GroupsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mGroup Load (0.2ms)[0m  SELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered groups/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 10ms (Views: 3.3ms | ActiveRecord: 0.4ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by GroupsController#create as HTML
+  Parameters: {"group"=>{"name"=>"Test group", "description"=>"the most tested group in the world"}}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "groups" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Test group"], ["description", "the most tested group in the world"], ["created_at", "2015-03-24 11:22:14.910666"], ["updated_at", "2015-03-24 11:22:14.910666"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/groups/1
+Completed 302 Found in 6ms (ActiveRecord: 0.4ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Processing by GroupsController#create as HTML
+  Parameters: {"group"=>{"name"=>"Test group", "description"=>"the most tested group in the world"}}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "groups" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Test group"], ["description", "the most tested group in the world"], ["created_at", "2015-03-24 11:22:14.920803"], ["updated_at", "2015-03-24 11:22:14.920803"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://test.host/groups/1
+Completed 302 Found in 4ms (ActiveRecord: 0.4ms)
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+Processing by GroupsController#create as JSON
+  Parameters: {"group"=>{"name"=>"Test group", "description"=>"the most tested group in the world"}}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "groups" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Test group"], ["description", "the most tested group in the world"], ["created_at", "2015-03-24 11:22:14.930298"], ["updated_at", "2015-03-24 11:22:14.930298"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  Rendered groups/show.json.jbuilder (0.4ms)
+Completed 201 Created in 9ms (Views: 4.2ms | ActiveRecord: 0.5ms)
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "groups"
+Processing by GroupsController#create as HTML
+  Parameters: {"group"=>{"name"=>"Test group", "description"=>"the most tested group in the world"}}
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "groups" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Test group"], ["description", "the most tested group in the world"], ["created_at", "2015-03-24 11:22:14.950035"], ["updated_at", "2015-03-24 11:22:14.950035"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/groups/1
+Completed 302 Found in 5ms (ActiveRecord: 0.4ms)
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "groups"
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "groups" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Test group"], ["description", "the most tested group in the world"], ["created_at", "2015-03-24 11:22:14.957789"], ["updated_at", "2015-03-24 11:22:14.957789"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mGroup Load (0.2ms)[0m  SELECT  "groups".* FROM "groups"  ORDER BY "groups"."id" ASC LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "groups"[0m
+Processing by GroupsController#destroy as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mGroup Load (0.1ms)[0m  SELECT  "groups".* FROM "groups" WHERE "groups"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "groups" WHERE "groups"."id" = ?  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/groups
+Completed 302 Found in 3ms (ActiveRecord: 0.6ms)
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "groups"
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "assignments"[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "assignments" ("name", "is_done", "deadline", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Tee rori-labra"], ["is_done", "f"], ["deadline", "2015-04-30 00:00:00.000000"], ["created_at", "2015-03-24 11:22:14.986994"], ["updated_at", "2015-03-24 11:22:14.986994"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mAssignment Load (0.2ms)[0m  [1mSELECT  "assignments".* FROM "assignments"  ORDER BY "assignments"."id" ASC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "assignments" ("name", "is_done", "deadline", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Tee rori-labra"], ["is_done", "f"], ["deadline", "2015-04-30 00:00:00.000000"], ["created_at", "2015-03-24 11:22:14.993508"], ["updated_at", "2015-03-24 11:22:14.993508"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "assignments"[0m
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "assignments" ("name", "is_done", "deadline", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Tee rori-labra"], ["is_done", "f"], ["deadline", "2015-04-30 00:00:00.000000"], ["created_at", "2015-03-24 11:22:14.999768"], ["updated_at", "2015-03-24 11:22:14.999768"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUserAssignment Load (0.2ms)[0m  SELECT "user_assignments".* FROM "user_assignments" WHERE "user_assignments"."assignment_id" = ?  [["assignment_id", 1]]
+  [1m[36mTask Load (0.2ms)[0m  [1mSELECT "tasks".* FROM "tasks" WHERE "tasks"."assignment_id" = ?[0m  [["assignment_id", 1]]
+  [1m[35mSQL (0.3ms)[0m  DELETE FROM "assignments" WHERE "assignments"."id" = ?  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "assignments"
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "assignments" ("name", "is_done", "deadline", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Tee rori-labra"], ["is_done", "f"], ["deadline", "2015-04-30 00:00:00.000000"], ["created_at", "2015-03-24 11:22:15.025881"], ["updated_at", "2015-03-24 11:22:15.025881"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "assignments" ("name", "is_done", "deadline", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Tee rori-labra"], ["is_done", "f"], ["deadline", "2015-04-30 00:00:00.000000"], ["created_at", "2015-03-24 11:22:15.031190"], ["updated_at", "2015-03-24 11:22:15.031190"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."name" = 'Samu' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("name", "birthdate", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Samu"], ["birthdate", "1992-08-27"], ["password_digest", "$2a$04$cyhSo2LFd8sVjRsr2wMdSeOv6uk0mKkHbEhjD/mzpcK3CbT02DBe2"], ["created_at", "2015-03-24 11:22:15.052948"], ["updated_at", "2015-03-24 11:22:15.052948"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "user_assignments" ("user_id", "assignment_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["user_id", 1], ["assignment_id", 1], ["created_at", "2015-03-24 11:22:15.061286"], ["updated_at", "2015-03-24 11:22:15.061286"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mAssignment Load (0.2ms)[0m  SELECT  "assignments".* FROM "assignments"  ORDER BY "assignments"."id" ASC LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "user_assignments" WHERE "user_assignments"."assignment_id" = ?[0m  [["assignment_id", 1]]
+  [1m[35mAssignment Load (0.2ms)[0m  SELECT  "assignments".* FROM "assignments"  ORDER BY "assignments"."id" ASC LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "users" INNER JOIN "user_assignments" ON "users"."id" = "user_assignments"."user_id" WHERE "user_assignments"."assignment_id" = ?[0m  [["assignment_id", 1]]
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "assignments" ("name", "is_done", "deadline", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Tee rori-labra"], ["is_done", "f"], ["deadline", "2015-04-30 00:00:00.000000"], ["created_at", "2015-03-24 11:22:15.085583"], ["updated_at", "2015-03-24 11:22:15.085583"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."name" = 'Kristian' LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "birthdate", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Kristian"], ["birthdate", "1992-08-27"], ["password_digest", "$2a$04$.2O52wAavvVq/7HRgQHUB.dNpUHtQsgrCx2Hq4oUSaQp77N/RgKtO"], ["created_at", "2015-03-24 11:22:15.093274"], ["updated_at", "2015-03-24 11:22:15.093274"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "user_assignments" ("user_id", "assignment_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["user_id", 1], ["assignment_id", 1], ["created_at", "2015-03-24 11:22:15.096730"], ["updated_at", "2015-03-24 11:22:15.096730"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."name" = 'Samu' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("name", "birthdate", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Samu"], ["birthdate", "1992-08-27"], ["password_digest", "$2a$04$/qAHDzSYls6eXqJZvDs2pusi1Qw213yh3xz0rueF.vsb/dtp66JaG"], ["created_at", "2015-03-24 11:22:15.107704"], ["updated_at", "2015-03-24 11:22:15.107704"]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "user_assignments" ("user_id", "assignment_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["user_id", 2], ["assignment_id", 1], ["created_at", "2015-03-24 11:22:15.111220"], ["updated_at", "2015-03-24 11:22:15.111220"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."name" = 'Luukkainen' LIMIT 1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "users" ("name", "birthdate", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Luukkainen"], ["birthdate", "1992-08-27"], ["password_digest", "$2a$04$XuWEpSb.wqAI.o4sW1P1R.2UkrxAGfl66jpcElSbFuRLhUnqsuiPC"], ["created_at", "2015-03-24 11:22:15.121909"], ["updated_at", "2015-03-24 11:22:15.121909"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "user_assignments" ("user_id", "assignment_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["user_id", 3], ["assignment_id", 1], ["created_at", "2015-03-24 11:22:15.125199"], ["updated_at", "2015-03-24 11:22:15.125199"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."name" = 'Chang' LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "users" ("name", "birthdate", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Chang"], ["birthdate", "1992-08-27"], ["password_digest", "$2a$04$xMVe75tUe3Q2TwqdxJv5iug4KdXxXub8kMZYuDKj3gfZr/8ftepoW"], ["created_at", "2015-03-24 11:22:15.135335"], ["updated_at", "2015-03-24 11:22:15.135335"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "user_assignments" ("user_id", "assignment_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["user_id", 4], ["assignment_id", 1], ["created_at", "2015-03-24 11:22:15.138336"], ["updated_at", "2015-03-24 11:22:15.138336"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mAssignment Load (0.2ms)[0m  [1mSELECT  "assignments".* FROM "assignments"  ORDER BY "assignments"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "users" INNER JOIN "user_assignments" ON "users"."id" = "user_assignments"."user_id" WHERE "user_assignments"."assignment_id" = ?  [["assignment_id", 1]]
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "assignments" ("name", "is_done", "deadline", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Tee rori-labra"], ["is_done", "f"], ["deadline", "2015-04-30 00:00:00.000000"], ["created_at", "2015-03-24 11:22:15.149293"], ["updated_at", "2015-03-24 11:22:15.149293"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."name" = 'Kristian' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("name", "birthdate", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Kristian"], ["birthdate", "1992-08-27"], ["password_digest", "$2a$04$FRk6wEQcY.9dCUXkeXiWJu2gVLOY.Zu1Ai2aH9lzLS0bCd6RrmTGi"], ["created_at", "2015-03-24 11:22:15.156742"], ["updated_at", "2015-03-24 11:22:15.156742"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "user_assignments" ("user_id", "assignment_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["user_id", 1], ["assignment_id", 1], ["created_at", "2015-03-24 11:22:15.160425"], ["updated_at", "2015-03-24 11:22:15.160425"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."name" = 'Samu' LIMIT 1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "users" ("name", "birthdate", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Samu"], ["birthdate", "1992-08-27"], ["password_digest", "$2a$04$xFuz.qIvGFOBI.dQ5Z.Nd.2q1wascbZdIgT9wdLhygfv1w0VM98r2"], ["created_at", "2015-03-24 11:22:15.171103"], ["updated_at", "2015-03-24 11:22:15.171103"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "user_assignments" ("user_id", "assignment_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["user_id", 2], ["assignment_id", 1], ["created_at", "2015-03-24 11:22:15.174288"], ["updated_at", "2015-03-24 11:22:15.174288"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."name" = 'Luukkainen' LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "users" ("name", "birthdate", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Luukkainen"], ["birthdate", "1992-08-27"], ["password_digest", "$2a$04$.g5S2kXLt9H6fwXSUDLvquHHMt2biwUsPf.noj.OJvHINfGKNYYWW"], ["created_at", "2015-03-24 11:22:15.184975"], ["updated_at", "2015-03-24 11:22:15.184975"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "user_assignments" ("user_id", "assignment_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["user_id", 3], ["assignment_id", 1], ["created_at", "2015-03-24 11:22:15.187980"], ["updated_at", "2015-03-24 11:22:15.187980"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."name" = 'Chang' LIMIT 1
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "users" ("name", "birthdate", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Chang"], ["birthdate", "1992-08-27"], ["password_digest", "$2a$04$4pOl53B/zAjfdAT2s0uqGOyWXtidjj9nXv8V3PiSDwABBQXlkFD2q"], ["created_at", "2015-03-24 11:22:15.197973"], ["updated_at", "2015-03-24 11:22:15.197973"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "user_assignments" ("user_id", "assignment_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["user_id", 4], ["assignment_id", 1], ["created_at", "2015-03-24 11:22:15.200934"], ["updated_at", "2015-03-24 11:22:15.200934"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mAssignment Load (0.2ms)[0m  SELECT  "assignments".* FROM "assignments"  ORDER BY "assignments"."id" ASC LIMIT 1
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" INNER JOIN "user_assignments" ON "users"."id" = "user_assignments"."user_id" WHERE "user_assignments"."assignment_id" = ? AND "users"."name" = ? LIMIT 1[0m  [["assignment_id", 1], ["name", "Chang"]]
+  [1m[35mAssignment Load (0.2ms)[0m  SELECT  "assignments".* FROM "assignments"  ORDER BY "assignments"."id" ASC LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" INNER JOIN "user_assignments" ON "users"."id" = "user_assignments"."user_id" WHERE "user_assignments"."assignment_id" = ? AND "users"."name" = ? LIMIT 1[0m  [["assignment_id", 1], ["name", "Samu"]]
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "assignments" ("name", "is_done", "deadline", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Tee rori-labra"], ["is_done", "f"], ["deadline", "2015-04-30 00:00:00.000000"], ["created_at", "2015-03-24 11:22:15.215275"], ["updated_at", "2015-03-24 11:22:15.215275"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "tasks" ("name", "assignment_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "asd"], ["assignment_id", 1], ["created_at", "2015-03-24 11:22:15.219744"], ["updated_at", "2015-03-24 11:22:15.219744"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "tasks" WHERE "tasks"."assignment_id" = ?  [["assignment_id", 1]]
+  [1m[36mTask Load (0.2ms)[0m  [1mSELECT  "tasks".* FROM "tasks" WHERE "tasks"."assignment_id" = ?  ORDER BY "tasks"."id" ASC LIMIT 1[0m  [["assignment_id", 1]]
+  [1m[35m (0.3ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "groups"
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "groups"[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "groups" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Test group"], ["description", "the most tested group in the world"], ["created_at", "2015-03-24 11:22:15.236754"], ["updated_at", "2015-03-24 11:22:15.236754"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "groups"[0m
+  [1m[35mGroup Load (0.2ms)[0m  SELECT  "groups".* FROM "groups"  ORDER BY "groups"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "groups" WHERE "groups"."id" = ?  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "groups"
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "groups" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Test group"], ["description", "the most tested group in the world"], ["created_at", "2015-03-24 11:22:15.245828"], ["updated_at", "2015-03-24 11:22:15.245828"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."name" = 'Samu' LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("name", "birthdate", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Samu"], ["birthdate", "1992-08-27"], ["password_digest", "$2a$04$x2i941FAkjXEj7kqgd1ejebJHKcI58CnWeZw71Y2XzG3xr1swYEti"], ["created_at", "2015-03-24 11:22:15.254017"], ["updated_at", "2015-03-24 11:22:15.254017"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "memberships"
+  [1m[36mGroup Load (0.2ms)[0m  [1mSELECT  "groups".* FROM "groups"  ORDER BY "groups"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "memberships" ("group_id", "user_id") VALUES (?, ?)[0m  [["group_id", 1], ["user_id", 1]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "memberships"[0m
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "tasks"
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "assignments" ("name", "is_done", "deadline", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Tee rori-labra"], ["is_done", "f"], ["deadline", "2015-04-30 00:00:00.000000"], ["created_at", "2015-03-24 11:22:15.284751"], ["updated_at", "2015-03-24 11:22:15.284751"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "tasks" ("name", "location", "assignment_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Väsää angularilla single-page-app"], ["location", "Kumpula"], ["assignment_id", 1], ["created_at", "2015-03-24 11:22:15.288837"], ["updated_at", "2015-03-24 11:22:15.288837"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mTask Load (0.2ms)[0m  [1mSELECT  "tasks".* FROM "tasks"  ORDER BY "tasks"."id" ASC LIMIT 1[0m
+  [1m[35mTask Load (0.2ms)[0m  SELECT  "tasks".* FROM "tasks"  ORDER BY "tasks"."id" ASC LIMIT 1
+  [1m[36mAssignment Load (0.1ms)[0m  [1mSELECT  "assignments".* FROM "assignments" WHERE "assignments"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "assignments" ("name", "is_done", "deadline", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Tee rori-labra"], ["is_done", "f"], ["deadline", "2015-04-30 00:00:00.000000"], ["created_at", "2015-03-24 11:22:15.298777"], ["updated_at", "2015-03-24 11:22:15.298777"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "tasks" ("name", "location", "assignment_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Väsää angularilla single-page-app"], ["location", "Kumpula"], ["assignment_id", 1], ["created_at", "2015-03-24 11:22:15.301957"], ["updated_at", "2015-03-24 11:22:15.301957"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "tasks"
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "assignments" ("name", "is_done", "deadline", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Tee rori-labra"], ["is_done", "f"], ["deadline", "2015-04-30 00:00:00.000000"], ["created_at", "2015-03-24 11:22:15.308408"], ["updated_at", "2015-03-24 11:22:15.308408"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "tasks" ("name", "location", "assignment_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Väsää angularilla single-page-app"], ["location", "Kumpula"], ["assignment_id", 1], ["created_at", "2015-03-24 11:22:15.312159"], ["updated_at", "2015-03-24 11:22:15.312159"]]
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "tasks" WHERE "tasks"."id" = ?  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "tasks"
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "users"[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."name" IS NULL LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."name" IS NULL LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."name" = 'Samu' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."name" = 'Samu' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."name" = 'Samu' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK TO SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."name" = 'Samu' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."name" = 'Samu' LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("name", "birthdate", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Samu"], ["birthdate", "1992-08-27"], ["password_digest", "$2a$04$iC5Qf5fcpWH1NVNaFUOCqOw.cxtHRUxZvs1agFyFuXvejfWfByIU."], ["created_at", "2015-03-24 11:22:15.362757"], ["updated_at", "2015-03-24 11:22:15.362757"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."name" = 'Samu' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("name", "birthdate", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Samu"], ["birthdate", "1992-08-27"], ["password_digest", "$2a$04$goSQxMsUy2a/AmLM7hgHC.Dwg0/eUf31YI6K3g.F5SScC0n348v0a"], ["created_at", "2015-03-24 11:22:15.373775"], ["updated_at", "2015-03-24 11:22:15.373775"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "users"
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."name" = 'Samu' LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "birthdate", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Samu"], ["birthdate", "1992-08-27"], ["password_digest", "$2a$04$X6E6lrISSivLO5v1.tBBCe/Po0tth2kim0Q.52DX7PCUU9jGYn8Ce"], ["created_at", "2015-03-24 11:22:15.384052"], ["updated_at", "2015-03-24 11:22:15.384052"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."name" = 'Samu' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."name" = 'Samu' LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."name" = 'Samu' LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "birthdate", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Samu"], ["birthdate", "1992-08-27"], ["password_digest", "$2a$04$37/TXw8WZcoK60owaM1QN.whs7n5Ox8l8tH//LKePGCmrwsOeMD4S"], ["created_at", "2015-03-24 11:22:15.402214"], ["updated_at", "2015-03-24 11:22:15.402214"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "users" WHERE "users"."id" = ?  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "users"
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."name" = 'Samu' LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("name", "birthdate", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Samu"], ["birthdate", "1992-08-27"], ["password_digest", "$2a$04$i1PhaotbKcMyAo.wgxXQxOuI7xTwioDFQZ7QXIU7BsFox3WFxZ4mG"], ["created_at", "2015-03-24 11:22:15.413782"], ["updated_at", "2015-03-24 11:22:15.413782"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."name" = 'Samu' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("name", "birthdate", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Samu"], ["birthdate", "1992-08-27"], ["password_digest", "$2a$04$kqbLUDiKTttOSE0xkveS6OaKIo.EeFqaQMOC493InA6XeiGNAr.6e"], ["created_at", "2015-03-24 11:22:15.423704"], ["updated_at", "2015-03-24 11:22:15.423704"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  rollback transaction
