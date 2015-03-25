@@ -1,6 +1,6 @@
 class TasksController < ApplicationController
   before_action :set_task, only: [:show, :edit, :update, :destroy]
-
+  before_action :ensure_that_user_is_signed_in
   # GET /tasks
   # GET /tasks.json
   def index

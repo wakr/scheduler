@@ -3,6 +3,7 @@ FactoryGirl.define do
     name "Samu"
     birthdate Date.new(1992, 8, 27)
     password "Test1"
+    password_confirmation "Test1"
   end
 
   factory :assignment do

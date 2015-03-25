@@ -1,4 +1,6 @@
 class MembershipsController < ApplicationController
+  before_action :ensure_that_user_is_signed_in
+
 
   def new
     @membership = Membership.new

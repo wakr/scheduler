@@ -4,6 +4,8 @@ describe AssignmentsController do
 
   before :each do
     @assignment = FactoryGirl.create(:assignment)
+    @user = FactoryGirl.create(:user)
+    session[:user_id] = @user.id
   end
 
   describe "GET show" do
@@ -34,4 +36,17 @@ describe AssignmentsController do
       expect(assigns(:assignment).nil?).to eq(false)
     end
   end
+
+  describe "POST new" do
+    it "saves correct assignment to database" do
+      a = FactoryGirl.attributes_for(:assignment)
+
+      pending("for the nil message. should create a us stubb and send with the assignment param")
+
+      expect{
+        post :create, assignment: a
+      }.to change{Assignment.count}.from(0).to(1)
+    end
+  end
+
 end

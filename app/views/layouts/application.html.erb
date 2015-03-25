@@ -8,12 +8,13 @@
 </head>
 <body>
 
-<%=link_to 'users', users_path%> | 
-<%=link_to 'assignments', assignments_path%> | 
-<!-- <%=link_to 'tasks', tasks_path%> | -->
-<%=link_to 'groups', groups_path%> <b>|</b>
+
 
     <% if current_user %>
+    <%=link_to 'users', users_path%> | 
+    <%=link_to 'assignments', assignments_path%> | 
+    <!-- <%=link_to 'tasks', tasks_path%> | -->
+    <%=link_to 'groups', groups_path%> <b>|</b>
         [<%= link_to current_user.name, current_user %>]
     <%end%>
 

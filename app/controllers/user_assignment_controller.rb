@@ -1,5 +1,5 @@
 class UserAssignmentController < ApplicationController
-
+  before_action :ensure_that_user_is_signed_in
 
   # send post to this to create a connection between the created Assignment and the user
   def create
