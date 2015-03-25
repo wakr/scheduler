@@ -18,6 +18,11 @@
   </tbody>
 </table>
 
+<h3>This assignment was assigned by</h3>
+<p>
+  <%= link_to @assignment.get_creator, @assignment.get_creator%>
+</p>
+
 <p>
   <strong>Is done:</strong>
   <%= @assignment.is_done %>
@@ -31,10 +36,20 @@
 <p><strong>Tasks</strong></p>
 
 <table>
+
+  <thead>
+  <tr>
+    <th>Name</th>
+    <th>Status</th>
+    <th colspan="10"></th>
+  </tr>
+  </thead>
+
   <tbody>
   <% @tasks.each do |task| %>
       <tr>
         <td><%= link_to task.name, task %></td>
+        <td><%= task.is_done %></td>
       </tr>
   <% end %>
   </tbody>

@@ -26,6 +26,15 @@
 <h3>
   Assigned assignments
 </h3>
+<table>
+  <tbody>
+  <% @user.get_created_assignments.each do |assignment| %>
+      <tr>
+        <td><%= link_to assignment.name, assignment %></td>
+      </tr>
+  <% end %>
+  </tbody>
+</table>
 
 <h3>Assigned to assignments</h3>
 <table>
@@ -37,6 +46,3 @@
   <% end %>
   </tbody>
 </table>
-
-<%= link_to 'Edit', edit_user_path(@user) %> |
-<%= link_to 'Back', users_path %>
