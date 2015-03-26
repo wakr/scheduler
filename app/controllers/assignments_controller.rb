@@ -24,7 +24,9 @@ class AssignmentsController < ApplicationController
 
   # GET /assignments/1/edit
   def edit
-    @user = User.all
+    @assignment = Assignment.new
+    @assignment.user_assignments.build # required for nested structure?
+    @users = User.all_except(current_user) # users can't assign themselves
   end
 
   # POST /assignments

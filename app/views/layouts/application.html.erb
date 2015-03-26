@@ -9,19 +9,19 @@
 <body>
 
 
-
-    <% if current_user %>
-    <%=link_to 'users', users_path%> | 
-    <%=link_to 'assignments', assignments_path%> | 
-    <!-- <%=link_to 'tasks', tasks_path%> | -->
-    <%=link_to 'groups', groups_path%> <b>|</b>
-        [<%= link_to current_user.name, current_user %>]
+    <nav>
+        <% if current_user %>
+        <%=link_to 'users', users_path%> | 
+        <%=link_to 'assignments', assignments_path%> | 
+        <!-- <%=link_to 'tasks', tasks_path%> | -->
+        <%=link_to 'groups', groups_path%> <b>|</b>
+            [<%= link_to current_user.name, current_user %>]
     <%end%>
 
 <%= link_to 'sign up', signup_path if not current_user%> |
 <%= link_to 'sign in', signin_path if not current_user%> |
 <%= link_to 'sign out', signout_path, method: :delete  if current_user%>
-
+    </nav>
 
 <%= yield %>
 

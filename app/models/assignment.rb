@@ -5,6 +5,7 @@ class Assignment < ActiveRecord::Base
 
 
   validates :name, presence: true
+  #validates doers?
   #is_done depends if subtasks are all done
 
   accepts_nested_attributes_for :user_assignments # for nesting
@@ -12,6 +13,10 @@ class Assignment < ActiveRecord::Base
 
   def to_s
     self.name
+  end
+
+  def isReady
+    self.is_done
   end
 
   def get_creator

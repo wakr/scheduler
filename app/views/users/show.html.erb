@@ -38,10 +38,22 @@
 
 <h3>Assigned to assignments</h3>
 <table>
+
+  <thead>
+  <tr>
+    <td>Name</td>
+    <td>Status</td>
+    <td></td>
+    <td colspan="3"></td>
+  </tr>
+  </thead>
+
   <tbody>
   <% @user.assignments.each do |assignment| %>
       <tr>
         <td><%= link_to assignment.name, assignment %></td>
+        <td><%=assignment.isReady%></td>
+        <td><%=link_to 'make done', ""%></td>
       </tr>
   <% end %>
   </tbody>

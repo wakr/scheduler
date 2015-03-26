@@ -28,7 +28,8 @@
       <th>Workers</th>
       <th>Deadline</th>
       <th>Assigned by</th>
-      <th colspan="10"></th>
+      <th>State</th>
+      <th colspan="3"></th>
     </tr>
   </thead>
 
@@ -51,9 +52,10 @@
 
         <td><%= assignment.deadline %></td>
         <td><%= link_to assignment.get_creator, assignment.get_creator%> </td> <!-- This is pretty slow because SQL-->
+        <td><%= assignment.isReady%></td>
         <td><%= link_to 'Edit', edit_assignment_path(assignment) %></td>
         <td><%= link_to 'Destroy', assignment, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-        <td><%= link_to 'Add task', new_task_path%></td>
+        <td><%= link_to 'Add task', new_task_path(:assignment_id => assignment.id)%></td>
         <td><%= link_to 'Add worker', ""%></td>
       </tr>
     <% end %>
