@@ -15,4 +15,6 @@ Rails.application.routes.draw do
   resources :memberships, only: [:new, :create, :destroy]
 
   resource :session, only: [:new, :create, :delete]
+
+  resources :user_assignments
 end

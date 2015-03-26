@@ -56,7 +56,7 @@
         <td><%= link_to 'Edit', edit_assignment_path(assignment) %></td>
         <td><%= link_to 'Destroy', assignment, method: :delete, data: { confirm: 'Are you sure?' } %></td>
         <td><%= link_to 'Add task', new_task_path(:assignment_id => assignment.id)%></td>
-        <td><%= link_to 'Add worker', ""%></td>
+        <td><%= link_to 'Add worker', new_user_assignment_path%></td>
       </tr>
     <% end %>
   </tbody>
