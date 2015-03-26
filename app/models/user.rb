@@ -40,6 +40,7 @@ class User < ActiveRecord::Base
   def self.all_who_are_in_same_group_as_creator(current_user)
     group_ids = current_user.groups.map{|g| g.id}
     user_ids = Membership.where(group_id: group_ids).map{|u| u.user_id}
+    user_ids = user_ids - [current_user.id] unless user_ids.empty?
     User.where(id: user_ids)
   end
 

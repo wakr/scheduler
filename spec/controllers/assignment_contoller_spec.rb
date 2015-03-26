@@ -42,20 +42,35 @@ describe AssignmentsController do
       expect(assigns(:members).nil?).to eq(false)
     end
 
-    it "variable members should contains only persons who are in same groups as creator." do
-            user = FactoryGirl.create(:user, name: "Kristian")
-      assignment = FactoryGirl.create(:assignment, name: "Mini ohtu projekti!")
-      assignment.creator_id = user.id
+    describe "variable members" do
+      before :each do
+              @user2 = FactoryGirl.create(:user, name: "Kristian")
+              @user3 = FactoryGirl.create(:user, name: "Chang")
+        assignment = FactoryGirl.create(:assignment, name: "Mini ohtu projekti!")
+        assignment.creator_id = @user2.id
 
-      group_a = FactoryGirl.create(:group, name:"Microsoft")
-      group_b = FactoryGirl.create(:group, name:"Kilometritehdas")
-      FactoryGirl.create(:membership, user_id: user.id, group_id: group_a.id)
-      FactoryGirl.create(:membership, user_id: @user.id, group_id: group_b.id)
-      get :new
-      members = assigns(:members)
-      expect(members).not_to include(user)
-      expect(members).to include(@user)
+        group_a = FactoryGirl.create(:group, name:"Microsoft")
+        group_b = FactoryGirl.create(:group, name:"Kilometritehdas")
+        FactoryGirl.create(:membership, user_id: @user2.id, group_id: group_a.id) #Kristian Microsoftille
+        FactoryGirl.create(:membership, user_id: @user.id, group_id: group_b.id) # Samu kilometritehtaalle
+        FactoryGirl.create(:membership, user_id: @user3.id, group_id: group_b.id) #Chang myös
+      end
+
+      it "should contain only persons who are in same groups as creator." do
+        get :new
+        members = assigns(:members)
+        expect(members).not_to include(@user2)
+        expect(members).to include(@user3)
+      end
+
+      it "should not contain creator/current_user" do
+        get :new
+        members = assigns(:members)
+        expect(members).not_to include(@user)
+      end
     end
+
+
   end
 
   describe "POST new" do
