@@ -43,6 +43,7 @@
   <tr>
     <td>Name</td>
     <td>Status</td>
+    <td>Tasks</td>
     <td></td>
     <td colspan="3"></td>
   </tr>
@@ -53,7 +54,18 @@
       <tr>
         <td><%= link_to assignment.name, assignment %></td>
         <td><%=assignment.isReady%></td>
-        <td><%=link_to 'make done', ""%></td>
+        <td>
+          <table>
+            <tbody>
+            <% assignment.tasks.each do |task| %>
+                <tr>
+                  <td><%=link_to task.name, task%></td>
+                  <td><button>Mark as created</button></td>
+                </tr>
+            <% end %>
+            </tbody>
+          </table>
+        </td>
       </tr>
   <% end %>
   </tbody>
