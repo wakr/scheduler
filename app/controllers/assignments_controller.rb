@@ -19,6 +19,7 @@ class AssignmentsController < ApplicationController
     @assignment = Assignment.new
     @assignment.user_assignments.build # required for nested structure?
     @users = User.all_except(current_user) # users can't assign themselves
+    @members = User.all_who_are_in_same_group_as_creator(current_user) 
   end
 
   # GET /assignments/1/edit

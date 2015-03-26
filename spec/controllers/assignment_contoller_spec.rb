@@ -5,6 +5,7 @@ describe AssignmentsController do
   before :each do
     @assignment = FactoryGirl.create(:assignment)
     @user = FactoryGirl.create(:user)
+    @assignment.creator_id = @user.id
     session[:user_id] = @user.id
   end
 
@@ -34,6 +35,26 @@ describe AssignmentsController do
     it "assigns variables" do
       get :new
       expect(assigns(:assignment).nil?).to eq(false)
+    end
+
+    it "assigns variable @members." do
+      get :new
+      expect(assigns(:members).nil?).to eq(false)
+    end
+
+    it "variable members should contains only persons who are in same groups as creator." do
+            user = FactoryGirl.create(:user, name: "Kristian")
+      assignment = FactoryGirl.create(:assignment, name: "Mini ohtu projekti!")
+      assignment.creator_id = user.id
+
+      group_a = FactoryGirl.create(:group, name:"Microsoft")
+      group_b = FactoryGirl.create(:group, name:"Kilometritehdas")
+      FactoryGirl.create(:membership, user_id: user.id, group_id: group_a.id)
+      FactoryGirl.create(:membership, user_id: @user.id, group_id: group_b.id)
+      get :new
+      members = assigns(:members)
+      expect(members).not_to include(user)
+      expect(members).to include(@user)
     end
   end
 
