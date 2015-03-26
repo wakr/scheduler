@@ -15,6 +15,10 @@ class Assignment < ActiveRecord::Base
     self.name
   end
 
+  def isReady
+    self.is_done
+  end
+
   def get_creator
     User.all.find(self.creator_id)
   end

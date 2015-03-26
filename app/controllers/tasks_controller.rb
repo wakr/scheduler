@@ -15,6 +15,7 @@ class TasksController < ApplicationController
   # GET /tasks/new
   def new
     @task = Task.new
+    @task.assignment_id = params[:assignment_id]
   end
 
   # GET /tasks/1/edit
@@ -29,7 +30,7 @@ class TasksController < ApplicationController
     respond_to do |format|
       if @task.save
         @task.update_attribute(:is_done, false)
-        format.html { redirect_to @task, notice: 'Task was successfully created.' }
+        format.html { redirect_to @task.assignment, notice: 'Task was successfully created.' }
         format.json { render :show, status: :created, location: @task }
       else
         format.html { render :new }
