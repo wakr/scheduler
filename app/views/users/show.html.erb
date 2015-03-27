@@ -31,6 +31,7 @@
   <% @user.get_created_assignments.each do |assignment| %>
       <tr>
         <td><%= link_to assignment.name, assignment %></td>
+        <td><button>Add worker</button></td>
       </tr>
   <% end %>
   </tbody>
