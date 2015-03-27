@@ -23,8 +23,8 @@ log/**
 .repl_history
 build/
 
-/db/*.sqlite3
-/db/*.log
+db/*.sqlite3
+db/*.log
 
 
 ## Documentation cache and generated files:
