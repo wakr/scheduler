@@ -52,7 +52,7 @@
 
         <td><%= assignment.deadline %></td>
         <td><%= link_to assignment.get_creator, assignment.get_creator%> </td> <!-- This is pretty slow because SQL-->
-        <td><%= assignment.isReady%></td>
+        <td><%= assignment.is_ready%></td>
         <td><%= link_to 'Edit', edit_assignment_path(assignment) %></td>
         <td><%= link_to 'Destroy', assignment, method: :delete, data: { confirm: 'Are you sure?' } %></td>
         <td><%= link_to 'Add task', new_task_path(:assignment_id => assignment.id)%></td>

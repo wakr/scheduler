@@ -4,7 +4,8 @@ describe AssignmentsController do
 
   before :each do
     @assignment = FactoryGirl.create(:assignment)
-    @user = FactoryGirl.create(:user)
+    @user = FactoryGirl.create(:user, name: "Kaapo")
+    @user_assignment = FactoryGirl.create(:user_assignment)
     @assignment.creator_id = @user.id
     session[:user_id] = @user.id
   end
@@ -21,12 +22,14 @@ describe AssignmentsController do
   end
   describe "GET index" do
     it "renders index" do
+      session[:user_id] = @user_assignment.user.id
       get :index
       expect(response).to render_template(:index)
     end
     it "response contains created assignment" do
+      session[:user_id] = @user_assignment.user.id
       get :index
-      expect(assigns(:assignments)).to eq([@assignment])
+      expect(assigns(:assignments)).to eq([@user_assignment.assignment])
     end
   end
 

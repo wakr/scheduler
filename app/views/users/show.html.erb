@@ -53,7 +53,7 @@
   <% @user.assignments.each do |assignment| %>
       <tr>
         <td><%= link_to assignment.name, assignment %></td>
-        <td><%=assignment.isReady%></td>
+        <td><%=assignment.is_ready%></td>
         <td>
           <table>
             <tbody>

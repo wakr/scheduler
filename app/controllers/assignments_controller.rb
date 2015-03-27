@@ -5,7 +5,12 @@ class AssignmentsController < ApplicationController
   # GET /assignments
   # GET /assignments.json
   def index
-    @assignments = Assignment.all
+    @assignments = current_user.assignments
+    if @assignments.count == 0
+      render :error_page
+    else
+      render :index
+    end
   end
 
   # GET /assignments/1
@@ -18,7 +23,6 @@ class AssignmentsController < ApplicationController
   def new
     @assignment = Assignment.new
     @assignment.user_assignments.build # required for nested structure?
-  #  @users = User.all_except(current_user) # users can't assign themselves
   #variable @members fits better?
     @members = User.all_who_are_in_same_group_as_creator(current_user)
   end

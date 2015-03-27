@@ -15,7 +15,7 @@ class Assignment < ActiveRecord::Base
     self.name
   end
 
-  def isReady
+  def is_ready
     self.is_done
   end
 
