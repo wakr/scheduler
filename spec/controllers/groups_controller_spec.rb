@@ -1,6 +1,12 @@
 require 'rails_helper'
 
 describe GroupsController do
+
+  before :each do
+    @user = FactoryGirl.create(:user)
+    session[:user_id] = @user.id
+  end
+
   describe "GET index" do
     it "assigns @groups" do
       group1 = FactoryGirl.create(:group)

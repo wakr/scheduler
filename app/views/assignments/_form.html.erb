@@ -20,7 +20,7 @@
 
         <div class="field">
           <%= ua.label :user_id %><br>
-          <%= ua.select :user_id, options_from_collection_for_select(@users,:id,:name) %>
+          <%= ua.select :user_id, options_from_collection_for_select(@members,:id,:name) %>
         </div>
 
         <% end %>

@@ -26,11 +26,9 @@
 <h3>
   Assigned assignments
 </h3>
-
-<h3>Assigned to assignments</h3>
 <table>
   <tbody>
-  <% @user.assignments.each do |assignment| %>
+  <% @user.get_created_assignments.each do |assignment| %>
       <tr>
         <td><%= link_to assignment.name, assignment %></td>
       </tr>
@@ -38,5 +36,37 @@
   </tbody>
 </table>
 
-<%= link_to 'Edit', edit_user_path(@user) %> |
-<%= link_to 'Back', users_path %>
+<h3>Assigned to assignments</h3>
+<table>
+
+  <thead>
+  <tr>
+    <td>Name</td>
+    <td>Status</td>
+    <td>Tasks</td>
+    <td></td>
+    <td colspan="3"></td>
+  </tr>
+  </thead>
+
+  <tbody>
+  <% @user.assignments.each do |assignment| %>
+      <tr>
+        <td><%= link_to assignment.name, assignment %></td>
+        <td><%=assignment.isReady%></td>
+        <td>
+          <table>
+            <tbody>
+            <% assignment.tasks.each do |task| %>
+                <tr>
+                  <td><%=link_to task.name, task%></td>
+                  <td><button>Mark as created</button></td>
+                </tr>
+            <% end %>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+  <% end %>
+  </tbody>
+</table>

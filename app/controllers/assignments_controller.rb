@@ -1,5 +1,6 @@
 class AssignmentsController < ApplicationController
   before_action :set_assignment, only: [:show, :edit, :update, :destroy]
+  before_action :ensure_that_user_is_signed_in
 
   # GET /assignments
   # GET /assignments.json
@@ -17,12 +18,16 @@ class AssignmentsController < ApplicationController
   def new
     @assignment = Assignment.new
     @assignment.user_assignments.build # required for nested structure?
-    @users = User.all_except(current_user) # users can't assign themselves
+  #  @users = User.all_except(current_user) # users can't assign themselves
+  #variable @members fits better?
+    @members = User.all_who_are_in_same_group_as_creator(current_user)
   end
 
   # GET /assignments/1/edit
   def edit
-    @user = User.all
+    @assignment = Assignment.new
+    @assignment.user_assignments.build # required for nested structure?
+    @users = User.all_except(current_user) # users can't assign themselves
   end
 
   # POST /assignments
@@ -38,7 +43,7 @@ class AssignmentsController < ApplicationController
     respond_to do |format|
       if @assignment.save
         @assignment.update_attribute(:is_done, false)
-        @assignment.user_assignments.first.update_attribute(:assignment_id, @assignment.id)
+        @assignment.user_assignments.first.update_attribute(:assignment_id, @assignment.id) # for each?
         format.html { redirect_to assignments_path, notice: 'Assignment was successfully created.' }
         format.json { render :show, status: :created, location: @assignment }
       else

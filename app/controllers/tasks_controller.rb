@@ -1,6 +1,6 @@
 class TasksController < ApplicationController
   before_action :set_task, only: [:show, :edit, :update, :destroy]
-
+  before_action :ensure_that_user_is_signed_in
   # GET /tasks
   # GET /tasks.json
   def index
@@ -15,6 +15,7 @@ class TasksController < ApplicationController
   # GET /tasks/new
   def new
     @task = Task.new
+    @task.assignment_id = params[:assignment_id]
   end
 
   # GET /tasks/1/edit
@@ -28,7 +29,8 @@ class TasksController < ApplicationController
 
     respond_to do |format|
       if @task.save
-        format.html { redirect_to @task, notice: 'Task was successfully created.' }
+        @task.update_attribute(:is_done, false)
+        format.html { redirect_to @task.assignment, notice: 'Task was successfully created.' }
         format.json { render :show, status: :created, location: @task }
       else
         format.html { render :new }

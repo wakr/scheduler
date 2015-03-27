@@ -7,7 +7,7 @@ Rails.application.routes.draw do
 
   resources :users
 
-  root :to => "users#index"
+  root :to => 'sessions#new'
   get 'signup', to: 'users#new'
   get 'signin', to: 'sessions#new'
   delete 'signout', to: 'sessions#destroy'
@@ -15,4 +15,6 @@ Rails.application.routes.draw do
   resources :memberships, only: [:new, :create, :destroy]
 
   resource :session, only: [:new, :create, :delete]
+
+  resources :user_assignments
 end
