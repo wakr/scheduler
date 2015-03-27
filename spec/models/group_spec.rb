@@ -31,6 +31,15 @@ describe Group do
       }.to change{Membership.count}.from(0).to(1)
     end
 
+    it "when destroying Group also memberships are destroyed" do
+      u = FactoryGirl.create :user
+      g = Group.first
+      g.members << u
+      expect{
+          g.destroy
+      }.to change {Membership.count}.from(1).to(0)
+    end
+
   end
 
 end
