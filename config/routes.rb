@@ -17,4 +17,6 @@ Rails.application.routes.draw do
   resource :session, only: [:new, :create, :delete]
 
   resources :user_assignments
+
+  get 'welcome', to: 'welcome#index'
 end
