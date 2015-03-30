@@ -47,7 +47,7 @@ class AssignmentsController < ApplicationController
       if @assignment.save
         @assignment.update_attribute(:is_done, false)
         @assignment.user_assignments.first.update_attribute(:assignment_id, @assignment.id) # for each?
-        format.html { redirect_to assignments_path, notice: 'Assignment was successfully created.' }
+        format.html { redirect_to current_user, notice: 'Assignment was successfully created.' }
         format.json { render :show, status: :created, location: @assignment }
       else
         format.html { render :new }

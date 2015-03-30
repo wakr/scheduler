@@ -1,5 +1,5 @@
 class TasksController < ApplicationController
-  before_action :set_task, only: [:show, :edit, :update, :destroy]
+  before_action :set_task, only: [:show, :edit, :update, :destroy, :mark_done]
   before_action :ensure_that_user_is_signed_in
   # GET /tasks
   # GET /tasks.json
@@ -21,6 +21,13 @@ class TasksController < ApplicationController
   # GET /tasks/1/edit
   def edit
   end
+
+  # POST /task/1/mark_done
+  def mark_done
+    @task.update_attribute(:is_done, true)
+    redirect_to :back
+  end
+
 
   # POST /tasks
   # POST /tasks.json
@@ -71,6 +78,6 @@ class TasksController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def task_params
-      params.require(:task).permit(:name, :description, :location, :assignment_id)
+      params.require(:task).permit(:id, :name, :description, :location, :assignment_id)
     end
 end

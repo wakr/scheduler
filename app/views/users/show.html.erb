@@ -27,11 +27,22 @@
   Assigned assignments
 </h3>
 <table>
+
+  <thead>
+  <tr>
+    <td>Name</td>
+    <td>Done</td>
+    <td></td>
+    <td colspan="3"></td>
+  </tr>
+  </thead>
+
   <tbody>
   <% @user.get_created_assignments.each do |assignment| %>
       <tr>
         <td><%= link_to assignment.name, assignment %></td>
-        <td><%= link_to "Add workers", new_user_assignment_path(:assignment_id => assignment.id) %></td>
+        <td><%= assignment.is_done%></td>
+        <td><%= link_to "Add workers", new_user_assignment_path(:assignment_id => assignment.id) if current_user.id == @user.id%></td>
       </tr>
   <% end %>
   </tbody>
@@ -61,7 +72,7 @@
             <% assignment.tasks.each do |task| %>
                 <tr>
                   <td><%=link_to task.name, task%></td>
-                  <td><button>Mark as created</button></td>
+                  <td><button>Mark as finished</button></td>
                 </tr>
             <% end %>
             </tbody>

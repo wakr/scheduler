@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   resources :assignments
 
   resources :tasks
+  post 'mark_done' => 'tasks#mark_done'
 
   resources :users
 

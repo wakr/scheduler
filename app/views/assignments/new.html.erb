@@ -1,6 +1,6 @@
 <h1>New Assignment</h1>
 
-<% if @members.empty? %>
+<% if @members.nil? %>
   <p>You can make assignments only for you group-mates. Please join to some group.</p>
 <% else %>
   <%= render 'form' %>

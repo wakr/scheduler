@@ -1,5 +1,21 @@
 <h1>Add a new worker for assignment <%= link_to @assignmnt, @assignmnt %></h1>
 
+<h3>People already doing this assignment</h3>
+
+<div>
+<table>
+  <tbody>
+  <% @assignmnt.doers.each do |worker| %>
+      <tr>
+        <td><%= link_to worker.name, worker %></td>
+      </tr>
+  <% end %>
+  </tbody>
+</table>
+</div>
+
+<br>
+
 <%= form_for(@user_assignment) do |f| %>
     <div class="field">
       <%= f.label :user_id %><br>
