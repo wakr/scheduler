@@ -22,8 +22,7 @@ class AssignmentsController < ApplicationController
   # GET /assignments/new
   def new
     @assignment = Assignment.new
-    @assignment.user_assignments.build # required for nested structure?
-  #variable @members fits better?
+    @assignment.user_assignments.build
     @members = User.all_who_are_in_same_group_as_creator(current_user)
   end
 

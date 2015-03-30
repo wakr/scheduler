@@ -41,4 +41,10 @@ class User < ActiveRecord::Base
     User.where(id: user_ids)
   end
 
+  def self.all_in_same_group_but_not_assigned_to_assignment(assignment_id, current_user)
+      in_same_group = all_who_are_in_same_group_as_creator(current_user)
+      in_same_group.select {|m| m.assignments.find_by_id(assignment_id).nil?}
+  end
+
+
 end

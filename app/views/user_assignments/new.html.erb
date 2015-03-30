@@ -1,10 +1,12 @@
-<h1>Hello new worker!</h1>
+<h1>Add a new worker for assignment <%= link_to @assignmnt, @assignmnt %></h1>
 
 <%= form_for(@user_assignment) do |f| %>
     <div class="field">
       <%= f.label :user_id %><br>
       <%= f.select :user_id, options_from_collection_for_select(@users,:id,:name) %>
     </div>
+
+    <%= f.hidden_field :assignment_id, :value => @assignmnt.id %>
 
     <div class="actions">
       <%= f.submit %>

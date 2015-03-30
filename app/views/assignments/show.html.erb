@@ -17,7 +17,8 @@
   <% end %>
   </tbody>
 </table>
-<button>Add more workers</button>
+
+<%= link_to "Add more workers", new_user_assignment_path(:assignment_id => @assignment.id)%>
 
 
 <h3>This assignment was assigned by</h3>

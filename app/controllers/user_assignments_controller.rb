@@ -4,13 +4,14 @@ class UserAssignmentsController < ApplicationController
 
   def new
     @user_assignment = UserAssignment.new()
-    @users = User.all
+    @assignmnt = Assignment.find(params[:assignment_id])
+    @users = User.all_in_same_group_but_not_assigned_to_assignment(@assignmnt.id, current_user)
   end
 
 
   # send post to this to create a connection between the created Assignment and the user
   def create
-    @user_assignment = UserAssignment.new(membership_params)
+    @user_assignment = UserAssignment.new(UserAssignment_params)
 
     if @user_assignment.save
       raise "user assigned to assignment. Implement the rest"
