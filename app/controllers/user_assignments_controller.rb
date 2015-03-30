@@ -11,12 +11,17 @@ class UserAssignmentsController < ApplicationController
 
   # send post to this to create a connection between the created Assignment and the user
   def create
-    @user_assignment = UserAssignment.new(UserAssignment_params)
+    @user_assignment = UserAssignment.new(user_assignment_params)
 
-    if @user_assignment.save
-      raise "user assigned to assignment. Implement the rest"
-    else
-      raise "user assigment failed. Implement the rest"
+    respond_to do |format|
+      if @user_assignment.save
+        format.html { redirect_to @user_assignment.assignment, notice: 'Worker was successfully added' }
+        format.json { render :show, status: :created, location: @user_assignment.assignment }
+
+      else
+        format.html { render :new }
+        format.json { render json: @user.errors, status: :unprocessable_entity }
+      end
     end
 
   end
@@ -24,7 +29,7 @@ class UserAssignmentsController < ApplicationController
 
   private
 
-  def UserAssignment_params
+  def user_assignment_params
     params.require(:user_assignment).permit(:user_id, :assignment_id) #connects the user and assignment for this user
   end
 
