@@ -18,7 +18,7 @@ describe User do
     expect(User.create(name: "Samu",birthdate: Date.new(1999,9,2), password: "abc", password_confirmation: "abs")).not_to be_valid
   end
 
-  describe "created and" do
+  describe "created" do
     before :each do
       @user = FactoryGirl.create(:user)
     end
@@ -46,6 +46,7 @@ describe User do
       expect(User.first.to_s).to eq(@user.name)
     end
 
+
     describe " logged in and" do
 
       it "has a secure password hashed" do
@@ -55,4 +56,29 @@ describe User do
     end
 
   end
+    describe " when has more data stored" do
+
+      before :each do
+        @user = FactoryGirl.create(:user, :name => "Kaapo")
+        @assignment = FactoryGirl.create(:assignment, :creator_id => @user.id)
+      end
+
+      it " knows own created assignments" do
+        fetchedA = @user.get_created_assignments
+        expect(fetchedA.count).to eq(1)
+      end
+
+      it "can find everybody else expect wanted user" do
+        expect(User.all_except(@user).count).to eq(0)
+      end
+
+      it "can find everybody who is in the same group but not assigned already to assignment" do
+
+      end
+
+    end
+
+
+
+
 end

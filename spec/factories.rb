@@ -15,6 +15,7 @@ FactoryGirl.define do
   factory :task do
     name "Väsää angularilla single-page-app"
     location "Kumpula"
+    is_done true
     assignment
   end
 

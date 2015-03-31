@@ -13,6 +13,8 @@ describe Assignment do
 
     before :each do
       @assignment = FactoryGirl.create(:assignment)
+      @user = FactoryGirl.create(:user, :name => "Kaapo")
+      @assignment.creator_id = @user.id
     end
 
     it "has the name and user set correctly" do
@@ -62,12 +64,44 @@ describe Assignment do
       expect(@assignment.tasks.count).to eq(1)
       expect(@assignment.tasks.first.name).to eq("asd")
     end
+
+    it " finds the right creator" do
+      u = @assignment.get_creator
+      expect(u.id).to eq(@user.id)
+    end
+
   end
+
+  describe " when asked about ready state" do
+
+    before :each do
+      @assignment = FactoryGirl.create(:assignment)
+      @task = FactoryGirl.create(:task)
+      @assignment.tasks << @task
+    end
+
+      it " if all subtasks are done should be ready" do
+        expect(@assignment.is_ready).to eq(true)
+      end
+
+      it " if assignment has no tasks, its initial state should be false" do
+          @assignment2 = FactoryGirl.create(:assignment)
+        expect(@assignment2.is_ready).to eq(false)
+      end
+
+      it " if assignment has one tasks that is not ready, it's state should be false" do
+        @task2 = FactoryGirl.create(:task, :name => "t")
+        @task2.update_attribute(:is_done, false)
+        @assignment.tasks << @task2
+        expect(@assignment.is_ready).to eq(false)
+      end
+
 end
 
-def put_user_to_assignment(user, assignment)
+  def put_user_to_assignment(user, assignment)
 
-  ass = UserAssignment.create user_id:user.id, assignment_id:assignment.id
-  user.user_assignments << ass
-  assignment.user_assignments << ass
+    ass = UserAssignment.create user_id:user.id, assignment_id:assignment.id
+    user.user_assignments << ass
+    assignment.user_assignments << ass
+  end
 end
