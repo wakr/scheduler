@@ -5,7 +5,6 @@ describe MembershipsController do
   before :each do
     @user = FactoryGirl.create(:user)
     session[:user_id] = @user.id
-    request.env["HTTP_REFERER"] = "/taaltakutsutaan"
     @test_membership = FactoryGirl.create(:membership, user_id: 5, group_id: 5)
   end
 
@@ -36,6 +35,7 @@ describe MembershipsController do
     end
 
     it "HTML request renders back after succesful create" do
+      request.env["HTTP_REFERER"] = "/taaltakutsutaan"
       send_post_create(11,22,:html)
       expect(response.status).to eq(302)
       expect(response).to redirect_to  %r(\Ahttp://test.host/taaltakutsutaan)
@@ -50,6 +50,7 @@ describe MembershipsController do
 
     describe "if membership allready exists" do
       it "HTML redirects back" do
+        request.env["HTTP_REFERER"] = "/taaltakutsutaan"
         send_post_create(5,5,:html)
         expect(response.status).to eq(302)
         expect(response).to redirect_to  %r(\Ahttp://test.host/taaltakutsutaan)
@@ -67,6 +68,7 @@ describe MembershipsController do
       expect(response.status).to eq(204)
     end
     it "HTML " do
+      request.env["HTTP_REFERER"] = "/taaltakutsutaan"
       send_post_destroy(@test_membership.id, :html)
       expect(response).to redirect_to  %r(\Ahttp://test.host/taaltakutsutaan)
     end
