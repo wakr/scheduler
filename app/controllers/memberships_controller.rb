@@ -4,6 +4,7 @@ class MembershipsController < ApplicationController
 
   def new
     @membership = Membership.new
+    render nothing: true
   end
 
   def create
