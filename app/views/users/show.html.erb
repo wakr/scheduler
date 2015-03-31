@@ -30,10 +30,10 @@
 
   <thead>
   <tr>
-    <td>Name</td>
-    <td>Done</td>
-    <td></td>
-    <td colspan="3"></td>
+    <th>Name</th>
+    <th>Done</th>
+    <th></th>
+    <th colspan="3"></th>
   </tr>
   </thead>
 
@@ -41,7 +41,11 @@
   <% @user.get_created_assignments.each do |assignment| %>
       <tr>
         <td><%= link_to assignment.name, assignment %></td>
-        <td><%= assignment.is_done%></td>
+        <% if assignment.is_done %>
+            <td><%= link_to assignment.is_done, assignment, method: :delete, data: {confirm: 'This item can be removed now. Are you sure?'}%></td>
+        <% else %>
+            <td><%= assignment.is_done%></td>
+        <%end %>
         <td><%= link_to "Add workers", new_user_assignment_path(:assignment_id => assignment.id) if current_user.id == @user.id%></td>
       </tr>
   <% end %>
@@ -53,11 +57,11 @@
 
   <thead>
   <tr>
-    <td>Name</td>
-    <td>Status</td>
-    <td>Tasks</td>
-    <td></td>
-    <td colspan="3"></td>
+    <th>Name</th>
+    <th>Status</th>
+    <th></th>
+    <th></th>
+    <th colspan="3"></th>
   </tr>
   </thead>
 
@@ -67,16 +71,25 @@
         <td><%= link_to assignment.name, assignment %></td>
         <td><%=assignment.is_ready%></td>
         <td>
+
           <table>
+            <thead>
+            <th>Task name</th>
+            <th>Done</th>
+            <th colspan="3"></th>
+            </thead>
             <tbody>
             <% assignment.tasks.each do |task| %>
                 <tr>
                   <td><%=link_to task.name, task%></td>
-                  <td><button>Mark as finished</button></td>
+                  <td><%=task.is_done%></td>
+                  <td><%=button_to "Mark as done", mark_done_path(:id => task.id), method: :post if not task.is_done%></td>
                 </tr>
             <% end %>
+            <td><br></td>
             </tbody>
           </table>
+
         </td>
       </tr>
   <% end %>

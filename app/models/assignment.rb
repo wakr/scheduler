@@ -6,7 +6,7 @@ class Assignment < ActiveRecord::Base
 
   validates :name, presence: true
   #validates doers?
-  #is_done depends if subtasks are all done
+
 
   accepts_nested_attributes_for :user_assignments # for nesting
   accepts_nested_attributes_for :tasks
@@ -15,8 +15,17 @@ class Assignment < ActiveRecord::Base
     self.name
   end
 
+
+  #is_done depends if subtasks are all done
   def is_ready
-    self.is_done
+    if self.tasks.empty? and not self.is_done # no tasks assigned for this
+      false
+    elsif (self.tasks.find_by is_done: false).nil? # can't find any false => all tasks are done
+      self.update_attribute(:is_done, true)
+      true
+    else
+      false
+    end
   end
 
   def get_creator

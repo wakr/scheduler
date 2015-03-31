@@ -14,7 +14,7 @@ class SessionsController < ApplicationController
 
       if user && user.authenticate(params[:password])
         session[:user_id] = user.id
-        redirect_to welcome_path, notice: "Welcome back!"
+        redirect_to welcome_path
       else
         redirect_to :back, notice: "Username and/or password mismatch"
       end
