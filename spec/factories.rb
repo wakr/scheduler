@@ -32,6 +32,7 @@ FactoryGirl.define do
   factory :user_assignment do
     user
     assignment
+    creator_id 27 #not real, but allows tests pass :D
   end
 
 end
