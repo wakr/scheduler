@@ -60,7 +60,14 @@ describe User do
 
       before :each do
         @user = FactoryGirl.create(:user, :name => "Kaapo")
+        @user2 = FactoryGirl.create(:user, :name => "Seppo")
+        @user3 = FactoryGirl.create(:user, :name => "Ismo")
         @assignment = FactoryGirl.create(:assignment, :creator_id => @user.id)
+        FactoryGirl.create(:user_assignment, :user_id => @user3.id, :assignment_id => @assignment.id)
+        @group = FactoryGirl.create(:group, :name => "u_model group")
+        FactoryGirl.create(:membership, :user_id => @user.id, :group_id => @group.id)
+        FactoryGirl.create(:membership, :user_id => @user2.id, :group_id => @group.id)
+        FactoryGirl.create(:membership, :user_id => @user3.id, :group_id => @group.id)
       end
 
       it " knows own created assignments" do
@@ -69,10 +76,14 @@ describe User do
       end
 
       it "can find everybody else expect wanted user" do
-        expect(User.all_except(@user).count).to eq(0)
+        expect(User.all_except(@user).include? @user).to eq(false)
       end
 
       it "can find everybody who is in the same group but not assigned already to assignment" do
+
+        usrs = User.all_in_same_group_but_not_assigned_to_assignment(@assignment.id, @user)
+        u = usrs.first
+        expect(u.id).to eq(@user2.id)
 
       end
 
