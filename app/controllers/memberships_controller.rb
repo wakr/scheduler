@@ -4,7 +4,7 @@ class MembershipsController < ApplicationController
 
   def new
     @membership = Membership.new
-    render nothing: true
+    render json: @membership
   end
 
   def create
@@ -20,7 +20,7 @@ class MembershipsController < ApplicationController
     respond_to do |format|
       if @membership.save
            format.html { redirect_to :back, notice: "Welcome to group!" }
-           format.json { render :show, status: :created, location: @membership }
+           format.json { render json: @membership, status: :created, location: @membership }
       else
            format.html { render :new }
            format.json { render json: @membership.errors, status: :unprocessable_entity }
