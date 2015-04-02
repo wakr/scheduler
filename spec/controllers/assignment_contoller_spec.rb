@@ -3,9 +3,9 @@ require 'rails_helper'
 describe AssignmentsController do
 
   before :each do
-    @assignment = FactoryGirl.create(:assignment)
     @user = FactoryGirl.create(:user, name: "Kaapo")
     @user_assignment = FactoryGirl.create(:user_assignment)
+    @assignment = Assignment.find(@user_assignment.assignment)
     @assignment.creator_id = @user.id
     session[:user_id] = @user.id
   end
@@ -78,13 +78,10 @@ describe AssignmentsController do
 
   describe "POST new" do
     it "saves correct assignment to database" do
-      a = FactoryGirl.attributes_for(:assignment)
+      a = FactoryGirl.attributes_for(:assignment, group_id: 2)
 
       pending("for the nil message. should create a us stubb and send with the assignment param")
-
-      expect{
-        post :create, assignment: a
-      }.to change{Assignment.count}.from(0).to(1)
+      post :create, assignment: a
     end
   end
 

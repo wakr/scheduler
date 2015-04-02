@@ -2,9 +2,11 @@ class Assignment < ActiveRecord::Base
   has_many :user_assignments, dependent: :destroy #fix name
   has_many :doers, :through => :user_assignments, source: :user
   has_many :tasks, dependent: :destroy
+  belongs_to :group
 
 
   validates :name, presence: true
+  validates :group_id, presence: true
   #validates doers?
 
 
