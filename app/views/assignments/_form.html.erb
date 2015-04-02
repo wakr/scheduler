@@ -1,37 +1,44 @@
-<%= form_for(@assignment) do |f| %>
-  <% if @assignment.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@assignment.errors.count, "error") %> prohibited this assignment from being saved:</h2>
 
-      <ul>
-      <% @assignment.errors.full_messages.each do |message| %>
-        <li><%= message %></li>
-      <% end %>
-      </ul>
+<input type="button" id="newAssignmentButton" value="Show form" />
+
+<br>
+
+<section id="newAssignmentForm" >
+  <%= form_for(@assignment) do |f| %>
+    <% if @assignment.errors.any? %>
+      <div id="error_explanation">
+        <h2><%= pluralize(@assignment.errors.count, "error") %> prohibited this assignment from being saved:</h2>
+
+        <ul>
+        <% @assignment.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+        </ul>
+      </div>
+    <% end %>
+
+    <div class="field">
+      <%= f.label :name %><br>
+      <%= f.text_field :name %>
+    </div>
+
+      <%= f.fields_for :user_assignments do |ua| %>
+
+          <div class="field">
+            <%= ua.label :user_id %><br>
+            <%= ua.select :user_id, options_from_collection_for_select(@members,:id, :name) %>
+          </div>
+
+          <% end %>
+
+
+    <div class="field">
+      <%= f.label :deadline %><br>
+      <%= f.datetime_select :deadline, :start_year => Time.now.year, :end_year => Time.now.year %>
+    </div>
+
+    <div class="actions">
+      <%= f.submit %>
     </div>
   <% end %>
-
-  <div class="field">
-    <%= f.label :name %><br>
-    <%= f.text_field :name %>
-  </div>
-
-    <%= f.fields_for :user_assignments do |ua| %>
-
-        <div class="field">
-          <%= ua.label :user_id %><br>
-          <%= ua.select :user_id, options_from_collection_for_select(@members,:id, :name) %>
-        </div>
-
-        <% end %>
-
-
-  <div class="field">
-    <%= f.label :deadline %><br>
-    <%= f.datetime_select :deadline, :start_year => Time.now.year, :end_year => Time.now.year %>
-  </div>
-
-  <div class="actions">
-    <%= f.submit %>
-  </div>
-<% end %>
+</section>
