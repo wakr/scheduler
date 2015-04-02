@@ -29,7 +29,7 @@ end
 
 gem 'fullcalendar-rails'
 gem 'momentjs-rails'
-
+gem 'mocha'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'

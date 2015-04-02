@@ -85,4 +85,21 @@ describe AssignmentsController do
     end
   end
 
+  describe "EDIT old" do
+
+    it "assigns the @assignment, @assignment.user_assignments and @users" do
+      get :edit, id: @assignment.id
+      expect(assigns(:assignment)).not_to eq(nil)
+    end
+
+  end
+
+  describe "UPDATE @assignment" do
+    it "updates correctly the old one" do
+      put :update, {id: @assignment, assignment: FactoryGirl.attributes_for(:assignment, :name => "asd")}
+      @assignment.reload
+      @assignment.name.should == "asd"
+    end
+  end
+
 end

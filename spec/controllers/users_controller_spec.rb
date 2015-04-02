@@ -72,7 +72,9 @@ describe UsersController do
   describe "UPDATE @user" do
 
     it "updates the user" do
-
+      put :update, {id: @user, user: FactoryGirl.attributes_for(:user, :name => "Pentti")}
+      @user.reload
+      @user.name.should == "Pentti"
     end
 
     it "after update, redirects to user show" do
