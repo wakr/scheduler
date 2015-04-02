@@ -5,7 +5,7 @@ describe AssignmentsController do
   before :each do
     @user = FactoryGirl.create(:user, name: "Kaapo")
     @user_assignment = FactoryGirl.create(:user_assignment)
-    @assignment = Assignment.find(@user_assignment.assignment)
+    @assignment = Assignment.find(@user_assignment.assignment.id)
     @assignment.creator_id = @user.id
     session[:user_id] = @user.id
   end
