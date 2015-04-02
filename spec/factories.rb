@@ -10,6 +10,7 @@ FactoryGirl.define do
     name "Tee rori-labra"
     is_done false
     deadline Date.new(2015, 4, 30)
+    group
   end
 
   factory :task do

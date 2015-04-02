@@ -42,7 +42,6 @@ class AssignmentsController < ApplicationController
     # THIS IS ONLY FOR CREATING ASSIGNMENT FOR THE VERY FIRST TIME
     # if users wants to add more users to this, edit should be used and user_assignment_controller for it
 
-
     respond_to do |format|
       if @assignment.save
         @assignment.update_attribute(:is_done, false)
@@ -88,7 +87,7 @@ class AssignmentsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def assignment_params
-      params.require(:assignment).permit(:name, :is_done, :deadline, user_assignments_attributes: [:user_id])
+      params.require(:assignment).permit(:name, :is_done, :deadline, :group_id, user_assignments_attributes: [:user_id])
     end
 
 end
