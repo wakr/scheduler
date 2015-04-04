@@ -6,6 +6,10 @@ gem 'rails', '4.2.0'
 
 gem 'rb-readline'
 
+group :development do
+  gem 'rails_layout'
+end
+
 group :development, :test do
   gem 'sqlite3'
   gem 'rspec-rails', '~> 3.0'
@@ -30,6 +34,7 @@ end
 gem 'fullcalendar-rails'
 gem 'momentjs-rails'
 gem 'mocha'
+gem 'bootstrap-sass'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'

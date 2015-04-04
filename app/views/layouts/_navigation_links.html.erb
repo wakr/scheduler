@@ -1,0 +1,14 @@
+<%# add navigation links to this file %>
+<% if current_user %>
+    <li><%=link_to 'users', users_path%></li>  
+    <li><%=link_to 'assignments', assignments_path%></li>  
+    <li><%= link_to 'create assignment', new_assignment_path%></li>
+    <li><%=link_to 'groups', groups_path%></li>
+    <li><%= link_to current_user.name, current_user %></li>
+<%end%>
+
+
+<li><%= link_to 'sign up', signup_path if not current_user%></li>
+<li><%= link_to 'sign in', signin_path if not current_user%></li>
+<li><%= link_to 'sign with facebook', "facebook" if not current_user%></li>
+<li><%= link_to 'sign out', signout_path, method: :delete  if current_user%></li>

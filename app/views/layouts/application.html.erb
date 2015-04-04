@@ -1,31 +1,27 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Scheduler</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= content_for?(:title) ? yield(:title) : "Scheduler" %></title>
+    <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "Scheduler" %>">
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    <%= csrf_meta_tags %>
+  </head>
+  <body>
+  <header>
+    <%= render 'layouts/navigation' %>
+  </header>
 
+  <main role="main" class=".container">
+    <%= render 'layouts/messages' %>
 
-    <nav>
-        <% if current_user %>
-        <%=link_to 'users', users_path%> | 
-        <%=link_to 'assignments', assignments_path%> | 
-          <%= link_to 'create assignment', new_assignment_path%> |
-        <%=link_to 'groups', groups_path%> <b>|</b>
-            [<%= link_to current_user.name, current_user %>]
-    <%end%>
+    <div class="row">
+      <div class="col-md-8">
+        <%= yield %>
+      </div>
+    </div>
 
-<%= link_to 'sign up', signup_path if not current_user%> |
-<%= link_to 'sign in', signin_path if not current_user%> |
-      <%= link_to 'sign with facebook', "facebook" if not current_user%> |
-<%= link_to 'sign out', signout_path, method: :delete  if current_user%>
-    </nav>
-
-<%= yield %>
-
-
-</body>
+  </main>
+  </body>
 </html>
