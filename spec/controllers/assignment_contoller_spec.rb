@@ -13,8 +13,7 @@ describe AssignmentsController do
   describe "GET show" do
     it "assigns @tasks" do
       task = FactoryGirl.create(:task)
-
-      get :show, id: @assignment.id
+      get :show, id: task.assignment.id
       tasks = assigns(:tasks)
       expect(tasks.first).to eq(task)
     end

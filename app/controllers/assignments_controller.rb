@@ -16,7 +16,8 @@ class AssignmentsController < ApplicationController
   # GET /assignments/1
   # GET /assignments/1.json
   def show
-    @tasks = Task.all
+    @tasks = @assignment.tasks
+    @assignment.is_ready
   end
 
   # GET /assignments/new

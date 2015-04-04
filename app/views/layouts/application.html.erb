@@ -20,6 +20,7 @@
 
 <%= link_to 'sign up', signup_path if not current_user%> |
 <%= link_to 'sign in', signin_path if not current_user%> |
+      <%= link_to 'sign with facebook', "facebook" if not current_user%> |
 <%= link_to 'sign out', signout_path, method: :delete  if current_user%>
     </nav>
 

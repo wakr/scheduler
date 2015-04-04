@@ -25,7 +25,9 @@ class TasksController < ApplicationController
   # POST /task/1/mark_done
   def mark_done
     @task.update_attribute(:is_done, true)
-    redirect_to :back
+    @task.reload
+    @task.assignment.reload
+    redirect_to @task.assignment
   end
 
 
@@ -37,6 +39,7 @@ class TasksController < ApplicationController
     respond_to do |format|
       if @task.save
         @task.update_attribute(:is_done, false)
+        @task.assignment.update_attribute(:is_done, false)
         format.html { redirect_to @task.assignment, notice: 'Task was successfully created.' }
         format.json { render :show, status: :created, location: @task }
       else

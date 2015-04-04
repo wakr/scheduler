@@ -6,7 +6,7 @@ class Assignment < ActiveRecord::Base
 
 
   validates :name, presence: true
-  validates :group_id, presence: true
+  #validates :group_id, presence: true
   #validates doers?
 
 

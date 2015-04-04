@@ -4,7 +4,7 @@ class UserAssignment < ActiveRecord::Base
 
   # avoid saving useless shit to db.
   validates :user_id, presence: true
-  validates :assignment_id, presence: true
+  #validates :assignment_id, presence: true
   #validates :creator_id, presence: true
 
 end
