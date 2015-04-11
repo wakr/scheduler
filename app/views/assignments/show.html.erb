@@ -1,14 +1,13 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Name:</strong>
+<h2>
   <%= @assignment.name %>
-</p>
+</h2>
 
 
 <h3>People doing this assignment</h3>
 
-<table>
+<table class="table-hover">
   <tbody>
   <% @assignment.doers.each do |worker| %>
       <tr>
@@ -37,7 +36,7 @@
 
 <p><strong>Tasks</strong></p>
 
-<table>
+<table class="table-hover">
 
   <thead>
   <tr>

@@ -1,19 +1,17 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Name:</strong>
+<h2>
   <%= @user.name %>
-</p>
+</h2>
 
 <p>
-  <strong>Birthdate:</strong>
-  <%= @user.birthdate %>
+  <i><%= @user.birthdate %></i>
 </p>
 
 
 <h3>Joined organizations</h3>
 
-<table>
+<table class="table">
     <tbody>
         <% @user.groups.each do |group| %>
                 <tr>
@@ -26,7 +24,7 @@
 <h3>
   Assigned assignments
 </h3>
-<table>
+<table class="table">
 
   <thead>
   <tr>
@@ -53,7 +51,7 @@
 </table>
 
 <h3>Assigned to assignments</h3>
-<table>
+<table class="table">
 
   <thead>
   <tr>
@@ -72,7 +70,7 @@
         <td><%=assignment.is_ready%></td>
         <td>
 
-          <table>
+          <table class="table">
             <thead>
             <th>Task name</th>
             <th>Done</th>

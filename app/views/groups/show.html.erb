@@ -1,18 +1,17 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Name:</strong>
+<h2>
   <%= @group.name %>
-</p>
+</h2>
 
-<p>
+<p class="lead">
   <strong>Description:</strong>
   <%= @group.description %>
 </p>
 
 <p>
   <strong>Users:</strong>
-        <table>
+        <table class="table table-hover">
           <tbody>
           <% @group.members.each do |member| %>
               <tr>
@@ -38,5 +37,3 @@
   <% end %>
 <% end %>
 <br/>
-<%= link_to 'Edit', edit_group_path(@group) %> |
-<%= link_to 'Back', groups_path %>
