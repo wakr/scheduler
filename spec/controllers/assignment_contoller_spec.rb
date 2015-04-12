@@ -101,4 +101,23 @@ describe AssignmentsController do
     end
   end
 
+  describe "POST destroy @assignment" do
+
+    it "deletes from the database if current_user is the creator" do
+      asgnmt = FactoryGirl.create(:assignment, name: "Siivous", creator_id: @user.id)
+
+      id = asgnmt.id
+      expect{
+        post :destroy, id: id
+      }.to change{Assignment.count}.from(2).to(1)
+    end
+
+    it "redirects back if current_user is not the creator" do
+      asgnmt = FactoryGirl.create(:assignment, name: "Siivous", creator_id: 3)
+      id = asgnmt.id
+      post :destroy, id: id
+      expect(response).to redirect_to :root
+    end
+  end
+
 end

@@ -73,14 +73,14 @@ class AssignmentsController < ApplicationController
   # DELETE /assignments/1
   # DELETE /assignments/1.json
   def destroy
-
     if current_user.id != @assignment.creator_id
-      redirect_to :back, notice: 'You are not authorized to delete assignments'
+      redirect_to request.env['HTTP_REFERER'] || :root, notice: 'You are not authorized to delete assignments'
+      return
     end
 
     @assignment.destroy
     respond_to do |format|
-      format.html { redirect_to :back, notice: 'Assignment was successfully destroyed.' }
+      format.html { redirect_to request.env['HTTP_REFERER'] || :root, notice: 'Assignment was successfully destroyed.' }
       format.json { head :no_content }
     end
   end

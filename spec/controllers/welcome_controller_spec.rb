@@ -13,6 +13,12 @@ describe WelcomeController do
       expect(assigns(:groups)).not_to be(nil)
     end
 
+    it "@groups is empty if there are no current_user" do
+      session[:user_id] = nil
+      get :index
+      expect(assigns(:groups)).to eq([])
+    end
+
     it "variable @groups contains only groups where current_user is member" do
       FactoryGirl.create(:group, name:"Mutantit")
       FactoryGirl.create(:group, name:"Koirat")
