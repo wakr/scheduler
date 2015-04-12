@@ -1,9 +1,9 @@
-<h1>Add a new worker for assignment <%= link_to @assignmnt, @assignmnt %></h1>
+<h1>Add a new worker for assignment <em><%= link_to @assignmnt, @assignmnt %></em></h1>
 
 <h3>People already doing this assignment</h3>
 
 <div>
-<table>
+<table class="table-hover">
   <tbody>
   <% @assignmnt.doers.each do |worker| %>
       <tr>
@@ -17,7 +17,7 @@
 <br>
 
 <%= form_for(@user_assignment) do |f| %>
-    <div class="field">
+    <div class="form-group">
       <%= f.label :user_id %><br>
       <%= f.select :user_id, options_from_collection_for_select(@users,:id,:name) %>
     </div>
@@ -25,7 +25,7 @@
     <%= f.hidden_field :assignment_id, :value => @assignmnt.id %>
 
     <div class="actions">
-      <%= f.submit %>
+      <%= f.submit class:'btn btn-primary'%>
     </div>
 
 <% end %>

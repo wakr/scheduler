@@ -1,4 +1,3 @@
-<p id="notice"><%= notice %></p>
 
 <h2>
   <%= @user.name %>
@@ -40,11 +39,11 @@
       <tr>
         <td><%= link_to assignment.name, assignment %></td>
         <% if assignment.is_done %>
-            <td><%= link_to assignment.is_done, assignment, method: :delete, data: {confirm: 'This item can be removed now. Are you sure?'}%></td>
+            <td><%= link_to assignment.is_done, assignment, method: :delete, data: {confirm: 'This item can be removed now. Are you sure?'}, class:'btn btn-danger'%></td>
         <% else %>
             <td><%= assignment.is_done%></td>
         <%end %>
-        <td><%= link_to "Add workers", new_user_assignment_path(:assignment_id => assignment.id) if current_user.id == @user.id%></td>
+        <td><%= link_to "Add workers", new_user_assignment_path(:assignment_id => assignment.id), class:'btn btn-info' if current_user.id == @user.id%></td>
       </tr>
   <% end %>
   </tbody>
@@ -81,7 +80,7 @@
                 <tr>
                   <td><%=link_to task.name, task%></td>
                   <td><%=task.is_done%></td>
-                  <td><%=button_to "Mark as done", mark_done_path(:id => task.id), method: :post if not task.is_done%></td>
+                  <td><%=button_to "Mark as done", mark_done_path(:id => task.id), method: :post, class:'btn btn-primary' if not task.is_done%></td>
                 </tr>
             <% end %>
             <td><br></td>

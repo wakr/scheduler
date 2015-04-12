@@ -12,7 +12,9 @@ class UsersController < ApplicationController
   # GET /users/1
   # GET /users/1.json
   def show
-
+      if not current_user.id === @user.id
+        redirect_to :back, alert: "You don't have right permissions to view other profiles"
+      end
   end
 
   # GET /users/new

@@ -5,6 +5,7 @@ class TasksController < ApplicationController
   # GET /tasks.json
   def index
     @tasks = Task.all
+    redirect_to :back
   end
 
   # GET /tasks/1
@@ -68,7 +69,7 @@ class TasksController < ApplicationController
   def destroy
     @task.destroy
     respond_to do |format|
-      format.html { redirect_to tasks_url, notice: 'Task was successfully destroyed.' }
+      format.html { redirect_to :back, notice: 'Task was successfully destroyed.' }
       format.json { head :no_content }
     end
   end
