@@ -75,12 +75,13 @@ describe AssignmentsController do
 
   end
 
-  describe "POST new" do
+  describe "POST create" do
     it "saves correct assignment to database" do
       a = FactoryGirl.attributes_for(:assignment, group_id: 2)
 
-      pending("for the nil message. should create a us stubb and send with the assignment param")
-      post :create, assignment: a
+      expect{
+        post :create, assignment: a
+      }.to change{Assignment.count}.from(1).to(2)
     end
   end
 
