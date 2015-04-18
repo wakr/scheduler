@@ -97,7 +97,7 @@ describe AssignmentsController do
     it "updates correctly the old one" do
       put :update, {id: @assignment, assignment: FactoryGirl.attributes_for(:assignment, :name => "asd")}
       @assignment.reload
-      @assignment.name.should == "asd"
+      expect(@assignment.name).to eq("asd")
     end
   end
 
