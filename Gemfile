@@ -35,6 +35,7 @@ gem 'fullcalendar-rails'
 gem 'momentjs-rails'
 gem 'mocha'
 gem 'bootstrap-sass'
+gem 'bootstrap_form'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'

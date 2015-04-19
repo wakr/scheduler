@@ -1,6 +1,7 @@
 class UsersController < ApplicationController
   before_action :set_user, only: [:show, :edit, :update, :destroy]
   before_action :ensure_that_user_is_signed_in, except: [:new, :create]
+  before_action :ensure_rights, only: [:show, :edit]
 
 
   # GET /users
@@ -12,9 +13,6 @@ class UsersController < ApplicationController
   # GET /users/1
   # GET /users/1.json
   def show
-      if not current_user.id === @user.id
-        redirect_to :back, alert: "You don't have right permissions to view other profiles"
-      end
   end
 
   # GET /users/new
@@ -77,5 +75,12 @@ class UsersController < ApplicationController
     # Never trust parameters from the scary internet, only allow the white list through.
     def user_params
       params.require(:user).permit(:name, :birthdate, :password, :password_confirmation)
+    end
+
+    def ensure_rights
+
+      if not current_user.id === @user.id
+        redirect_to :back, alert: "You don't have right permissions to view other profiles"
+      end
     end
 end

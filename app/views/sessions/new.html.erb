@@ -1,9 +1,10 @@
-<h1>Sign in</h1>
+<div class="container-fluid" id="loginfield">
 
-<p id="notice"><%= notice %></p>
 
-<%= form_tag session_path do %>
-    username <%= text_field_tag :name, params[:name] %> <br>
-    password <%= password_field_tag :password, params[:password] %> <br>
-    <%= submit_tag "Log in" , class:'btn btn-primary'%>
+<%= bootstrap_form_tag url: session_path do |f|%>
+
+      <%= f.text_field :name, icon: "user" %>
+      <%= f.password_field :password, icon:"lock" %> <br>
+     <%= submit_tag "Log in" , class:'btn btn-default'%>
 <% end %>
+</div>
