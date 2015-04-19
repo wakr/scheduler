@@ -2,19 +2,21 @@
 <script>
     $(document).ready(function() {
 
-    // page is now ready, initialize the calendar...
+        // page is now ready, initialize the calendar...
 
-    $('#calendar').fullCalendar({
-        // put your options and callbacks here
-        events: '/assignments.json',
-        firstDay: 1,
-        eventTextColor: "white"
-        // Need more adjusting
+        var calendar = $('#calendar');
+
+        calendar.fullCalendar({
+            // put your options and callbacks here
+            events: '/assignments.json',
+            firstDay: 1,
+            eventTextColor: "white"
+            // Need more adjusting
+
+        });
+
 
     });
-
-
-});
 
 </script>
 
@@ -66,3 +68,5 @@
 </div>
 
 <div id="calendar"></div>
+
+
