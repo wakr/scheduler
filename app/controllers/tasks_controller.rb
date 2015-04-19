@@ -28,7 +28,7 @@ class TasksController < ApplicationController
     @task.update_attribute(:is_done, true)
     @task.reload
     @task.assignment.reload
-    redirect_to @task.assignment
+    redirect_to :back
   end
 
 

@@ -1,3 +1,4 @@
+<div class="container-fluid" id="newworker_field">
 
 <h1>Add a new worker for assignment <em><%= link_to @assignmnt, @assignmnt %></em></h1>
 
@@ -7,9 +8,9 @@
 <table class="table-hover">
   <tbody>
   <% @assignmnt.doers.each do |worker| %>
-      <tr>
-        <td><%= link_to worker.name, worker %></td>
-      </tr>
+      <ul>
+        <li><%= link_to worker.name, worker %></li>
+      </ul>
   <% end %>
   </tbody>
 </table>
@@ -17,16 +18,15 @@
 
 <br>
 
-<%= form_for(@user_assignment) do |f| %>
+<%= bootstrap_form_for(@user_assignment) do |f| %>
     <div class="form-group">
-      <%= f.label :user_id %><br>
-      <%= f.select :user_id, options_from_collection_for_select(@users,:id,:name) %>
+      <%= f.select :user_id, options_from_collection_for_select(@users,:id,:name) , icon: 'arrow-down'%>
     </div>
 
     <%= f.hidden_field :assignment_id, :value => @assignmnt.id %>
 
-    <div class="actions">
-      <%= f.submit class:'btn btn-primary'%>
-    </div>
+      <%= f.submit%>
 
 <% end %>
+
+</div>
