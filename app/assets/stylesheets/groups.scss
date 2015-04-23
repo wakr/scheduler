@@ -3,6 +3,17 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 #newgroup_form {
-  margin-left: 50%;
-  padding-top: 10%;
+ // margin-left: 50%;
+  //padding-top: 10%;
+
+  h1{
+    color: antiquewhite;
+  }
+}
+
+#group_index{
+  color: antiquewhite;
+  h1{
+    text-decoration: underline;
+  }
 }

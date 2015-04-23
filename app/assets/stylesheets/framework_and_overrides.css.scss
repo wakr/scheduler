@@ -33,6 +33,7 @@ img {
   }
 // apply styles to HTML elements
 // to make views framework-neutral
+
 main {
   @extend .container;
   background-color: #363636;
@@ -44,4 +45,23 @@ main {
 section {
   @extend .row;
   margin-top: 20px;
-  }
+}
+
+.btn {
+  border: none !important;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  -o-border-radius: 0px;
+  border-radius: 0px;
+  border: 0px;
+
+  color: #363636 !important;
+}
+.btn-default{
+ background-color: #779ECB;
+}
+
+.nav{
+  color:red;
+}
+

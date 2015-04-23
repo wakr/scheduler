@@ -1,7 +1,31 @@
+<script src='fullcalendar/lang-all.js'></script>
+<script>
+    $(document).ready(function() {
+
+        // page is now ready, initialize the calendar...
+
+        var calendar = $('#calendar');
+
+        calendar.fullCalendar({
+            // put your options and callbacks here
+            lang: 'fi',
+            events: '/assignments.json',
+            firstDay: 1,
+            eventTextColor: "white"
+
+            // Need more adjusting
+
+        });
+
+
+    });
+
+</script>
+
 
 <div id="userbody_form">
 
-  <div class="col-md-4 col-md-offset-5">
+  <div class="col-md-2 col-md-offset-5">
         <h2>
           <%= @user.name %>
         </h2>
@@ -10,6 +34,9 @@
           <%= @user.birthdate %>
         </p>
     </div>
+
+
+  <div class="col-md-6 col-md-offset-3" id="calendar"></div>
 
   <div class="container-fluid col-md-4">
 
@@ -111,4 +138,6 @@
       <i class="fa fa-pencil-square-o btn btn-default"> Edit your information</i>  <!--class:'btn btn-default' %> -->
     <% end %>
   </div>
+
+
 </div>
