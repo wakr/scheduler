@@ -42,7 +42,7 @@
 
   <div class="col-md-6 col-md-offset-3" id="calendar"></div>
 
-  <div class="container-fluid col-md-4">
+  <div id="inline-custom-box" class="container-fluid col-md-4">
 
 <h3>Joined organizations: </h3>
             <% @user.groups.each do |group| %>
@@ -50,11 +50,11 @@
                       <li><%= link_to group.name, group %></li>
                     </ul>
             <% end %>
+
   </div>
 
-  <div class="container-fluid col-md-4">
-
-<h3>
+  <div id="inline-custom-box" class="container-fluid col-md-4">
+    <h3>
   Creator of
 </h3>
 <table class="table">
@@ -92,7 +92,7 @@
 </table>
 </div>
 
-  <div class="col-md-4">
+  <div id="inline-custom-box" class="col-md-4">
 <h3>Assigned to assignments</h3>
 <table class="table">
 
