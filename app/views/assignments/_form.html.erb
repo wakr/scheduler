@@ -13,22 +13,13 @@
       </div>
     <% end %>
 
-    <div class="field">
-      <%= f.text_field :name %>
-    </div>
+      <%= f.text_field :name , icon:"user"%>
 
       <%= f.fields_for :user_assignments do |ua| %>
-
-          <div class="field">
             <%= ua.select :user_id, options_from_collection_for_select(@members,:id, :name) , icon:"arrow-down"%>
-          </div>
-
           <% end %>
 
-
-    <div class="field">
       <%= f.datetime_select :deadline, :start_year => Time.now.year, :end_year => Time.now.year %>
-    </div>
 
 
 

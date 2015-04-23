@@ -1,61 +1,74 @@
-<h2>
-  <%= @assignment.name %>
-</h2>
+
+<div class="container-fluid" id="assignment_show">
+  <div class="col-md-12 col-md-offset-2">
+    <h1>
+      <%= @assignment.name %> by <%= link_to @assignment.get_creator, @assignment.get_creator%>
+    </h1>
+  </div>
+  <div class="col-md-4 col-md-offset-2">
 
 
-<h3>This assignment was assigned by</h3>
-<p>
-  <%= link_to @assignment.get_creator, @assignment.get_creator%>
-</p>
-
-<h3>People doing this assignment</h3>
-
-<table class="table-hover">
-  <tbody>
-  <% @assignment.doers.each do |worker| %>
-      <tr>
-        <td><%= link_to worker.name, worker %></td>
-      </tr>
-  <% end %>
-  </tbody>
-</table>
 
 
-<p>
-  <strong>Is done:</strong>
-  <%= @assignment.is_done %>
-</p>
 
-<p>
-  <strong>Deadline:</strong>
-  <%= @assignment.deadline %>
-</p>
 
-<p><strong>Tasks</strong></p>
+        <h3>People doing this assignment:</h3>
 
-<table class="table">
+        <table class="table-hover">
+          <tbody>
+          <% @assignment.doers.each do |worker| %>
+              <ul>
+                <li><%= link_to worker.name, worker %></li>
+              </ul>
+          <% end %>
+          </tbody>
+        </table>
 
-  <thead>
-  <tr>
-    <th>Name</th>
-    <th>Status</th>
-    <th></th>
-    <th colspan="3"></th>
-  </tr>
-  </thead>
 
-  <tbody>
-  <% @tasks.each do |task| %>
-      <tr>
-        <td><%= link_to task.name, task %></td>
-        <td><%= task.is_done %></td>
-        <td><%= link_to 'delete', task, method: :delete, class:'btn btn-danger' if current_user.id == @assignment.creator_id and not task.is_done%></td>
-        <td><%= link_to 'mark done', mark_done_path(:id => task.id), method: :post, class:'btn btn-info' if not task.is_done%></td>
-      </tr>
-  <% end %>
-  </tbody>
-</table>
-<br>
-<%= link_to 'New task', new_task_path(:assignment_id => @assignment.id), class:'btn btn-primary' if current_user.id == @assignment.creator_id%>
-<br><br>
+        <p>
+          <strong>Is done:</strong>
+          <%= @assignment.is_done %>
+        </p>
 
+        <p>
+          <strong>Deadline:</strong>
+          <%= @assignment.deadline %>
+        </p>
+  </div>
+  <div class="col-md-4 col-md-offset-1">
+
+          <% if not @assignment.tasks.empty? %>
+        <h3><strong>Tasks</strong></h3>
+
+        <table class="table">
+
+          <thead>
+          <tr>
+            <th>Name</th>
+            <th>Status</th>
+            <th></th>
+            <th colspan="3"></th>
+          </tr>
+          </thead>
+
+          <tbody>
+          <% @tasks.each do |task| %>
+              <tr>
+                <td><%= link_to task.name, task %></td>
+                <td><%= task.is_done %></td>
+                <td><%= link_to 'delete', task, method: :delete, class:'btn btn-danger' if current_user.id == @assignment.creator_id and not task.is_done%></td>
+                <td><%= link_to 'mark done', mark_done_path(:id => task.id), method: :post, class:'btn btn-info' if not task.is_done%></td>
+              </tr>
+          <% end %>
+          </tbody>
+        </table>
+              <br>
+              <% else %>
+          <h3>This assignment don't have any tasks. Add one?</h3>
+          <%end%>
+
+        <div class="col-md-4 col-md-offset-4">
+        <%= link_to 'New task', new_task_path(:assignment_id => @assignment.id), class:'btn btn-primary' if current_user.id == @assignment.creator_id%>
+        </div>
+          </div>
+</div>

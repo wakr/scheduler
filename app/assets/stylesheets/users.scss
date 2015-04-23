@@ -32,9 +32,22 @@
 }
 
 #calendar{
+  .fc-today{
+    background-color: #6F8B94;
+  }
+  .fc-event{
+    box-shadow: 2px 2px 2px #706868;
+  }
+  .fc-agenda-axis, #calendar .fc-widget-header{
+    background-color: #C2E6FF;
+    border-color: #AED0EA;
+    font-weight: normal;
+    padding: 3px;
+    border-radius: 3px;
+  }
+
 
 }
-
 #editfield select {
   padding:3px;
   margin: 0;
@@ -58,7 +71,7 @@
 
 #userbody_form {
   color: antiquewhite;
-  h2{
-
+  h1{
+    text-decoration: underline;
   }
 }

@@ -1,5 +1,6 @@
 <script src='fullcalendar/lang-all.js'></script>
 <script>
+
     $(document).ready(function() {
 
         // page is now ready, initialize the calendar...
@@ -13,11 +14,11 @@
             firstDay: 1,
             eventTextColor: "white"
 
+
             // Need more adjusting
 
         });
-
-
+        
     });
 
 </script>
@@ -26,13 +27,16 @@
 <div id="userbody_form">
 
   <div class="col-md-2 col-md-offset-5">
-        <h2>
+        <h1>
           <%= @user.name %>
-        </h2>
+        </h1>
+    <div class="col-md-0">
+      <%= link_to  edit_user_path(@user) do %>
+          <i class="fa fa-pencil-square-o btn btn-default"> Edit your information</i>  <!--class:'btn btn-default' %> -->
+      <% end %>
+    </div>
 
-        <p>
-          <%= @user.birthdate %>
-        </p>
+
     </div>
 
 
@@ -40,17 +44,12 @@
 
   <div class="container-fluid col-md-4">
 
-<h3>Joined organizations</h3>
-
-    <table class="table">
-        <tbody>
+<h3>Joined organizations: </h3>
             <% @user.groups.each do |group| %>
-                    <tr>
-                      <td><%= link_to group.name, group %></td>
-                    </tr>
+                    <ul>
+                      <li><%= link_to group.name, group %></li>
+                    </ul>
             <% end %>
-        </tbody>
-    </table>
   </div>
 
   <div class="container-fluid col-md-4">
@@ -139,13 +138,6 @@
 </table>
 
     </div>
-
-
-  <div class="col-md-12">
-    <%= link_to  edit_user_path(@user) do %>
-      <i class="fa fa-pencil-square-o btn btn-default"> Edit your information</i>  <!--class:'btn btn-default' %> -->
-    <% end %>
-  </div>
 
 
 </div>
