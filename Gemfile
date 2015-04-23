@@ -36,6 +36,7 @@ gem 'momentjs-rails'
 gem 'mocha'
 gem 'bootstrap-sass'
 gem 'bootstrap_form'
+gem 'font-awesome-rails'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
