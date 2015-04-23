@@ -30,8 +30,14 @@
       <%= f.datetime_select :deadline, :start_year => Time.now.year, :end_year => Time.now.year %>
     </div>
 
+
+
     <div class="actions">
-      <%= f.submit class:'btn btn-default fa fa-pencil-square-o'%>
+
+      <%= button_tag( :class => "btn btn-default") do %>
+        <i class="fa fa-bar-chart"></i> Create Assignment
+      <% end %>
+
     </div>
   <% end %>
 </section>
