@@ -51,7 +51,15 @@
         <% else %>
             <td><%= assignment.is_done%></td>
         <%end %>
-        <td><%= link_to "Add workers", new_user_assignment_path(:assignment_id => assignment.id), class:'btn btn-info' if current_user.id == @user.id%></td>
+
+
+        <td>
+          <% if current_user.id == @user.id %>
+            <%= link_to new_user_assignment_path(:assignment_id => assignment.id) do %>
+              <i class="fa fa-user-plus btn btn-info">  Add worker</i>
+            <% end %>
+          <% end %>
+        </td>
       </tr>
   <% end %>
   </tbody>
