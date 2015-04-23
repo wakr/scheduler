@@ -48,6 +48,19 @@
 
 
 }
+
+#usershow_index{
+  color: antiquewhite;
+
+  h1{
+    text-decoration: underline;
+  }
+
+  table{
+    border-collapse:collapse !important;
+  }
+}
+
 #editfield select {
   padding:3px;
   margin: 0;

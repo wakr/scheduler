@@ -1,6 +1,8 @@
-<h1>Listing Users</h1>
+<div class="col-md-4 col-md-offset-4" id="usershow_index">
 
-<table class="table">
+<h1>All users</h1>
+
+<table class="table table-hover">
   <thead>
     <tr>
       <th>Name</th>
@@ -14,13 +16,13 @@
       <tr>
         <td><%= link_to user.name, user %></td>
         <td>
-          <table class="table">
+          <table class="">
             <tbody>
 
             <% user.groups.each do |group| %>
-                <tr>
-            <td><%=link_to group.name, group%></td>
-                </tr>
+                <ul>
+                    <li><%=link_to group.name, group%></li>
+                </ul>
             <%end%>
 
             </tbody>
@@ -33,3 +35,4 @@
 
 <br>
 
+</div>
