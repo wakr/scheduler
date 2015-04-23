@@ -1,0 +1,43 @@
+<h3>Assigned to assignments</h3>
+<table class="table">
+
+  <thead>
+  <tr>
+    <th>Name</th>
+    <th>Status</th>
+    <th></th>
+    <th></th>
+    <th colspan="3"></th>
+  </tr>
+  </thead>
+
+  <tbody>
+  <% @user.assignments.each do |assignment| %>
+      <tr>
+        <td><%= link_to assignment.name, assignment %></td>
+        <td><%=assignment.is_ready%></td>
+        <td>
+
+          <table class="table">
+            <thead>
+            <th>Task name</th>
+            <th>Done</th>
+            <th colspan="3"></th>
+            </thead>
+            <tbody>
+            <% assignment.tasks.each do |task| %>
+                <tr>
+                  <td><%=link_to task.name, task%></td>
+                  <td><%=task.is_done%></td>
+                  <td><%=button_to "Mark as done", mark_done_path(:id => task.id), method: :post, class:'btn btn-primary' if not task.is_done%></td>
+                </tr>
+            <% end %>
+            <td><br></td>
+            </tbody>
+          </table>
+
+        </td>
+      </tr>
+  <% end %>
+  </tbody>
+</table>

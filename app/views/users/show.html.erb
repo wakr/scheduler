@@ -23,9 +23,7 @@
 
 </script>
 
-
 <div id="userbody_form">
-
   <div class="col-md-2 col-md-offset-5">
         <h1>
           <%= @user.name %>
@@ -35,109 +33,21 @@
           <i class="fa fa-pencil-square-o btn btn-default"> Edit your information</i>  <!--class:'btn btn-default' %> -->
       <% end %>
     </div>
-
-
-    </div>
-
-
-  <div class="col-md-6 col-md-offset-3" id="calendar"></div>
-
-  <div id="inline-custom-box" class="container-fluid col-md-4">
-
-<h3>Joined organizations: </h3>
-            <% @user.groups.each do |group| %>
-                    <ul>
-                      <li><%= link_to group.name, group %></li>
-                    </ul>
-            <% end %>
-
-  </div>
-
-  <div id="inline-custom-box" class="container-fluid col-md-4">
-    <h3>
-  Creator of
-</h3>
-<table class="table">
-
-  <thead>
-  <tr>
-    <th>Name</th>
-    <th>Can be destroyed</th>
-    <th></th>
-    <th colspan="3"></th>
-  </tr>
-  </thead>
-
-  <tbody>
-  <% @user.get_created_assignments.each do |assignment| %>
-      <tr>
-        <td><%= link_to assignment.name, assignment %></td>
-        <% if assignment.is_done %>
-            <td><%= link_to assignment.is_done, assignment, method: :delete, data: {confirm: 'This item can be removed now. Are you sure?'}, class:'btn btn-danger'%></td>
-        <% else %>
-            <td><%= assignment.is_done%></td>
-        <%end %>
-
-
-        <td>
-          <% if current_user.id == @user.id %>
-            <%= link_to new_user_assignment_path(:assignment_id => assignment.id) do %>
-              <i class="fa fa-user-plus btn btn-info">  Add worker</i>
-            <% end %>
-          <% end %>
-        </td>
-      </tr>
-  <% end %>
-  </tbody>
-</table>
 </div>
 
-  <div id="inline-custom-box" class="col-md-4">
-<h3>Assigned to assignments</h3>
-<table class="table">
+<div class="col-md-6 col-md-offset-3" id="calendar"></div>
 
-  <thead>
-  <tr>
-    <th>Name</th>
-    <th>Status</th>
-    <th></th>
-    <th></th>
-    <th colspan="3"></th>
-  </tr>
-  </thead>
+<div id="inline-custom-box" class="container-fluid col-md-4">
+  <%= render 'joined_organizations' %>
+</div>
 
-  <tbody>
-  <% @user.assignments.each do |assignment| %>
-      <tr>
-        <td><%= link_to assignment.name, assignment %></td>
-        <td><%=assignment.is_ready%></td>
-        <td>
+<div id="inline-custom-box" class="container-fluid col-md-4">
+ <%= render 'creator_of' %>
+</div>
 
-          <table class="table">
-            <thead>
-            <th>Task name</th>
-            <th>Done</th>
-            <th colspan="3"></th>
-            </thead>
-            <tbody>
-            <% assignment.tasks.each do |task| %>
-                <tr>
-                  <td><%=link_to task.name, task%></td>
-                  <td><%=task.is_done%></td>
-                  <td><%=button_to "Mark as done", mark_done_path(:id => task.id), method: :post, class:'btn btn-primary' if not task.is_done%></td>
-                </tr>
-            <% end %>
-            <td><br></td>
-            </tbody>
-          </table>
-
-        </td>
-      </tr>
-  <% end %>
-  </tbody>
-</table>
-
-    </div>
+<div id="inline-custom-box" class="col-md-4">
+  <%= render 'assigned_to_assignments' %>
+</div>
 
 
 </div>

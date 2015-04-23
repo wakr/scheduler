@@ -1,0 +1,31 @@
+<h3>Creator of</h3>
+<table class="table">
+  <thead>
+  <tr>
+    <th>Name</th>
+    <th>Can be destroyed</th>
+    <th></th>
+    <th colspan="3"></th>
+  </tr>
+  </thead>
+
+  <tbody>
+  <% @user.get_created_assignments.each do |assignment| %>
+      <tr>
+        <td><%= link_to assignment.name, assignment %></td>
+        <% if assignment.is_done %>
+            <td><%= link_to assignment.is_done, assignment, method: :delete, data: {confirm: 'This item can be removed now. Are you sure?'}, class:'btn btn-danger'%></td>
+        <% else %>
+            <td><%= assignment.is_done%></td>
+        <%end %>
+        <td>
+          <% if current_user.id == @user.id %>
+            <%= link_to new_user_assignment_path(:assignment_id => assignment.id) do %>
+              <i class="fa fa-user-plus btn btn-info">  Add worker</i>
+            <% end %>
+          <% end %>
+        </td>
+      </tr>
+  <% end %>
+  </tbody>
+</table>
