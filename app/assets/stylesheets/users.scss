@@ -3,8 +3,8 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 #newuser_field form{
-  margin-left: 50%;
-  padding-top: 10%;
+  //margin-left: 50%;
+  //padding-top: 10%;
 }
 
 #newuser_field select {
@@ -50,4 +50,12 @@
   -moz-appearance:none;
   appearance:none;
   cursor:pointer;
+}
+
+
+#userbody_form {
+  color: antiquewhite;
+  h2{
+
+  }
 }

@@ -1,20 +1,18 @@
 <%# add navigation links to this file %>
 <% if current_user %>
-  <li role="presentation" class="dropdown">
-    <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-expanded="false">
-          <%= current_user.name %><span class="caret"></span>
-    </a>
-    <ul class="dropdown-menu" role="menu">
-      <li><%=link_to 'my page', current_user %></li>
-      <li><%=link_to 'users', users_path%></li>  
-      <li><%=link_to 'assignments', assignments_path%></li>  
-      <li><%=link_to 'create assignment', new_assignment_path%></li>
-      <li><%=link_to 'groups', groups_path%></li>
-    </ul>
-  </li>
+
+    <li><%=link_to current_user, current_user %></li>
+    <li><%=link_to 'Users', users_path%></li>  
+    <li><%=link_to 'Assignments', assignments_path%></li>  
+    <li><%=link_to 'Create assignment', new_assignment_path%></li>
+    <li><%=link_to 'Groups', groups_path%></li>
+
 <%end%>
 
 
-<li><%= link_to 'sign up', signup_path if not current_user%></li>
-<li><%= link_to 'sign in', signin_path if not current_user%></li>
-<li><%= link_to 'sign out', signout_path, method: :delete  if current_user%></li>
+
+
+
+    <li><%= link_to 'Sign up', signup_path if not current_user%></li>
+    <li><%= link_to 'Sign in', signin_path if not current_user%></li>
+    <li><%= link_to 'Sign out', signout_path, method: :delete  if current_user%></li>

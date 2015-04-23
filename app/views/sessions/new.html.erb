@@ -1,10 +1,13 @@
-<div class="container-fluid" id="loginfield">
 
 
-<%= bootstrap_form_tag url: session_path do |f|%>
+<div class="col-md-6 col-md-offset-3" >
+    <div class="container-fluid" id="loginfield">
 
-      <%= f.text_field :name, icon: "user" %>
-      <%= f.password_field :password, icon:"lock" %> <br>
-     <%= submit_tag "Log in" , class:'btn btn-default'%>
-<% end %>
+        <%= bootstrap_form_tag url: session_path do |f|%>
+
+          <%= f.text_field :name, icon: "user", placeholder:"Username" %>
+          <%= f.password_field :password, icon:"lock" , style:"color: black;", placeholder:"Password"%> <br>
+         <%= submit_tag "Log in" , class:'btn btn-default'%>
+    <% end %>
+    </div>
 </div>

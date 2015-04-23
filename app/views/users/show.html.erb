@@ -1,24 +1,32 @@
 
-<h2>
-  <%= @user.name %>
-</h2>
+<div id="userbody_form">
 
-<p>
-  <i><%= @user.birthdate %></i>
-</p>
+  <div class="col-md-12 col-md-offset-5">
+        <h2>
+          <%= @user.name %>
+        </h2>
 
+        <p>
+          <%= @user.birthdate %>
+        </p>
+    </div>
+
+  <div class="container-fluid col-md-4">
 
 <h3>Joined organizations</h3>
 
-<table class="table">
-    <tbody>
-        <% @user.groups.each do |group| %>
-                <tr>
-                  <td><%= link_to group.name, group %></td>
-                </tr>
-        <% end %>
-    </tbody>
-</table>
+    <table class="table">
+        <tbody>
+            <% @user.groups.each do |group| %>
+                    <tr>
+                      <td><%= link_to group.name, group %></td>
+                    </tr>
+            <% end %>
+        </tbody>
+    </table>
+  </div>
+
+  <div class="container-fluid col-md-4">
 
 <h3>
   Creator of
@@ -48,7 +56,9 @@
   <% end %>
   </tbody>
 </table>
+</div>
 
+  <div class="col-md-4">
 <h3>Assigned to assignments</h3>
 <table class="table">
 
@@ -93,4 +103,10 @@
   </tbody>
 </table>
 
-<%= link_to "Edit your information", edit_user_path(@user), class:'btn btn-default' %>
+    </div>
+
+
+  <div class="col-md-12">
+    <%= link_to "Edit your information", edit_user_path(@user), class:'btn btn-default' %>
+  </div>
+</div>
