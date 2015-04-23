@@ -1,6 +1,7 @@
 
 
 $(document).ready(function(){
+    return;
   var form = $( "#newAssignmentForm");
   form.hide();
   $( "#newAssignmentButton" ).on( "click", function() {

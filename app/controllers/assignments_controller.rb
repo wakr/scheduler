@@ -39,7 +39,7 @@ class AssignmentsController < ApplicationController
   def create
     @assignment = Assignment.new(assignment_params)
     @assignment.creator_id = current_user.id
-    current_user.assignments << @assignment
+    #current_user.assignments << @assignment
     # THIS IS ONLY FOR CREATING ASSIGNMENT FOR THE VERY FIRST TIME
     # if users wants to add more users to this, edit should be used and user_assignment_controller for it
 
@@ -50,7 +50,7 @@ class AssignmentsController < ApplicationController
         format.html { redirect_to current_user, notice: 'Assignment was successfully created.' }
         format.json { render :show, status: :created, location: @assignment }
       else
-        format.html { render :new }
+        format.html { redirect_to :back }
         format.json { render json: @assignment.errors, status: :unprocessable_entity }
       end
     end
