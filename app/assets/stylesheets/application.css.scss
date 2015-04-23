@@ -17,6 +17,23 @@
  *= require font-awesome
  */
 
+* {
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+}
+
+#error_explanation {
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+
+  h2 {
+    -webkit-border-radius: 1px;
+    -moz-border-radius: 1px;
+    border-radius: 1px;
+  }
+}
 
 form label {
   color: antiquewhite;
@@ -24,5 +41,5 @@ form label {
 }
 
 main {
-  
+
 }
