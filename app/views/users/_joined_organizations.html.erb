@@ -1,6 +1,10 @@
-<h3>Joined organizations: </h3>
+<div class="panel-body">
+  <div class="panel-heading">
+    <h3>Joined organizations </h3>
+  </div>
 <% @user.groups.each do |group| %>
         <ul>
           <li><%= link_to group.name, group %></li>
         </ul>
 <% end %>
+</div>

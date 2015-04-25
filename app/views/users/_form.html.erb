@@ -12,12 +12,12 @@
   <% end %>
 
 
-        <%= f.text_field :name , icon:"user"%>
+        <%= f.text_field :name , icon:"user", placeholder:"Username"%>
         <div id="newuser_dateselect">
         <%= f.date_select :birthdate, :start_year => Time.now.year - 60, :end_year => Time.now.year%>
         </div>
 
-      <%= f.password_field :password , icon:"lock"%>
+      <%= f.password_field :password , icon:"lock",  placeholder:"Password with one numeral and one uppercase"%>
       <%= f.password_field :password_confirmation, icon:"eye-open" %>
 
     <%= f.submit%>

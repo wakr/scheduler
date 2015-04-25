@@ -13,7 +13,7 @@
       </div>
     <% end %>
 
-      <%= f.text_field :name , icon:"user"%>
+      <%= f.text_field :name , icon:"user", placeholder: 'Name of the assignment'%>
 
       <%= f.fields_for :user_assignments do |ua| %>
             <%= ua.select :user_id, options_from_collection_for_select(@members,:id, :name) , icon:"arrow-down"%>

@@ -1,43 +1,47 @@
+<div class="panel-body">
+  <div class="panel-heading">
 <h3>Assigned to assignments</h3>
+  </div>
 <table class="table">
 
-  <thead>
-  <tr>
-    <th>Name</th>
-    <th>Status</th>
-    <th></th>
-    <th></th>
-    <th colspan="3"></th>
-  </tr>
-  </thead>
 
   <tbody>
   <% @user.assignments.each do |assignment| %>
       <tr>
         <td><%= link_to assignment.name, assignment %></td>
-        <td><%=assignment.is_ready%></td>
+        <% if assignment.is_ready%>
+            <td>Assigment is ready and creator can now destroy it.</td>
+        <% else %>
+            <td>Assigment is not fully ready yet.</td>
+        <% end %>
+
         <td>
 
-          <table class="table">
+          <%if not assignment.tasks.empty? %>
+          <table class="table borderless">
             <thead>
-            <th>Task name</th>
-            <th>Done</th>
-            <th colspan="3"></th>
+            <th>Tasks</th>
             </thead>
             <tbody>
             <% assignment.tasks.each do |task| %>
                 <tr>
                   <td><%=link_to task.name, task%></td>
-                  <td><%=task.is_done%></td>
+                  <% if task.is_done %>
+                  <td>Ready</td>
+                      <% else %>
+                  <td></td>
+                      <% end %>
+                  <td><%= task.description %></td>
                   <td><%=button_to "Mark as done", mark_done_path(:id => task.id), method: :post, class:'btn btn-primary' if not task.is_done%></td>
                 </tr>
             <% end %>
             <td><br></td>
             </tbody>
           </table>
-
+            <% end%>
         </td>
       </tr>
   <% end %>
   </tbody>
 </table>
+</div>

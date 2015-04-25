@@ -1,8 +1,9 @@
-<div class="container-fluid" id="newworker_field">
+<div class="" id="newworker_field">
 
-<h1>Add a new worker for assignment <em><%= link_to @assignmnt, @assignmnt %></em></h1>
-
-<h3>People already doing this assignment</h3>
+<div class="">
+    <h1>Add a new worker for assignment <em><%= link_to @assignmnt, @assignmnt %></em></h1>
+</div>
+<h3>These workers are already doing this assignment:</h3>
 
 <div>
 <table class="table-hover">
@@ -19,10 +20,8 @@
 <br>
 
 <%= bootstrap_form_for(@user_assignment) do |f| %>
-    <div class="form-group">
-      <%= f.select :user_id, options_from_collection_for_select(@users,:id,:name) , icon: 'arrow-down'%>
-    </div>
 
+      <%= f.select :user_id, options_from_collection_for_select(@users,:id,:name) , icon: 'arrow-down'%>
     <%= f.hidden_field :assignment_id, :value => @assignmnt.id %>
 
       <%= f.submit%>

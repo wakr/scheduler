@@ -38,10 +38,6 @@ form {
 #userbody_form #inline-custom-box{
     margin-top: 10px;
 
-    border-top: 2px solid #000000;
-    border-left: 2px solid #000000;
-    border-bottom: 2px solid #000000;
-    border-right: 2px solid #000000;
 }
 
 form label {
@@ -54,8 +50,39 @@ main {
 
 }
 
+.panel {
+  background:#2E2F30;
+  border: none;
 
+  ul{
+    list-style-type: none;
+  }
+
+}
+
+.panel-heading{
+  background-color: #444444;
+  margin-bottom: 1%;
+
+  text-decoration: underline;
+}
 
 h1 {
   font-family: "Ubuntu";
+}
+
+
+.borderless td, .borderless th {
+  border: none;
+}
+
+.table > tbody > tr > td, .table > tfoot > tr > th, .table > tfoot > tr > td {
+  padding: 8px;
+  line-height: 1.42857;
+  vertical-align: top;
+  border-top: none !important;
+}
+
+.table-hover tbody tr:hover td, .table-hover tbody tr:hover th {
+  background-color: #2E2F30;
 }

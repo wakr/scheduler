@@ -41,7 +41,7 @@ class TasksController < ApplicationController
       if @task.save
         @task.update_attribute(:is_done, false)
         @task.assignment.update_attribute(:is_done, false)
-        format.html { redirect_to @task.assignment, notice: 'Task was successfully created.' }
+        format.html { redirect_to current_user, notice: 'Task was successfully created.' }
         format.json { render :show, status: :created, location: @task }
       else
         format.html { render :new }
