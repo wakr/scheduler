@@ -39,12 +39,12 @@ class AssignmentsController < ApplicationController
   def create
     @assignment = Assignment.new(assignment_params)
     @assignment.creator_id = current_user.id
-    current_user.assignments << @assignment
+
     # THIS IS ONLY FOR CREATING ASSIGNMENT FOR THE VERY FIRST TIME
     # if users wants to add more users to this, edit should be used and user_assignment_controller for it
-
     respond_to do |format|
       if @assignment.save
+        current_user.assignments << @assignment
         @assignment.update_attribute(:is_done, false)
         @assignment.user_assignments.first.update_attribute(:assignment_id, @assignment.id) # for each?
         format.html { redirect_to current_user, notice: 'Assignment was successfully created.' }

@@ -32,9 +32,13 @@
                 </table>
             </td>
 
-            <td><%= assignment.deadline %></td>
+            <td><%= assignment.deadline.to_formatted_s(:db) %></td>
             <td><%= link_to assignment.get_creator, assignment.get_creator%> </td> <!-- This is pretty slow because SQL-->
-            <td><%= assignment.is_ready%></td>
+            <% if assignment.is_ready %>
+            <td>Done</td>
+                <% else %>
+            <td>Not done yet</td>
+                <% end %>
 
           </tr>
         <% end %>

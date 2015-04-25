@@ -24,32 +24,33 @@
 </script>
 
 <div class="container-fluid">
-<div id="userbody_form">
-  <div class="col-md-2 col-md-offset-10">
-        <h1>
-          <%= @user.name %>
-        </h1>
+    <div id="userbody_form">
+      <div class="col-md-2 col-md-offset-10">
+            <h1>
+              <%= @user.name %>
+            </h1>
 
-      <%= link_to  edit_user_path(@user) do %>
-          <i class="fa fa-pencil-square-o btn btn-default"> Edit your information</i>  <!--class:'btn btn-default' %> -->
-      <% end %>
+          <%= link_to  edit_user_path(@user) do %>
+              <i class="fa fa-pencil-square-o btn btn-default"> Edit your information</i>  <!--class:'btn btn-default' %> -->
+          <% end %>
 
-</div>
+    </div>
 
-<div class="col-md-6" id="calendar"></div>
+    <div class="col-md-6" id="calendar"></div>
 
-  <div class="bottom-aligned-row">
-<div id="inline-custom-box" class="col-md-6 panel panel-default">
-  <%= render 'joined_organizations' %>
-</div>
+          <div class="workbox">
 
-<div id="inline-custom-box" class="col-md-6 panel panel-default">
- <%= render 'creator_of' %>
-</div>
+                <div id="inline-custom-box" class="col-md-6 panel panel-default">
+                  <%= render 'joined_organizations' %>
+                </div>
 
-<div id="inline-custom-box" class="col-md-6 panel panel-default">
-  <%= render 'assigned_to_assignments' %>
-</div>
-  </div>
-</div>
+                <div id="inline-custom-box" class="col-md-6 panel panel-default">
+                 <%= render 'creator_of' %>
+                </div>
+
+                <div id="inline-custom-box" class="col-md-6 panel panel-default">
+                  <%= render 'assigned_to_assignments' %>
+                </div>
+          </div>
+    </div>
 </div>
