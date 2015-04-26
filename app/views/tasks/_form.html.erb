@@ -11,7 +11,7 @@
     </div>
   <% end %>
 
-    <%= f.text_field :name, icon: "tag", placeholder: 'Name of the group'%>
+    <%= f.text_field :name, icon: "tag", placeholder: 'Name of the task'%>
     <%= f.text_area :description , icon:"pencil", placeholder: 'Description of the task'%>
     <%= f.text_field :location , icon:"plane", placeholder: 'Location where task is suppose to be done'%>
     <%= f.hidden_field :assignment_id, :value => @task.assignment_id %>

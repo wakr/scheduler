@@ -6,11 +6,14 @@ class AssignmentsController < ApplicationController
   # GET /assignments.json
   def index
     @assignments = current_user.assignments
+
+
     if @assignments.count == 0
       render :error_page
     else
       render :index
     end
+
   end
 
   # GET /assignments/1
@@ -22,6 +25,11 @@ class AssignmentsController < ApplicationController
 
   # GET /assignments/new
   def new
+
+    if User.all_who_are_in_same_group_as_creator(current_user).empty? # user not in any group
+      redirect_to groups_path, alert: "Please join to some group with people first or wait until there are people in your group."
+    end
+
     @assignment = Assignment.new
     @assignment.user_assignments.build
     @members = User.all_who_are_in_same_group_as_creator(current_user)

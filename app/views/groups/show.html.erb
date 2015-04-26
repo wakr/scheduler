@@ -22,6 +22,7 @@
 </p>
 <% if Membership.membership_exists?(current_user.id, @group.id) %>
   <%= link_to 'Leave the group', membership_path(Membership.find_mem(current_user, @group.id)), method: :delete, class:'btn btn-warning' %>
+      <%= link_to 'Destroy group', @group, method: :delete, class:'btn btn-danger'%>
 <% else %>
   <%= form_for(@membership, method: :post) do |f| %>
     <div class="field">

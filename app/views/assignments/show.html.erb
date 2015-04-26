@@ -27,7 +27,11 @@
 
         <p>
           <strong>Status:</strong>
-          <%= @assignment.is_done %>
+          <% if @assignment.is_done %>
+          Done
+          <% else %>
+          Not done yet
+          <% end %>
         </p>
 
         <p>
@@ -55,7 +59,11 @@
           <% @tasks.each do |task| %>
               <tr>
                 <td><%= link_to task.name, task %></td>
-                <td><%= task.is_done %></td>
+                <% if task.is_done %>
+                <td>Done</td>
+                <% else %>
+                <td>Not done yet</td>
+                <% end %>
                 <td><%= link_to 'delete', task, method: :delete, class:'btn btn-danger' if current_user.id == @assignment.creator_id and not task.is_done%></td>
                 <td><%= link_to 'mark done', mark_done_path(:id => task.id), method: :post, class:'btn btn-info' if not task.is_done%></td>
               </tr>
