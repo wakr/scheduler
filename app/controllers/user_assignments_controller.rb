@@ -15,7 +15,7 @@ class UserAssignmentsController < ApplicationController
 
     respond_to do |format|
       if @user_assignment.save
-        format.html { redirect_to @user_assignment.assignment, notice: 'Worker was successfully added' }
+        format.html { redirect_to current_user, notice: 'Worker was successfully added' }
         format.json { render :show, status: :created, location: @user_assignment.assignment }
 
       else

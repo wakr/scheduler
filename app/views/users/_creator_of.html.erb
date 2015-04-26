@@ -17,7 +17,7 @@
             <td></td>
         <%end %>
         <td>
-          <% if current_user.id == @user.id %>
+          <% if current_user.id == @user.id and not User.all_in_same_group_but_not_assigned_to_assignment(assignment.id, current_user).empty? %>
             <%= link_to new_user_assignment_path(:assignment_id => assignment.id) do %>
               <i class="fa fa-user-plus btn btn-info">  Add worker</i>
             <% end %>
