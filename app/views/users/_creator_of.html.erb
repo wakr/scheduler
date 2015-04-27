@@ -12,7 +12,7 @@
       <tr>
         <td><%= link_to assignment.name, assignment %></td>
         <% if assignment.is_done %>
-            <td><%= link_to 'Destroy', assignment, method: :delete, data: {confirm: 'This item can be removed now. Are you sure?'}, class:'btn btn-danger'%></td>
+            <td><%= link_to 'Mark permanently done', assignment, method: :delete, data: {confirm: 'This item can be removed now. Are you sure?'}, class:'btn btn-danger'%></td>
         <% else %>
             <td></td>
         <%end %>
@@ -21,6 +21,8 @@
             <%= link_to new_user_assignment_path(:assignment_id => assignment.id) do %>
               <i class="fa fa-user-plus btn btn-info">  Add worker</i>
             <% end %>
+          <% else %>
+              <i>All workers already assigned to this</i>
           <% end %>
         </td>
         <td>

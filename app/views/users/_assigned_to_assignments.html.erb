@@ -2,7 +2,7 @@
   <div class="panel-heading">
 <h3>Assigned to assignments</h3>
   </div>
-<table class="table">
+<table class="table table-hover">
 
 
   <tbody>
@@ -10,9 +10,11 @@
       <tr>
         <td><%= link_to assignment.name, assignment %></td>
         <% if assignment.is_ready%>
-            <td>Assigment is ready and creator can now destroy it.</td>
+            <td>The assignment is ready and the creator can now destroy it.</td>
+        <% elsif assignment.tasks.empty?%>
+        <td>This assignment doesn't have any tasks yet.</td>
         <% else %>
-            <td>Assigment is not fully ready yet.</td>
+            <td>Assignment is not fully ready yet.</td>
         <% end %>
 
         <td>
@@ -21,6 +23,9 @@
           <table class="table borderless">
             <thead>
             <th>Tasks</th>
+            <th></th>
+            <th></th>
+            <th></th>
             </thead>
             <tbody>
             <% assignment.tasks.each do |task| %>
