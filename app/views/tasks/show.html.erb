@@ -1,8 +1,8 @@
 
-<div class="container-fluid col-md-7 col-md-offset-5" id="showtask_form">
+<div class="container-fluid col-md-3 col-md-offset-5 panel panel-body" id="showtask_form">
 
 
-    <h1>
+    <h1 class="panel-heading">
       <%= @task.name %>
     </h1>
 
@@ -16,5 +16,5 @@
       <%= @task.location %>
     </p>
 
-    <%= link_to 'Edit', edit_task_path(@task) %>
+    <%= link_to 'Edit', edit_task_path(@task) , class: 'btn btn-default'%>
 </div>
