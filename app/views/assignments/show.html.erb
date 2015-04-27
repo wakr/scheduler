@@ -1,9 +1,11 @@
 
 <div class="container-fluid" id="assignment_show">
   <div class="col-md-12 col-md-offset-2">
-    <h1>
-      <%= @assignment.name %> by <%= link_to @assignment.get_creator, @assignment.get_creator%>
-    </h1>
+    <h2>
+      <i class="fa fa-trello fa-1x">
+        <%= @assignment.name %> by <%= link_to @assignment.get_creator, @assignment.get_creator%>
+      </i>
+    </h2>
     <% if current_user.id == @assignment.creator_id %>
         <%= link_to 'Delete', @assignment, method: :delete, data: {confirm: 'This item can be removed now. Are you sure?'}, class:'btn btn-danger'%>
     <% end %>
