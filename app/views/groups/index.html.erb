@@ -1,6 +1,5 @@
-
 <div class="col-md-6 col-md-offset-3 panel panel-body" id="group_index">
-<h1 class="panel-heading">Groups</h1>
+<h1 class="panel-heading"><i class="fa fa-trello fa-1x" > Groups </i></h1>
 
 <table class="table table-hover">
   <thead>
@@ -23,5 +22,7 @@
 
 <br>
 
-<%= link_to 'New Group', new_group_path , class:'btn btn-default' %>
+<%= link_to new_group_path do %>
+  <i class='fa fa-users btn btn-default'> New Group</i>
+<% end %>
 </div>
