@@ -88,7 +88,7 @@ class AssignmentsController < ApplicationController
 
     @assignment.destroy
     respond_to do |format|
-      format.html { redirect_to request.env['HTTP_REFERER'] || :root, notice: 'Assignment was successfully destroyed.' }
+      format.html { redirect_to :root, notice: 'Assignment was successfully destroyed.' }
       format.json { head :no_content }
     end
   end
