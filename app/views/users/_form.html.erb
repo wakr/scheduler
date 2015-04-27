@@ -14,7 +14,7 @@
 
         <%= f.text_field :name , icon:"user", placeholder:"Username"%>
         <div id="newuser_dateselect">
-        <%= f.date_select :birthdate, :start_year => Time.now.year - 60, :end_year => Time.now.year%>
+        <%= f.date_select :birthdate, :start_year => Time.now.year - 60, :end_year => Time.now.year, label: 'Date of birth'%>
         </div>
 
       <%= f.password_field :password , icon:"lock",  placeholder:"Password with one numeral and one uppercase"%>
