@@ -7,48 +7,46 @@
       </i>
     </h2>
     <% if current_user.id == @assignment.creator_id %>
-        <%= link_to 'Delete', @assignment, method: :delete, data: {confirm: 'This item can be removed now. Are you sure?'}, class:'btn btn-danger'%>
+        <%= link_to 'Delete', @assignment, method: :delete, data: {confirm: 'You are about to remove this assignment permanently. Are you sure?'}, class:'btn btn-danger'%>
     <% end %>
 
   </div>
-  <div class="col-md-4 col-md-offset-2">
+  <div class="col-md-4 col-md-offset-2 panel-body">
 
 
+    <p>
+      <strong>Status:</strong>
+      <% if @assignment.is_done %>
+          Done
+      <% else %>
+          Not done yet
+      <% end %>
+    </p>
 
-
+    <p>
+      <strong>Deadline:</strong>
+      <%= @assignment.deadline.to_formatted_s(:db) %>
+    </p>
 
 
         <h3>People doing this assignment:</h3>
 
-        <table class="table-hover">
-          <tbody>
-          <% @assignment.doers.each do |worker| %>
-              <ul>
-                <li><%= link_to worker.name, worker %></li>
-              </ul>
-          <% end %>
-          </tbody>
-        </table>
+            <table class="table-hover">
+              <tbody>
+              <% @assignment.doers.each do |worker| %>
+                  <ul>
+                    <li><%= link_to worker.name, worker %></li>
+                  </ul>
+              <% end %>
+              </tbody>
+            </table>
 
 
-        <p>
-          <strong>Status:</strong>
-          <% if @assignment.is_done %>
-          Done
-          <% else %>
-          Not done yet
-          <% end %>
-        </p>
-
-        <p>
-          <strong>Deadline:</strong>
-          <%= @assignment.deadline.to_formatted_s(:db) %>
-        </p>
   </div>
-  <div class="col-md-4 col-md-offset-1">
+  <div class="col-md-4 col-md-offset-1 panel panel-body">
 
           <% if not @assignment.tasks.empty? %>
-        <h3><strong>Tasks</strong></h3>
+        <h3 class="panel-heading"><strong>Tasks</strong></h3>
 
         <table class="table">
 
